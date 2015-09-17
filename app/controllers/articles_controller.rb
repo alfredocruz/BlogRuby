@@ -19,11 +19,12 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    set_meta "description"   => Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe
+    set_meta "description"   => Sanitize.fragment(@article.body.truncate(150), Sanitize::Config::RELAXED).html_safe
     set_meta "title" => @article.title
     set_meta "viewport"   => "width=device-width, initial-scale=1"
     set_meta "og:title"   => @article.title
-    set_meta "og:description"   => Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe
+    set_meta "og:description"   => Sanitize.fragment(@article.body.truncate(150), Sanitize::Config::RELAXED).html_safe
+    set_meta "og:image"   => @article.image.url
     @article.update_visits_count
     if request.path != article_path(@article)
       redirect_to @article, status: :moved_permanently
