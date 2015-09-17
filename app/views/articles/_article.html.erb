@@ -1,0 +1,42 @@
+<div class="cuadro-1 hoverable">
+	<div class="row cero-margin">
+		<div class="col-xs-6 left-align">
+			<%if can? :update, @article%>
+				<%= link_to edit_article_path(article) do%>
+					<i class="fa fa-pencil-square-o"></i>
+				<%end%>
+			<%end%>
+		</div>
+		<div class="col-xs-6 right-align">
+			<%if can? :destroy, @article%>
+				<%= link_to article, method: :delete, data: { confirm: 'Are you sure?'} do%>
+					<i class="fa fa-trash-o"></i>
+				<%end%>
+			<%end%>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-image waves-effect waves-block waves-light">
+			<%= image_tag article.image.url,:class=>"activator" %>
+		</div>
+		<div class="card-content">
+			<div class="card-title activator grey-text text-darken-4 titulo">
+				<%= link_to article.title.truncate(40), article%>
+				<i class="material-icons right">more_vert</i>
+			</div>
+			<div class="index-icon">
+				<span class="left"><i class="fa fa-eye"></i><%=article.visits_count%></span>
+			</div>
+			
+		</div>
+		<div class="card-reveal">
+			<div class="row cero-margin">
+				<span class="card-title grey-text text-darken-4 left-align"><%= link_to article.title.truncate(34), article%><i class="material-icons right">close</i></span>
+			</div>
+			<div class="body left-align ">
+
+				<%= Sanitize.fragment(article.body.truncate(150), Sanitize::Config::RELAXED).html_safe%>
+			</div>
+		</div>
+	</div>
+</div>

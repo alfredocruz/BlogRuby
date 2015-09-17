@@ -1,0 +1,22 @@
+<div class="row center-xs">
+	<div class="col-xs-6 sombras marin-top">
+		<h5>Editando permiso de: <%= @user.username %></h5>
+
+		<%= form_for(@user) do |f| %>
+			<div class="row bottom-xs">
+				<%= f.radio_button :role, "admin" ,:class=>"with-gap"%>
+				<label for="user_role_admin">Admin</label>
+
+				<%= f.radio_button :role, "autor" ,:class=>"with-gap"%>
+				<label for="user_role_autor">Autor</label>
+
+				<%= f.radio_button :role, "usuario",:class=>"with-gap"%>
+				<label for="user_role_usuario">Usuario</label>
+	
+				<div class="col-xs-6 right-align">
+		    		<%= f.submit "Guardar cambios",:class=>"btn waves-effect waves-light" %>
+		    	</div>
+		    </div>
+		<%end%>
+	</div>
+</div>

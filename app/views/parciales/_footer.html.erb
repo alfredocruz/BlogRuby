@@ -1,0 +1,43 @@
+<footer class="page-footer marin-top">
+   <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
+        <h5 class="grey-text text-darken-2">Facebook</h5>
+        <div class="fb-page" data-href="https://www.facebook.com/Dowloadapps" data-width="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Dowloadapps"><a href="https://www.facebook.com/Dowloadapps">Dowloadapps</a></blockquote></div></div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
+        <h5 class="grey-text text-darken-2">Google</h5>
+        <div class="g-page" data-width="180" data-href="//plus.google.com/u/0/111321982096712663213" data-rel="publisher"></div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
+        <h5 class="grey-text text-darken-2">Etiquetas</h5>
+            <div class="left-align">
+               <% @tags.each do |tag| %>
+               <span><%= link_to tag.name, tag_path(tag),:class =>"tag" %></span><% end %>
+            </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
+         <h5 class="grey-text text-darken-2">Sobre el Autor</h5>
+         <div class="row">
+            <div class="col-xs-11">
+               <p class="grey-text text-lighten-4 left-align cero-margin-top">
+                  <img src="http://res.cloudinary.com/alfredhdz/image/upload/v1442242514/g8dxbttcokyfr6y1kzsh.jpg" alt="" class=" circle responsive-img avatar">
+                  Mi nombre es Alfred Hdz soy un aficionado ala programacion. Cree este sitio con el fin de apoyar y compartir aplicaciones de manera libre.
+               </p>
+               <p class="grey-text text-lighten-4 left-align">si te quieres unir a este proyecto manda un correo electronico a alfredocruz9292@gmail.com</p>
+            </div>
+         </div>
+      </div>
+      
+   </div>
+
+   <div class="footer-copyright copyright">
+         <span>© 2015 Todos los derechos resevados</span>
+         <a class="grey-text text-lighten-4 right" href="#!"></a>
+         <a class="right grey-text text-lighten-4" onclick="location.reload()" style="font-size:.8em;"><em>¿Problemas para Ingresar? Recarga la Pagina!</em></a>
+      
+   </div>
+</footer>
+<!--Google-->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'es-419'}
+</script>

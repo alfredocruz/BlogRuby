@@ -1,0 +1,35 @@
+<div class="row center-xs">
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
+		<%= render "sliderpatallacompleta" %>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding marin-top">
+		<div class="row">
+			<div class="col-xs center">
+				<h4 class="fondos_h text-shadow left-align" ><%= link_to "HOME/ANDROID/",root_path%></h4>
+				<h1 class="fondos_h text-shadow oculto" >Aplicaciones para Android</h1>
+				<main class="sombras" >		
+					<%= render @articles %>
+					<div class="col-xs-12 border-top pagination">
+						<%= will_paginate @articles,:container => false %>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10  marin-top">
+  		<%= render "aside"%>
+  	</div>
+</div>
+
+<%= render "parciales/footer" %>
+
+<div class="fixed-action-btn " style="bottom: 49px; right: 0px;">
+    <a class="btn-floating btn-large black">
+      <i class="large material-icons">share</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="fa fa-google-plus"></i></a></li>
+      <li><a class="btn-floating blue"><i class="fa fa-twitter"></i></a></li>
+      <li><a class="btn-floating blue darken-4"><i class="fa fa-facebook"></i></a></li>
+    </ul>
+</div>

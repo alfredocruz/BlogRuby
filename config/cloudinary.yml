@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: alfredhdz
+  api_key: '388733958349314'
+  api_secret: I5KJg2WakCDhH70YpbxMTmQmPj0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: alfredhdz
+  api_key: '388733958349314'
+  api_secret: I5KJg2WakCDhH70YpbxMTmQmPj0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: alfredhdz
+  api_key: '388733958349314'
+  api_secret: I5KJg2WakCDhH70YpbxMTmQmPj0
+  enhance_image_tag: true
+  static_image_support: false

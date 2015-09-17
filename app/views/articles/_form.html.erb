@@ -1,0 +1,76 @@
+<div class="row">
+  <%= form_for(@article,html:{:class =>"col s12", id:"articles_form"}) do |f| %>
+    <% if @article.errors.any? %>
+        <h5><%= pluralize(@article.errors.count, "error") %> prohibieron que este articulo fuese guardado.</h5>
+        <ul>
+          <% @article.errors.each do |atributo,message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+    <% end %>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">create</i>
+        <%= f.text_field :title,:class =>"materialize-textarea"%>
+        <label for="textarea1">Nombre de la url(min. 25 Caracteres)</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">insert_link</i>
+        <%= f.text_field :link_des%>
+        <label for="icon_prefix">Link de Descarga</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">layers</i>
+        <%= f.text_field :tamano%>
+        <label for="icon_prefix">Tamaño en Mb</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="file-field input-field col s6">
+        <div class="btn">
+          <span>Imagen</span>
+          <%= f.file_field :image, :calss=>"file" %>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate valid" type="text" />
+        </div>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">backspace</i>
+        <%= f.text_field :tag_list%>
+        <label for="icon_prefix">Categorias</label>
+      </div>
+    </div>
+    <div>
+      <%= f.hidden_field :body,id:"body-textarea"%>
+      <%= f.hidden_field :markup_body,id:"markup-body-textarea"%>
+      <div id="epiceditor" style="height:350px;" ></div>
+    </div>
+    <div class="row">
+      <div class="actions col s12 right-align " style="margin: 20px;" >
+         <button class="btn waves-effect waves-light valign" type="submit" name="action" style="width: 150px;height:50px;">
+          <i class="material-icons">send</i>
+        </button>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<script>
+  var editor = new EpicEditor({
+    textarea: "markup-body-textarea",
+    file:{
+      name:"nuevo_articulo"
+    }
+  });
+  editor.load();
+  
+
+  $("#articles_form").on("submit",function(){
+    $("#body-textarea").val( editor.exportFile("nuevo_articulo","html") );
+    $("#markup-body-textarea").val( editor.exportFile("nuevo_articulo") );
+  });
+</script>

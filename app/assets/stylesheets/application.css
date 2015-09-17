@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.tag {
+	padding-left:10px  !important;
+background:#0090D5 !important; /* Color de fondo */
+padding:5px 10px !important;
+color:#fff!important; /* Color de la fuente */
+height:26px !important;
+line-height:26px !important;
+text-decoration:none !important;
+border:none !important;
+-webkit-transition:all .3s ease-in-out !important;t: 30pxt: 30px; /* transicion */
+margin-left:3px !important;
+margin-top:3px !important;
+font-size:13px !important; /* tamaño de la fuente */
+-webkit-border-radius: 4px !important; /* Bordes redondeados */
+-moz-border-radius: 4px !important; /* Bordes redondeados */
+border-radius: 4px !important; /* Bordes redondeados */
+}
+.tag:hover{
+background:#69625A !important; /* Color de fondo al pasar el mouse */
+-webkit-border-radius: 8px !important; /* Bordes redondeados al pasar el mause */
+-moz-border-radius: 8px !important; /* Bordes redondeados al pasar el mause */
+border-radius: 8px !important; /* Bordes redondeados al pasar el mause */
+}
+
+ul li form input{
+  left:50%!important;
+  top:50% !important;
+  width:20px !important;
+  height:20px !important;
+  border-style:none !important;
+  border-radius:20px !important;
+  padding:10px !important;
+ 
+  outline:none !important;
+  transition-duration:500ms !important;
+  cursor:pointer !important;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAWpJREFUWEfNljFOxDAQRbehoKDnIjTcgYtwAHpOwhE4BA3Vig6Je9ABYZ60kZbVc5xkifRHelrleRzP2rGT3TAM0ahMQmUSKpNQmYTKJFQmoTIJlUmonMFlcV88FW/F5+GXazzt1m8xKjvcFh/FVNBOnvVfhMoJHorvgtgXzNZNcXX45RpPkEe+3Wc2KhswIwz6VTwWF4Xl4Wknj/yzZlKlwDM1LiuDW84p5BH0W/1MqhRYOoLla83cKeSNy01/y+miUmB3EksHGv8Y/a29i0qBI4RgI1h7C/IJ+lt7F5UC5xzBbrX2FuQT9Lf2LiqF+BmMfwbHgWJ3cfw5CEvfJD8FcVdY3ixUTrDkXTzGe3Fd2P26qOww92uGmaM4YnWRKmfAM8VssTs5QlrfgxR1VpEq/5mzilS5AauLVLkRq4pUuSHHRb4WlvMHlRtDkS/F85FrojIJlUmoTEJlEiqTUJmEyiRUJqEyh2H3Cz4WH1fC57RBAAAAAElFTkSuQmCC)!important;
+  background-repeat:no-repeat !important;
+  font-family:'Segoe UI' !important;
+  font-size:15px !important;
+  color:transparent !important;
+  overflow:hidden !important;
+  
+}
+ul li form{
+  position: relative;
+  z-index: 1000;
+}
+ul li form input:focus
+{
+  width:200px !important;
+  cursor:text !important;
+  padding-left:40px !important;
+  color:#A0A0A0 !important;
+}
+ul li form input:hover{
+	background-color:#039be5 !important;
+}
+ul li form input:focus
+{
+  background-color:#F5F5F5 !important;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJTSURBVFiF7ZdNSxtRFIafM5PgJGqXxXy4DIziJhBdFLrwnyi4cym40S4ClkJ/g2B/Qv+BC0s3CtkIDWYZasWtXxEzebswQxGt3sk0Nou8cHfnPTycc+fOOSaJUZb3vwFe0hgwrcaAaTUGTKuRB8wMYrLZ2dxEd3rVPC2aqAoqBi0ZDfXs8DZzsad2++ZfAFrSP0m+NPdO4gtQeSasZcbK9c8f39PAQcIW50vzmxIHQEXQkGzdU2+pc6c3nnpLkq0LGkBF4iBfmt9MC+hcwX7lDgBhfOycTu5IR3ePElotGxSvthFbgJnxPlUlJb14KJdzQSE8CQqhgmJYd/EExbAeFEIFhfCEcjnn4nnqOLV4oju9Sr+tndPJHRdP53RyJ2533z+QnADN0yIAst2n2vqUpKM7ZLsP/EMDFFUAn+gwSfI4PvYPIidA9Z+U6641kySP4/X8k/Ss3CoILYB8RmGS5HF87B9EbhU0GgARfqK7FMfH/kHkBtiz+7tnWjOrZV08ZrUsprUH/mEB3mYu9oCWQTUoXm27eILi1bZBFWj1/cMDVLt9Y8YK0ENs5Upz9b9V0qyWzZXm6ogPAF6PjTSDQ6Jh4f5frE+AJ2gg2/WJDq+71sxnFEb4i5jW+pWL1fS7/vLl+fHZ0AHvId2mGa/HRs/jMxCmgUwMCO7z4NTbhZkoE+2ngRwIMInSQg595L88Pz7zu/4y0ATCKBPtT71dmHH1v8pOkgby1ZamR5DZ6KuL71W3uj+Q9k3SLxfP0D+StBr5vXgMmFZjwLQaA6bVyAP+BkJqfmMbSKF/AAAAAElFTkSuQmCC)!important;
+}
+.transparent:hover{
+	background-color: transparent !important;
+}

@@ -1,0 +1,136 @@
+<header class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+			<ul class="right hide-on-med-and-down">
+				<% if user_signed_in?%>
+					<li class="li-nav"><%= link_to edit_user_registration_path do%>
+						<i class="fa fa-pencil ico-nav"></i>
+						<span class="font-nav">Edirtar Perfil</span><%end%>
+					</li>
+					<li class="li-nav"><%= link_to destroy_user_session_path, method: :delete do%>
+						<i class="fa fa-sign-out ico-nav"></i>
+						<span class="font-nav">Salir</span><%end%>
+					</li>
+				<%else%>
+					<li class="li-nav" data-target="modal1">
+						<a class="modal-trigger" data-target="modal1">
+							<i class="fa fa-sign-in ico-nav"></i>
+							<span class="font-nav">Ingresar</span>
+						</a>
+					</li>
+					<li class="li-nav" data-target="modal2">
+						<a class="modal-trigger" data-target="modal2">
+							<i class="fa fa-user-plus ico-nav"></i>
+							<span class="font-nav">Crear cuenta</span>
+						</a>
+					</li>
+				<%end%>
+				<li class="li-nav" data-activates="dropdown1">
+					<a class="dropdown-button" data-activates="dropdown1">
+						<i class="fa fa-tags ico-nav"></i>
+						<span data-activates="dropdown1" class="font-nav">Categorias</span>
+						<i class="material-icons right" data-activates="dropdown1">arrow_drop_down</i>
+					</a>
+				</li>
+				<ul id='dropdown1' class='dropdown-content'>
+					<% unless  @tags.nil? %>
+						<% @tags.each do |tag| %>
+							<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %></li>
+						<% end %>
+					<%end%>
+				</ul>
+				<% if user_signed_in?%>
+					<li class="li-nav" style="padding:0em 1em;"><i class="fa fa-user ico-nav"></i><span class="font-nav "><%= current_user.username%></span></li>
+				<%else%>
+					<li class="li-nav" style="padding:0em 1em;"><i class="fa fa-user-times ico-nav"></i></li>
+				<%end%>
+			</ul>
+			<ul class="right">
+				<li class="transparent">
+					<%= form_tag articles_path, :method => 'get' do %>
+						<%= search_field_tag :search, params[:search]%>
+					<%end%>
+				</li>
+			</ul>
+			<div class="relative">
+				<%= link_to root_path,:class=>'brand-logo' do%>
+				<div class="absolute" style="height:64px;">
+					<img src="http://compumexicopc.webcindario.com/images/logo.png">
+				</div>
+				<div class="relative hide-on-small-only">
+					<em>DownloadApps</em>
+				</div>
+				<%end%>
+			</div>
+			<ul id="slide-out" class="side-nav">
+				<%if user_signed_in?%>
+					<div class="col s12 m8 offset-m2 l6 offset-l3">
+				        <div class="card-panel grey lighten-5 z-depth-1 cero-padding" style="box-shadow: 0px 0px; margin:0px; line-height: 20px;">
+				        	<div class="row valign-wrapper cero-margin">
+					            <div class="col s4">
+					            	
+					            </div>
+					            <div class="col s12" style="line-height: 20px;">
+					              	<span class="font-nav black-text"><%= current_user.username%></span>
+					            </div>
+					            <div class="col s12" style="line-height: 20px;">
+					              	<span class="font-nav black-text"><%= current_user.email%></span>
+					            </div>
+				          	</div>
+				        </div>
+				    </div>
+				<%end%>
+				<li>
+					<%= link_to root_path do%>
+						<i class="material-icons ico-nav">home</i>
+						<span class="font-nav">Home</span>
+					<%end%>
+				</li>
+				<% if user_signed_in?%>
+					<li>
+						<%= link_to edit_user_registration_path do%>
+							<i class="fa fa-pencil ico-nav"></i>
+							<span class="font-nav">Editar Perfil</span>
+						<%end%>
+					</li>
+					<li>
+						<%= link_to destroy_user_session_path, method: :delete do%>
+							<i class="fa fa-sign-out ico-nav"></i>
+							<span class="font-nav">Salir</span>
+						<%end%>
+					</li>
+				<%else%>
+					<li>
+						<%= link_to new_session_path(resource_name) do%>
+							<i class="material-icons ico-nav">person</i>
+							<span class="font-nav">Iniciar sesion</span>
+						<%end%>
+					</li>
+					<li>
+						<%= link_to new_registration_path(resource_name) do%>
+							<i class="material-icons ico-nav">person_add</i>
+							<span class="font-nav">Crear cuenta</span>
+						<%end%>
+					</li>
+				<% end -%>
+				<li class="no-padding">
+				 	<ul class="collapsible collapsible-accordion">
+						<li>
+					  		<a class="collapsible-header">Categorias<i class="fa fa-tags ico-nav"></i><i class="material-icons right">arrow_drop_down</i></a>
+					  		<div class="collapsible-body">
+								<ul>
+									<% unless  @tags.nil? %>
+										<% @tags.each do |tag| %>
+											<li><%= link_to tag.name, tag_path(tag)%></li>
+										<% end %>
+									<%end%>
+								</ul>
+					  		</div>
+						</li>
+				 	</ul>
+				</li>
+			</ul>
+			<a data-activates="slide-out" class="button-collapse"><i data-activates="slide-out" class="material-icons">view_headline</i></a>
+		</div>
+	</nav>
+</header>

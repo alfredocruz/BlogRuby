@@ -1,0 +1,20 @@
+<div class="row  marin-top center-xs">
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10">
+		<div class="row">
+			<div class="col-xs center">
+			<h1 class="fondos_h text-shadow oculto" >Aplicaciones para Android</h1>
+			<h4 class="fondos_h text-shadow left-align mayusculas"><%= link_to "HOME/ANDROID/",root_path%><%=link_to @tag.name,tag_path(@tag) %></h4>
+				<main class="sombras" >
+					<%= render @tag.articles %>
+					<br>
+				
+				</main>
+			</div>
+		</div>
+	</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10">
+	  		<%= render "articles/aside" %>
+	  	</div>
+</div>
+<%= render "parciales/footer" %>
