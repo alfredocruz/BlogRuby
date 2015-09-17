@@ -15,7 +15,6 @@ class Ability
         elsif user.role == "usuario"
             can :read, Tag
             can :read, Article
-            can :manage, :all
         else
             can :read,:all
         end
