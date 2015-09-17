@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     set_meta "viewport"   => "width=device-width, initial-scale=1"
     set_meta "og:title"   => "dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
-    set_meta "og:image"   => "http://compumexicopc.webcindario.com/images/logo.png"
+    set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
     @articles = Article.search(params[:search]).paginate(:per_page => 12, :page => params[:page]).ultimos
   end
 
