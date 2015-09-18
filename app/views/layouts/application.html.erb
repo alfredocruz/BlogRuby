@@ -12,7 +12,8 @@
 <body>
    <%= render "parciales/navegacion" %>
    <% flash.each do |key,msg| %>
-      <%= content_tag :p,msg, :id=>key %>
+         <%= content_tag :p,msg, :id=>key%>
+      </div>
    <%end%>
    <div class="fixed-action-btn right-align" style="bottom: 76.5%; right: 0px;">
       <%if can? :new, @article%>
