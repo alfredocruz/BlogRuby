@@ -3,13 +3,13 @@
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
-        <%= f.email_field :email, autofocus: true %>
+        <%= f.email_field :email, autofocus: true,:id=>"users_email" %>
         <%= f.label :email,"Correo electronico" %>
       </div>
 
       <div class="input-field col s12">
         <i class="material-icons prefix">account_circle</i>
-        <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.password_field :password, autocomplete: "off",:id=>"users_password" %>
         <%= f.label :password,"Contraseña" %>
       </div>
 
