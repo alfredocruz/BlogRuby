@@ -1,4 +1,8 @@
 module ApplicationHelper
+	def resource_class
+  		devise_mapping.to
+	end
+	
 	def title
 		if @title.nil?
 			title = "DowloadApps"
