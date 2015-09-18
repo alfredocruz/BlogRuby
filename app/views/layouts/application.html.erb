@@ -33,7 +33,7 @@
          if (d.getElementById(id)) return;
          js = d.createElement(s); js.id = id;
          js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
-         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&app_id=<%=ENV['FB_APP_ID']%>&version=v2.4";
+         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=<%=ENV['FB_APP_ID']%>&version=v2.4";
          fjs.parentNode.insertBefore(js, fjs);
          }(document, 'script', 'facebook-jssdk'));
 
