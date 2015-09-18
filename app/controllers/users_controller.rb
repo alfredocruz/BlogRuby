@@ -25,6 +25,6 @@ class UsersController < ApplicationController
 		@user = User.friendly.find(params[:id])
 	end
     def user_params
-      params.require(:user).permit(:role)
+      params.require(:user).permit(:role,:provider,:uid)
     end
 end
