@@ -6,9 +6,9 @@ class TagsController < ApplicationController
 	
 	def index
     	
-	    set_meta "title" => tag.name
+	    set_meta "title" => "Categorias"
 	    set_meta "viewport"   => "width=device-width, initial-scale=1"
-	    set_meta "og:title"   => tag.name
+	    set_meta "og:title"   => "Categorias"
   	end
 
 	def show
