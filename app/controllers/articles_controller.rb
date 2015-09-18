@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
     set_meta "title" => @article.title
     set_meta "og:title"   => @article.title
     set_meta "og:image"   => @article.image.url
-    set_meta "AUTHOR_NAME" => @article.user.username
+    set_meta "name" => @article.user.username
     @article.update_visits_count
     if request.path != article_path(@article)
       redirect_to @article, status: :moved_permanently
