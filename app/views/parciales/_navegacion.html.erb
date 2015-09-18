@@ -31,14 +31,14 @@
 						<span data-activates="dropdown1" class="font-nav">Categorias</span>
 						<i class="material-icons right" data-activates="dropdown1">arrow_drop_down</i>
 					</a>
+					<ul id='dropdown1' class='dropdown-content'>
+						<% unless  @tags.nil? %>
+							<% @tags.each do |tag| %>
+								<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %></li>
+							<% end %>
+						<%end%>
+					</ul>
 				</li>
-				<ul id='dropdown1' class='dropdown-content'>
-					<% unless  @tags.nil? %>
-						<% @tags.each do |tag| %>
-							<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %></li>
-						<% end %>
-					<%end%>
-				</ul>
 				<% if user_signed_in?%>
 					<li class="li-nav" style="padding:0em 1em;"><i class="fa fa-user ico-nav"></i><span class="font-nav "><%= current_user.username%></span></li>
 				<%else%>
