@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 	private
 	def set_meta_tags
 		set_meta "title" => "dowloadapps"
+		set_meta "viewport"   => "width=device-width, initial-scale=1"
 	end
 	def set_user
 		@user = User.friendly.find(params[:id])

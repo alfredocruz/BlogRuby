@@ -3,13 +3,13 @@ class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:show ,:index]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :set_tags, only:[:show,:index]
+  before_action :set_meta_tags
   load_and_authorize_resource :except =>[:create]
   # GET /articles
   # GET /articles.json
   def index
     set_meta "description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "title" => "dowloadapps"
-    set_meta "viewport"   => "width=device-width, initial-scale=1"
     set_meta "og:title"   => "dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
@@ -21,7 +21,6 @@ class ArticlesController < ApplicationController
   def show
     set_meta "twitter:description"  => Sanitize.fragment(@article.body.truncate(100), Sanitize::Config::RELAXED).html_safe
     set_meta "title" => @article.title
-    set_meta "viewport"   => "width=device-width, initial-scale=1"
     set_meta "og:title"   => @article.title
     set_meta "og:image"   => @article.image.url
     @article.update_visits_count
@@ -81,6 +80,9 @@ class ArticlesController < ApplicationController
   end
 
   private
+    def set_meta_tags
+      set_meta "viewport"   => "width=device-width, initial-scale=1"
+    end
     def set_tags
       @tags = Tag.all
     end

@@ -12,7 +12,9 @@ class TagsController < ApplicationController
   	end
 
 	def show
-
+		set_meta "title" => tag.name
+	    set_meta "viewport"   => "width=device-width, initial-scale=1"
+	    set_meta "og:title"   => tag.name
 	end
 
 	def destroy
