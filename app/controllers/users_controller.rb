@@ -16,6 +16,9 @@ class UsersController < ApplicationController
   	end
 
 	private
+	def set_meta_tags
+		set_meta "title" => "dowloadapps"
+	end
 	def set_user
 		@user = User.friendly.find(params[:id])
 	end
