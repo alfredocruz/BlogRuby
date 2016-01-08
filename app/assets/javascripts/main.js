@@ -28,6 +28,12 @@ function handle(delta) {
 
  $('select').material_select();
 
+ var options = [
+    {selector: '.cuadro-1', offset: 200, callback: 'globalFunction()' },
+    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
+  ];
+  Materialize.scrollFire(options);
+
 });
 
  function init(){
