@@ -3,6 +3,6 @@ class User < ActiveRecord::Base
   	friendly_id :username
   	# Include default devise modules. Others available are:
   	# :confirmable, :lockable, :timeoutable and :omniauthable
-  	devise :database_authenticatable, :registerable,:recoverable, :rememberable, :trackable, :validatable
+  	devise :database_authenticatable, :registerable,:recoverable, :rememberable, :trackable, :validatable,:omniauthable, :omniauth_providers => [:facebook]
   	has_many :articles
 end
