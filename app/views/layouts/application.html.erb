@@ -6,6 +6,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= auto_discovery_link_tag(:rss, "http://dowloadapps.herokuapp.com/") %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
    </head>
@@ -53,7 +54,9 @@
       }(document, 'script', 'facebook-jssdk'));
 
       });
+
    </script>
+   <link href="http://dowloadapps.herokuapp.com/" rel="alternate" title="RSS" type="application/rss+xml" />
     <%= yield %>
    <!-- Modal Structure -->
    <div id="modal1" class="modal">

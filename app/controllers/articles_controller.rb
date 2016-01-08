@@ -81,6 +81,13 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def feed
+    @articles = Article.all
+    respond_to do |format|
+      format.rss { render :layout => false }
+    end
+  end
+
   private
     def set_meta_tags
       set_meta "viewport"   => "width=device-width, initial-scale=1"
