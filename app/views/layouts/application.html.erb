@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
       <%= auto_discovery_link_tag(:rss, "http://dowloadapps.herokuapp.com/") %>
+      <link rel="alternate" type="application/rss+xml" title="Codingfish RSS Feed" href="http://dowloadapps.herokuapp.com/feed?format=rss">
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <%= csrf_meta_tags %>
    </head>
