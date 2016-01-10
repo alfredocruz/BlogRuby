@@ -14,13 +14,12 @@ xml.rss :version => "2.0" do
         else
           xml.title ""
         end
+        xml.title article.title
         xml.description article.body
-        xml.author "Alfred Hdz"
         xml.pubDate article.created_at.to_s(:rfc822)
         
-        xml.link "http://dowloadapps.herokuapp.com/android/" + article.slug.to_s
-        xml.guid article.slug
-        text = article.body
+        xml.link article_url(article)
+        xml.guid article_url(article)
       end
     end
   end
