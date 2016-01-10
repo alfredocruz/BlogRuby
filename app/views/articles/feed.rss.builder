@@ -14,7 +14,6 @@ xml.rss :version => "2.0" do
         else
           xml.title ""
         end
-        xml.title article.title
         xml.description article.body
         xml.pubDate article.created_at.to_s(:rfc822)
         
