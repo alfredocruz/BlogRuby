@@ -17,7 +17,7 @@ xml.rss :version => "2.0", 'xmlns:atom' => 'http://www.w3.org/2005/Atom' do
         end
         xml.description article.body.truncate(150)
         xml.pubDate article.created_at.to_s(:rfc822)
-        xml.link article_url(article, :rss)+"-"+"Alfred Hdz"
+        xml.link article_url(article, :rss)
         xml.guid article_url(article, :rss)
         xml.image_url article.image_url
       end
