@@ -1,10 +1,10 @@
 class ArticlesController < ApplicationController
 
-  before_action :authenticate_user!, except: [:show ,:index]
+  before_action :authenticate_user!, except: [:show ,:index,:feed]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :set_tags, only:[:show,:index]
   before_action :set_meta_tags
-  load_and_authorize_resource :except =>[:create]
+  load_and_authorize_resource :except =>[:create,:feed]
   # GET /articles
   # GET /articles.json
   def index
