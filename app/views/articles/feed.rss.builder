@@ -20,6 +20,7 @@ xml.rss :version => "2.0", 'xmlns:atom' => 'http://www.w3.org/2005/Atom' do
         xml.link article_url(article, :rss)
         xml.guid article_url(article, :rss)
         xml.image_url article.image_url
+        xml.webmaster "Alfred Hdz"
       end
     end
   end
