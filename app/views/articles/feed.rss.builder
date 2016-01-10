@@ -4,7 +4,7 @@ xml.rss :version => "2.0" do
     xml.title "dowloadapps"
     xml.author "Alfred Hdz"
     xml.description "Esta es una pagina donde podras descargar aplicaciones gratis y mas."
-    xml.link "http://dowloadapps.herokuapp.com"
+    xml.link articles_url
     xml.language "en"
 
     for article in @articles
