@@ -134,6 +134,13 @@ aside{
 	width: auto;
 	height: auto;
 }
+
+.slider .slides li .caption{
+	background-color: rgba(0,0,0,0.5) !important;
+    bottom: 0!important;
+    left: 0 !important;
+    width: 100% !important;
+}
 .cuadro-1{
 	width: 10em;
 	height: auto;
@@ -149,8 +156,9 @@ aside{
 }
 .card{
 	margin: 0px!important;
+	overflow: hidden!important;
 	.card-content{
-		padding: 0px;
+		padding: 7px 0px 0px 0px;
 		text-align: center;
 		a{
 			font-family: 'Old Standard TT', serif !important;
@@ -169,6 +177,8 @@ aside{
 		}
 	}
 	.card-reveal{
+		padding: 5px !important;
+		overflow-x: hidden!important; 
 		.row{
 			span{
 				line-height: .7em !important;

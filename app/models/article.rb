@@ -2,7 +2,6 @@ class Article < ActiveRecord::Base
 	extend FriendlyId
   	friendly_id :title, use: [:slugged, :history]
   	mount_uploader :image, ArticleUploader
-
   	belongs_to :user
   	has_many :taggings
   	has_many :tags, through: :taggings
