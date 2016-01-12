@@ -87,16 +87,20 @@
 					</div>
 					
 				</div>
+				<div class="fb-comments" data-href="http://dowloadapps.herokuapp.com<%=article_path%>" data-width="100%" data-numposts="5"></div>
+				
+
 				<% if user_signed_in?%>
-					
 		        <%else%>
-		        	
+		        	<!--
 		        	<div class="row">
 		        		<div class="col-xs-12 center-align margin-bottom">
 		        			<strong style="font-weight: bold;">Registra tu cuenta o ingresa para comentar.</strong>
 		        		</div>
+
 		        		<%= render "btnRegistration" %>
 		        	</div>
+		        	-->
 		        <%end%>
 			</div>
 		</div>
