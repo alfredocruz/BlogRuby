@@ -6,7 +6,7 @@ class ArticleUploader < CarrierWave::Uploader::Base
    include Cloudinary::CarrierWave
    #esta imagen es la del los recuadros del index
    version :index_cards do
-       process resize_to_fill: [80, 80]
+       process resize_to_fill: [80, 80,:north]
    end
    #primer dato anchura[anchura,altura]
    version :index_slider do
