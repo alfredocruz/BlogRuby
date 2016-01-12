@@ -25,6 +25,11 @@ function handle(delta) {
 		scrollTop: $(window).scrollTop() - (distance * delta)
 	}, time );
 }
+//este codigo es para los mensajes flash
+  $("#flash-message").on('click', '.close', function() {
+    $(this).parent("#flash-message").fadeOut(250);
+  });
+
 
  $('select').material_select();
 

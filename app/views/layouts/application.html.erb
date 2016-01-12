@@ -12,10 +12,22 @@
    </head>
 <body>
    <%= render "parciales/navegacion" %>
-   <% flash.each do |key,msg| %>
-         <%= content_tag :p,msg, :id=>key%>
+
+    <% if notice %>
+      <div id="flash-message" class="flash-message green">
+        <button type="button" class="close">&times;</button>
+        <i class="fa fa-check"></i><div class="margin"><%= notice %></div>
       </div>
-   <%end%>
+    <% end %>
+    <% if alert %>
+      
+      <div id="flash-message" class="flash-message red">
+        <button type="button" class="close">&times;</button>
+        <i class="fa fa-exclamation"></i>
+        <div class="margin"><%= alert %></div>
+      </div>
+    <% end %>
+
    <div class="fixed-action-btn right-align" style="bottom: 76.5%; right: 0px;">
       <%if can? :new, @article%>
          <%= link_to new_article_path, :class =>"btn-floating btn-large red" do%>

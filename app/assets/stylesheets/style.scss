@@ -141,6 +141,43 @@ aside{
     left: 0 !important;
     width: 100% !important;
 }
+.side-nav li a{
+	&:hover{
+		background: transparent;
+	}
+}
+.flash-message {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  padding: 10px 15px;
+  z-index: 999;
+}
+.close {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  color: white;
+  font-size: 2em;
+  padding: 1px;
+  marging: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  z-index: -1;
+
+}
+.green{
+	background-color: rgba(0,128,0,0.8);
+}
+.red{
+	background-color: #F44336!important;
+}
+.margin{
+	margin-left: 1em;
+	display: inline-block;
+}
+
 .cuadro-1{
 	width: 10em;
 	height: auto;
