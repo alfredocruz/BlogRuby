@@ -17,7 +17,7 @@
       
 
       <div class="input-field col s12">
-        <i class="material-icons prefix">person_pin</i>
+        <i class="material-icons prefix">vpn_key</i>
         <% if @minimum_password_length %>
         <em><% @minimum_password_length %></em>
         <% end %><br />
@@ -28,7 +28,7 @@
       </div>
 
       <div class="input-field col s12">
-        <i class="material-icons prefix">person_pin</i>
+        <i class="material-icons prefix">vpn_key</i>
         <%= f.password_field :password_confirmation, autocomplete: "off" ,required:"required"%>
         <%= f.label :password_confirmation,"Confirmar Contreseña" %>
       </div>

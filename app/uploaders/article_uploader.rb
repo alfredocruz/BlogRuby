@@ -4,7 +4,18 @@ class ArticleUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
    include Cloudinary::CarrierWave
-
+   #esta imagen es la del los recuadros del index
+   version :index_cards do
+       process resize_to_fill: [80, 80]
+   end
+   #primer dato anchura[anchura,altura]
+   version :index_slider do
+       process resize_to_fill: [600, 400]
+   end
+   #imagen de articles show
+   version :show do
+       process resize_to_fill: [200, 200]
+   end
    # Crop to 275px, 206px
    version :thumbnail do
        process resize_to_fill: [275, 206]

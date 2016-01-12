@@ -1,4 +1,5 @@
  $(document).on('ready page:load', function () {
+
  	$(".dropdown-button").dropdown();
  	$('.slider').slider({full_width: true});
 	$(".button-collapse").sideNav();
