@@ -13,7 +13,11 @@ body{
 	}
 }
 .color-dow{
+	min-width: 1rem !important;
 	color: #757575 !important;
+	font-size: 1em !important;
+	position: relative !important;
+	padding: 14px 0px !important;
 }
 .fullScreen{
 	width: 100%;

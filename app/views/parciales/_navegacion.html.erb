@@ -35,7 +35,7 @@
 						<% unless  @tags.nil? %>
 							<% @tags.each do |tag| %>
 								<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %>
-								<span class="badge color-dow"><%= tag.articles.count%></span>
+								<span class="badge color-dow right"><%= tag.articles.count%></span>
 									
 								</li>
 
