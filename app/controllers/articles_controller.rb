@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
   def index
     
     set_meta "description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
-    set_meta "title" => "dowloadapps"
+    set_meta "title" => "dowloadapps-Aplicaciones para Android, juegos , temas,herramientas, multimedia "
     set_meta "og:title"   => "dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
