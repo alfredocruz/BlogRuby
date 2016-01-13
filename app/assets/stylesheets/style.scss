@@ -210,9 +210,13 @@ aside{
 	.card-content{
 		padding: 7px 0px 0px 0px;
 		text-align: center;
+		h2{
+			margin: 0px;
+			font-size: 4.5rem !important;
+		}
 		a{
 			font-family: 'Old Standard TT', serif !important;
-			font-size: .6em !important;
+			font-size: .2em !important;
 			width: 100% !important;
 			display: block !important;
 			color: #505050 !important;
