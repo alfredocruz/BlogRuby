@@ -34,7 +34,11 @@
 					<ul id='dropdown1' class='dropdown-content'>
 						<% unless  @tags.nil? %>
 							<% @tags.each do |tag| %>
-								<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %></li>
+								<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %>
+								<span class="badge color-dow"><%= tag.articles.count%></span>
+									
+								</li>
+
 							<% end %>
 						<%end%>
 					</ul>

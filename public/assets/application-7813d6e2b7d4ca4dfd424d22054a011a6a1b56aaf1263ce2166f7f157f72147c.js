@@ -14823,55 +14823,8 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
   });
 
 }).call(this);
- $(document).on('ready page:load', function () {
- 	$(".dropdown-button").dropdown();
- 	$('.slider').slider({full_width: true});
-	$(".button-collapse").sideNav();
-	init();
-
-	if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
-window.onmousewheel = document.onmousewheel = wheel;
-
-function wheel(event) {
-	var delta = 0;
-	if (event.wheelDelta) delta = event.wheelDelta / 120;
-	else if (event.detail) delta = -event.detail / 3;
-
-	handle(delta);
-	if (event.preventDefault) event.preventDefault();
-	event.returnValue = false;
-}
-
-function handle(delta) {
-	var time 	= 1000;
-	var distance 	= 400;
-
-	$('html, body').stop().animate({
-		scrollTop: $(window).scrollTop() - (distance * delta)
-	}, time );
-}
-
- $('select').material_select();
-
- var options = [
-    {selector: '.cuadro-1', offset: 200, callback: 'globalFunction()' },
-    {selector: '.other-class', offset: 200, callback: 'globalFunction()' },
-  ];
-  Materialize.scrollFire(options);
-
-});
-
- function init(){
-$.stellar({
-		'horizontalScrolling': false,
-		hideDistantElements: false
-	});
-
- }
-
-
+function init(){$.stellar({horizontalScrolling:!1,hideDistantElements:!1})}$(document).on("ready page:load",function(){function e(e){var t=0;e.wheelDelta?t=e.wheelDelta/120:e.detail&&(t=-e.detail/3),l(t),e.preventDefault&&e.preventDefault(),e.returnValue=!1}function l(e){var l=1e3,t=400;$("html, body").stop().animate({scrollTop:$(window).scrollTop()-t*e},l)}$(".dropdown-button").dropdown(),$(".slider").slider({full_width:!0}),$(".button-collapse").sideNav(),init(),window.addEventListener&&window.addEventListener("DOMMouseScroll",e,!1),window.onmousewheel=document.onmousewheel=e,$("#flash-message").on("click",".close",function(){$(this).parent("#flash-message").fadeOut(250)}),$("select").material_select();var t=[{selector:".cuadro-1",offset:200,callback:"globalFunction()"},{selector:".other-class",offset:200,callback:"globalFunction()"}];Materialize.scrollFire(t)});
  
-;
 /*!
  * Materialize v0.97.5 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -14912,4 +14865,11 @@ $(document).on('ready page:load', function () {
       out_duration: 200, // Transition out duration
     }
     );
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 });
