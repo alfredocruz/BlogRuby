@@ -13,6 +13,7 @@ class Article < ActiveRecord::Base
 	before_save :set_visits_count
 
 	scope :ultimos, -> {order("created_at DESC")}
+	scope :order_visits, ->{order("visits_count DESC")}
 
 	def tag_list
   		self.tags.collect do |tag|

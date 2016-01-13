@@ -38,36 +38,7 @@
   
  <!--facebook-->
    <div id="fb-root"></div>
-   <script>
-      $(document).on('ready page:load', function () {
-
-         /*(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
-         js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=<%=ENV['FB_APP_ID']%>&version=v2.4";
-         fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));*/
-         window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '316086441848514',
-            xfbml      : true,
-            version    : 'v2.4'
-          });
-         };
-
-     (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-      });
-
-   </script>
+   
     <%= yield %>
    <!-- Modal Structure -->
    <div id="modal1" class="modal">

@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
     @articles = Article.search(params[:search]).paginate(:per_page => 12, :page => params[:page]).ultimos
+    @articles_visit = Article.all.order_visits
   end
 
   # GET /articles/1
@@ -25,6 +26,7 @@ class ArticlesController < ApplicationController
     set_meta "og:title"   => @article.title
     set_meta "og:image"   => @article.image.url
     set_meta "name" => @article.user.username
+    
     @article.update_visits_count
     if request.path != article_path(@article)
       redirect_to @article, status: :moved_permanently
@@ -48,7 +50,7 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.save
-        format.html { redirect_to @article, notice: 'Article was successfully created.' }
+        format.html { redirect_to @article, notice: 'Se ha creado correctamente el artículo.' }
         format.json { render :show, status: :created, location: @article }
       else
         format.html { render :new }
@@ -62,7 +64,7 @@ class ArticlesController < ApplicationController
   def update
     respond_to do |format|
       if @article.update(article_params)
-        format.html { redirect_to @article, notice: 'Article was successfully updated.' }
+        format.html { redirect_to @article, notice: 'Artículo se ha actualizado correctamente.' }
         format.json { render :show, status: :ok, location: @article }
       else
         format.html { render :edit }
@@ -76,7 +78,7 @@ class ArticlesController < ApplicationController
   def destroy
     @article.destroy
     respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
+      format.html { redirect_to articles_url, notice: 'Artículo fue eliminado con éxito.' }
       format.json { head :no_content }
     end
   end

@@ -5,15 +5,12 @@ class TagsController < ApplicationController
 	load_and_authorize_resource
 	
 	def index
-    	
 	    set_meta "title" => "Categorias"
-	    set_meta "viewport"   => "width=device-width, initial-scale=1"
 	    set_meta "og:title"   => "Categorias"
   	end
 
 	def show
 		set_meta "title" => @tag.name
-	    set_meta "viewport"   => "width=device-width, initial-scale=1"
 	    set_meta "og:title"   => @tag.name
 	end
 
@@ -28,6 +25,7 @@ class TagsController < ApplicationController
 	private
 		def set_tag_all
 			@tags = Tag.all
+			set_meta "viewport"   => "width=device-width, initial-scale=1"
 		end
 	    # Use callbacks to share common setup or constraints between actions.
 	    def set_tag
