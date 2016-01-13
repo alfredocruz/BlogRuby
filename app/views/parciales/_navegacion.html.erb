@@ -87,7 +87,7 @@
 				<%end%>
 				<li>
 					<%= link_to root_path do%>
-						<i class="material-icons ico-nav">home</i>
+						<i class="fa fa-home ico-nav"></i>
 						<span class="font-nav">Home</span>
 					<%end%>
 				</li>
@@ -107,13 +107,13 @@
 				<%else%>
 					<li>
 						<%= link_to new_session_path(resource_name) do%>
-							<i class="material-icons ico-nav">person</i>
+							<i class="fa fa-sign-in ico-nav"></i>
 							<span class="font-nav">Iniciar sesion</span>
 						<%end%>
 					</li>
 					<li>
 						<%= link_to new_registration_path(resource_name) do%>
-							<i class="material-icons ico-nav">person_add</i>
+							<i class="fa fa-user-plus ico-nav"></i>
 							<span class="font-nav">Crear cuenta</span>
 						<%end%>
 					</li>
@@ -121,7 +121,9 @@
 				<li class="no-padding">
 				 	<ul class="collapsible collapsible-accordion">
 						<li>
-					  		<a class="collapsible-header">Categorias<i class="fa fa-tags ico-nav"></i><i class="material-icons right">arrow_drop_down</i></a>
+					  		<a class="collapsible-header">Categorias<i class="fa fa-tags ico-nav"></i>
+					  		<i class="fa fa-sort-desc right"></i>
+					  		</a>
 					  		<div class="collapsible-body">
 								<ul>
 									<% unless  @tags.nil? %>
