@@ -16,9 +16,9 @@ sitemap_for Page.scoped
 
 # For products with special sitemap name and priority, and link to comments:
 #
-   sitemap_for Product.published, name: :published_products do |product|
-     url product, last_mod: product.updated_at, priority: (product.featured? ? 1.0 : 0.7)
-     url product_comments_url(product)
+   sitemap_for Article.published, name: :published_articles do |article|
+     url article, last_mod: article.updated_at, priority: (article.featured? ? 1.0 : 0.7)
+     url article_comments_url(article)
    end
 
 # If you want to generate multiple sitemaps in different folders (for example if you have

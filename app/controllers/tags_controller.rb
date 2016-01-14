@@ -10,6 +10,7 @@ class TagsController < ApplicationController
   	end
 
 	def show
+		@articles_visit = Article.limit(10).order_visits
 		set_meta "title" => @tag.name
 	    set_meta "og:title"   => @tag.name
 	end
