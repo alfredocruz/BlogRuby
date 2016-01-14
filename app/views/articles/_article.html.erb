@@ -22,7 +22,7 @@
 		<div class="card-content">
 			<div class="card-title activator grey-text text-darken-4 titulo">
 				<h2><%= link_to article.title.truncate(40), article%></h2>
-				<i class="material-icons right">more_vert</i>
+				<i class="fa fa-ellipsis-v right"></i>
 			</div>
 			<div class="index-icon">
 				<span class="left"><i class="fa fa-eye"></i><%= article.visits_count%></span>
@@ -31,7 +31,10 @@
 		</div>
 		<div class="card-reveal">
 			<div class="row cero-margin">
-				<span class="card-title grey-text text-darken-4 left-align"><%= link_to article.title.truncate(34), article%><i class="material-icons right">close</i></span>
+				<span class="card-title grey-text text-darken-4 left-align">
+					<%= link_to article.title.truncate(34), article%>
+					<i class="fa fa-times right"></i>
+				</span>
 			</div>
 			<div class="body left-align ">
 

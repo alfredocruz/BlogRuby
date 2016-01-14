@@ -79,6 +79,8 @@ GEM
       railties (>= 3.2, < 5.0)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-rails (4.5.0.0)
+      railties (>= 3.2, < 5.0)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.6)
@@ -221,6 +223,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   epic-editor-rails
+  font-awesome-rails
   friendly_id (~> 5.1.0)
   heroku_rails_deflate
   jbuilder (~> 2.0)

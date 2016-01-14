@@ -29,7 +29,7 @@
 					<a class="dropdown-button" data-activates="dropdown1">
 						<i class="fa fa-tags ico-nav"></i>
 						<span data-activates="dropdown1" class="font-nav">Categorias</span>
-						<i class="material-icons right" data-activates="dropdown1">arrow_drop_down</i>
+						<i class="fa fa-sort-desc right fa-lg" data-activates="dropdown1"></i>
 					</a>
 					<ul id='dropdown1' class='dropdown-content'>
 						<% unless  @tags.nil? %>
@@ -66,7 +66,7 @@
 				</div>
 				<%end%>
 			</div>
-			<a data-activates="slide-out" class="button-collapse"><i data-activates="slide-out" class="material-icons">view_headline</i></a>
+			<a data-activates="slide-out" class="button-collapse"><i class="fa fa-align-justify" data-activates="slide-out" ></i></a>
 			<ul id="slide-out" class="side-nav">
 				<%if user_signed_in?%>
 					<div class="col s12 m8 offset-m2 l6 offset-l3">
