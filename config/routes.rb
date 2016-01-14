@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	map.sitemap '/sitemap.xml', :controller => 'sitemap'
+	
   	resources :users, :path=>"usuarios_admin"
 
     resources :tags, :path => "category"
