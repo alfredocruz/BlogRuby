@@ -35,7 +35,7 @@
   
  <!--facebook-->
    <div id="fb-root"></div>
-   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <%= javascript_include_tag 'application',async:true, 'data-turbolinks-track' => true%>
     <%= yield %>
    <!-- Modal Structure -->
    <div id="modal1" class="modal">
