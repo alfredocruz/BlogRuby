@@ -4,6 +4,7 @@
       <%= meta_tags %>
       <link rel="icon" type="image/png" href="http://compumexicopc.webcindario.com/images/logo.png" />
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application',defer: true,async: true, 'data-turbolinks-track' => true%>
       <%= auto_discovery_link_tag(:rss, "http://dowloadapps.herokuapp.com/") %>
       <%= csrf_meta_tags %>
    </head>
@@ -35,7 +36,7 @@
   
  <!--facebook-->
    <div id="fb-root"></div>
-   <%= javascript_include_tag 'application',defer: Rails.env.production?, 'data-turbolinks-track' => true%>
+   
     <%= yield %>
    <!-- Modal Structure -->
    <div id="modal1" class="modal">
