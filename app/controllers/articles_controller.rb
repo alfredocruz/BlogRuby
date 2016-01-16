@@ -50,7 +50,6 @@ class ArticlesController < ApplicationController
 
     respond_to do |format|
       if @article.save
-        Welcome.notify(@article).deliver_now
         format.html { redirect_to @article, notice: 'Se ha creado correctamente el artículo.' }
         format.json { render :show, status: :created, location: @article }
       else
