@@ -11,19 +11,19 @@
 
     <div class="row">
       <div class="input-field col s12">
-        <i class="material-icons prefix">create</i>
+        <i class="fa fa-pencil prefix"></i>
         <%= f.text_field :title,:class =>"materialize-textarea"%>
         <label for="textarea1">Nombre de la url(min. 25 Caracteres)</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s6">
-        <i class="material-icons prefix">insert_link</i>
+        <i class="fa fa-link prefix"></i>
         <%= f.text_field :link_des%>
         <label for="icon_prefix">Link de Descarga</label>
       </div>
       <div class="input-field col s6">
-        <i class="material-icons prefix">layers</i>
+        <i class="fa fa-file prefix"></i>
         <%= f.text_field :tamano%>
         <label for="icon_prefix">Tamaño en Mb</label>
       </div>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="input-field col s6">
-        <i class="material-icons prefix">backspace</i>
+        <i class="fa fa-tags prefix"></i>
         <%= f.text_field :tag_list%>
         <label for="icon_prefix">Categorias</label>
       </div>
@@ -52,7 +52,7 @@
     <div class="row">
       <div class="actions col s12 right-align " style="margin: 20px;" >
          <button class="btn waves-effect waves-light valign" type="submit" name="action" style="width: 150px;height:50px;">
-          <i class="material-icons">send</i>
+          <i class="fa fa-paper-plane"></i>
         </button>
       </div>
     </div>
