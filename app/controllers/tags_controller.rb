@@ -22,6 +22,20 @@ class TagsController < ApplicationController
 	      format.json { head :no_content }
 	    end
   	end
+  	def edit
+  		
+  	end
+  	def update
+	    respond_to do |format|
+	      if @tag.update(tag_params)
+	        format.html { redirect_to @tag, notice: 'Artículo se ha actualizado correctamente.' }
+	        format.json { render :show, status: :ok, location: @tag }
+	      else
+	        format.html { render :edit }
+	        format.json { render json: @tag.errors, status: :unprocessable_entity }
+	      end
+	    end
+  	end
 
 	private
 		def set_tag_all
