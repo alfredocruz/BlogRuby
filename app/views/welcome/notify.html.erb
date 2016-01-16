@@ -1,0 +1,9 @@
+<p>
+Hola <h1><%= @article.title%></h1><br>
+
+<p><%= truncate(@article.body,lenght: 30) %></p><br>
+
+
+<%= link_to @article.title, @article%>
+
+</p>

@@ -12,6 +12,7 @@ gem 'cloudinary'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'omniauth'
+gem 'delayed_job_active_record'
 #font awesome para iconos
 gem 'font-awesome-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

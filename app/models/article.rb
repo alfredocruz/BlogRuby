@@ -11,7 +11,6 @@ class Article < ActiveRecord::Base
 	validates :link_des, :presence=>{ :message=>"Usted debe de ingresar un link de descarga" }
 	validates :tamano, :presence =>{ :message=>"Usted debe de ingresar un tamaño en MB" }
 	before_save :set_visits_count
-
 	scope :ultimos, -> {order("created_at DESC")}
 	scope :order_visits, ->{order("visits_count DESC")}
 
