@@ -32,10 +32,6 @@ $(document).on('ready page:load', function () {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-if (window._gaq != null) {
-  return _gaq.push(['_trackPageview']);
- } else if (window.pageTracker != null) {
-  return pageTracker._trackPageview();
- }
+
 
 });

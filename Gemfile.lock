@@ -85,6 +85,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    google-analytics-rails (1.0.0)
     hashie (3.4.3)
     heroku_rails_deflate (1.0.3)
       actionpack (>= 3.2.13)
@@ -225,6 +226,7 @@ DEPENDENCIES
   epic-editor-rails
   font-awesome-rails
   friendly_id (~> 5.1.0)
+  google-analytics-rails
   heroku_rails_deflate
   jbuilder (~> 2.0)
   jquery-rails
