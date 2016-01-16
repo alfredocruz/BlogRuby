@@ -7,6 +7,7 @@
       <%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
       <%= auto_discovery_link_tag(:rss, "http://dowloadapps.herokuapp.com/") %>
       <%= csrf_meta_tags %>
+      <%= analytics_init if GoogleAnalytics.valid_tracker? %>
    </head>
 <body>
    <%= render "parciales/navegacion" %>
@@ -36,7 +37,7 @@
   
  <!--facebook-->
    <div id="fb-root"></div>
-       <%= analytics_init if GoogleAnalytics.valid_tracker? %>
+       
     <%= yield %>
    <!-- Modal Structure -->
    <div id="modal1" class="modal">
