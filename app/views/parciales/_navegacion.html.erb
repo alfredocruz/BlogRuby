@@ -44,9 +44,9 @@
 					</ul>
 				</li>
 				<% if user_signed_in?%>
-					<li class="li-nav" style="padding:0em 1em;"><i class="fa fa-user ico-nav"></i><span class="font-nav "><%= current_user.username%></span></li>
+					<li class="li-nav"><i class="fa fa-user ico-nav"></i><span class="font-nav "><%= current_user.username%></span></li>
 				<%else%>
-					<li class="li-nav" style="padding:0em 1em;"><i class="fa fa-user-times ico-nav"></i></li>
+					<li class="li-nav"><i class="fa fa-user-times ico-nav"></i></li>
 				<%end%>
 			</ul>
 			<ul class="right">

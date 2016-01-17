@@ -32,6 +32,14 @@ $(document).on('ready page:load', function () {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
+$(function() {
+  prettyPrint();
+  $('.lang-html').mouseover(function() {
+     $(this).addClass('over');
+  });
+  $('.lang-html').mouseleave(function() {
+    $(this).removeClass('over');
+  });
+});
 
 });
