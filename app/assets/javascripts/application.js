@@ -39,7 +39,7 @@ $(document).on('ready page:load', function () {
     // Google Analytics
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
     // Facebook SDK
-     add('http://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=200103733347528', 'facebook-jssdk');
+     add('//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514');
 }(document, 'script'));
 
 $(function() {
