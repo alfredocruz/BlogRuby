@@ -24,6 +24,8 @@ $(document).on('ready page:load', function () {
       out_duration: 200, // Transition out duration
     }
     );
+
+
 $(function() {
   prettyPrint();
   $('.lang-html').mouseover(function() {
