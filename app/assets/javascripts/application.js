@@ -24,13 +24,23 @@ $(document).on('ready page:load', function () {
       out_duration: 200, // Transition out duration
     }
     );
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+
+(function(doc, script) {
+    var js,
+        fjs = doc.getElementsByTagName(script)[0],
+        add = function(url, id) {
+            if (doc.getElementById(id)) {return;}
+            js = doc.createElement(script);
+            js.src = url;
+            id && (js.id = id);
+            fjs.parentNode.insertBefore(js, fjs);
+        };
+
+    // Google Analytics
+    add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
+    // Facebook SDK
+     add('http://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=200103733347528', 'facebook-jssdk');
+}(document, 'script'));
 
 $(function() {
   prettyPrint();
