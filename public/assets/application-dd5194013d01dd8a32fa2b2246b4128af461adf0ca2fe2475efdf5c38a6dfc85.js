@@ -15566,7 +15566,7 @@ $(document).on('ready page:load', function () {
     }
     );
 
-function(doc, script) {
+(function(doc, script) {
     var js,
         fjs = doc.getElementsByTagName(script)[0],
         add = function(url, id) {
@@ -15580,19 +15580,7 @@ function(doc, script) {
     // Google Analytics
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
     // Facebook SDK
-    add('//connect.facebook.net/en_US/all.js', 'facebook-jssdk');
-    // Twitter SDK
-    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
+     add('//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514');
 }(document, 'script'));
-
-$(function() {
-  prettyPrint();
-  $('.lang-html').mouseover(function() {
-     $(this).addClass('over');
-  });
-  $('.lang-html').mouseleave(function() {
-    $(this).removeClass('over');
-  });
-});
 
 });
