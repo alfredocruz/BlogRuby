@@ -41,7 +41,6 @@ function(doc, script) {
     // Facebook SDK
     add('//connect.facebook.net/en_US/all.js', 'facebook-jssdk');
     // Twitter SDK
-    add('//platform.twitter.com/widgets.js', 'twitter-wjs');
 }(document, 'script'));
 
 $(function() {
