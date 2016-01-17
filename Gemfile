@@ -23,6 +23,7 @@ group :production do
 	gem 'rails_12factor'
 	gem 'heroku_rails_deflate'
 end
+group :assets do gem 'turbo-sprockets-rails3' end
 gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
