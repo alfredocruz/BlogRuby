@@ -13,6 +13,8 @@ class TagsController < ApplicationController
 		@articles_visit = Article.limit(10).order_visits
 		set_meta "title" => @tag.name
 	    set_meta "og:title"   => @tag.name
+	    set_meta "og:description"   => @tag.name+(" para andoid")
+	    set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
 	end
 
 	def destroy
