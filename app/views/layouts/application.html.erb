@@ -4,7 +4,7 @@
       <%= meta_tags %>
       <link rel="icon" type="image/png" href="http://compumexicopc.webcindario.com/images/logo.png" />
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
+      
       <%= auto_discovery_link_tag(:rss, "http://dowloadapps.herokuapp.com/") %>
       <%= csrf_meta_tags %>
       <meta name="google-site-verification" content="-HDR1fDXBp8byMOmnTAZie004nw0WfnpBKP5AJ_Q0QU" />
@@ -60,5 +60,6 @@
          <%= render "parciales/new" %>
       </div>
    </div>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true%>
 </body>
 </html>
