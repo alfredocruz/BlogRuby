@@ -1,16 +1,22 @@
-<div class="row">
-		<% @tags.each do |tag| %>
-			<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-				<div class="collection row center-align">
-					<%= link_to tag.name,tag,:class =>"collection-item col-xs-12"%>
-					<div style="right:5px; bottom:0px; position:absolute; ">
-						<%if can? :destroy, @tag%>
-							<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>
-								<i class="fa fa-trash-o" ></i>
+
+
+<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding" id="target">
+	<aside>
+		<div class="row cero-margin">
+			<% @tags.each do |tag| %>
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+					<div class="collection row center-align">
+						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12"%>
+						<div style="right:5px; bottom:0px; position:absolute; ">
+							<%if can? :destroy, @tag%>
+								<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>
+									<i class="fa fa-trash-o" ></i>
+								<%end%>
 							<%end%>
-						<%end%>
+						</div>
 					</div>
 				</div>
-			</div>
-		<% end %>
-	</div>
+			<% end %>
+		</div>
+	</aside>
+</div>

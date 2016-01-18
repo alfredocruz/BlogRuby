@@ -25,23 +25,13 @@
 						</a>
 					</li>
 				<%end%>
-				<li class="li-nav" data-activates="dropdown1">
-					<a class="dropdown-button" data-activates="dropdown1">
+				<li class="li-nav toggle">
+					<a class="dropdown-button">
 						<i class="fa fa-tags ico-nav"></i>
-						<span data-activates="dropdown1" class="font-nav">Categorias</span>
-						<i class="fa fa-sort-desc right fa-lg" data-activates="dropdown1"></i>
+						<span class="font-nav">Categorias</span>
+						<i class="fa fa-sort-desc right fa-lg"></i>
 					</a>
-					<ul id='dropdown1' class='dropdown-content'>
-						<% unless  @tags.nil? %>
-							<% @tags.each do |tag| %>
-								<li><%= link_to tag.name, tag_path(tag),:class =>"collection-item" %>
-								<span class="badge color-dow right"><%= tag.articles.count%></span>
-									
-								</li>
-
-							<% end %>
-						<%end%>
-					</ul>
+					
 				</li>
 				<% if user_signed_in?%>
 					<li class="li-nav"><i class="fa fa-user ico-nav"></i><span class="font-nav "><%= current_user.username%></span></li>

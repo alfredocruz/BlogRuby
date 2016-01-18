@@ -38,4 +38,12 @@ $(document).on('ready page:load', function () {
     // Facebook SDK
      add('//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514');
 }(document, 'script'));
+
+$('.Hide').click(function() {
+    $('#target').hide(500);
+});
+$('.toggle').click(function() {
+    $('#target').toggle('slow');
+});
+
 });

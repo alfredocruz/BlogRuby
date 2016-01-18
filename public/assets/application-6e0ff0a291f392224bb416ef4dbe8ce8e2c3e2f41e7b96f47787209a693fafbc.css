@@ -26,22 +26,22 @@ body {
   overflow-x: hidden;
 }
 
-/* line 9, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 8, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .fa-ellipsis-v {
   font-size: 18px !important;
   padding: 0px 5px 0px 3px !important;
 }
 
-/* line 13, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 12, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .dropdown-content li > a, .dropdown-content li > span {
   display: inline-block !important;
 }
-/* line 15, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 14, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .dropdown-content li > a:hover, .dropdown-content li > span:hover {
   background-color: transparent;
 }
 
-/* line 19, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 18, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .color-dow {
   min-width: 1rem !important;
   color: #757575 !important;
@@ -50,28 +50,28 @@ body {
   padding: 14px 0px !important;
 }
 
-/* line 26, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 25, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .fullScreen {
   width: 100%;
   height: 100%;
 }
 
-/* line 30, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 29, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .btn-ingresar {
   background-color: #03a9f4;
 }
 
-/* line 33, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 32, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .btn-crear-cuenta {
   background-color: #00e676;
 }
 
-/* line 36, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 35, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .parent_class .field_with_errors {
   display: inline;
 }
 
-/* line 39, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 38, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .comment-box {
   background-color: rgba(255, 255, 255, 0.5);
   color: #444;
@@ -81,166 +81,166 @@ body {
   border: 1px solid #E2E2E2;
 }
 
-/* line 47, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 46, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card-header {
   margin: .5em 0em !important;
 }
 
-/* line 50, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 49, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .caracteristicas {
   font-family: 'Old Standard TT', serif;
 }
 
-/* line 53, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 52, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 #comments-box {
   background-color: #F5F5F5 !important;
 }
 
-/* line 57, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 56, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .border-bottom {
   border-bottom: 1px solid #f1f1f1;
 }
 
-/* line 60, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 59, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .border-top {
   border-top: 1px solid #f1f1f1;
 }
 
-/* line 63, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 62, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .cero-padding {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
 
-/* line 67, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 66, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .cero-margin {
   margin-bottom: 0px !important;
 }
 
-/* line 70, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 69, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 ´.cero-margin-top {
   margin-top: -5px !important;
 }
 
-/* line 73, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 72, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .avatar {
   max-width: 30% !important;
 }
 
-/* line 76, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 75, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .marin-top {
   margin-top: 2em !important;
 }
 
-/* line 79, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 78, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .margin-bottom {
   margin-bottom: 1em !important;
 }
 
-/* line 82, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 81, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .margin-left {
   margin-left: 0em !important;
 }
-/* line 84, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 83, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .margin-left img {
   display: inline !important;
   border-radius: 1em;
 }
 
-/* line 89, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 88, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .cat {
   margin: 10px;
 }
 
-/* line 92, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 91, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .brand-logo {
   font-size: 1.5rem !important;
 }
 
-/* line 95, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 94, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .font-color {
   color: #aeaeae;
   font-size: 13px;
 }
 
-/* line 99, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 98, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 102, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 101, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-title {
   color: #212121 !important;
   font-size: 2rem !important;
 }
 
-/* line 106, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 105, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-icon {
   font-size: 15px !important;
   color: #999 !important;
 }
 
-/* line 111, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 110, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .index-icon {
   height: auto !important;
   font-size: 10px !important;
   color: #999 !important;
   position: relative !important;
 }
-/* line 116, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 115, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .index-icon span {
   position: absolute;
   left: 0px;
   top: 0px;
   padding-left: .5em !important;
 }
-/* line 121, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 120, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .index-icon span i {
   letter-spacing: .3em;
 }
 
-/* line 126, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 125, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-color-text {
   color: #616161 !important;
 }
-/* line 128, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 127, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-color-text:hover {
   text-decoration: underline !important;
   color: rgba(0, 0, 0, 0.49) !important;
 }
 
-/* line 133, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 132, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-user {
   margin-top: 5em !important;
   color: #8d8d8d !important;
   font-style: italic;
 }
 
-/* line 139, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 138, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .show-imagen {
   width: 15em !important;
   height: 15em !important;
 }
 
-/* line 143, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 142, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .text-comment {
   background-color: #F5F5F5 !important;
   max-width: 100% !important;
   width: 100% !important;
 }
 
-/* line 148, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 147, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .padding-top {
   padding-top: 1em !important;
 }
 
-/* line 151, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 150, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 aside {
   width: auto;
   height: auto;
 }
 
-/* line 156, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 155, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .slider .slides li .caption {
   background-color: rgba(0, 0, 0, 0.5) !important;
   bottom: 0 !important;
@@ -248,12 +248,12 @@ aside {
   width: 100% !important;
 }
 
-/* line 163, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 162, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .side-nav li a:hover {
   background: transparent;
 }
 
-/* line 167, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 166, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .flash-message {
   position: relative;
   color: #fff;
@@ -262,7 +262,7 @@ aside {
   z-index: 999;
 }
 
-/* line 174, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 173, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .close {
   position: absolute;
   bottom: 0px;
@@ -277,23 +277,23 @@ aside {
   z-index: -1;
 }
 
-/* line 188, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 187, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .green {
   background-color: rgba(0, 128, 0, 0.8);
 }
 
-/* line 191, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 190, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .red {
   background-color: #F44336 !important;
 }
 
-/* line 194, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 193, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .margin {
   margin-left: 1em;
   display: inline-block;
 }
 
-/* line 199, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 198, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .cuadro-1 {
   width: 10em;
   height: auto;
@@ -302,29 +302,29 @@ aside {
   border: 1px solid #d5d5d5;
   display: inline-block;
 }
-/* line 206, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 205, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .cuadro-1 img {
   padding: 1em 1em 0em 1em;
   position: relative;
   height: 8em;
 }
 
-/* line 212, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 211, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card {
   margin: 0px !important;
   overflow: hidden !important;
 }
-/* line 215, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 214, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-content {
   padding: 7px 0px 0px 0px;
   text-align: center;
 }
-/* line 218, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 217, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-content h2 {
   margin: 0px;
   font-size: 4.5rem !important;
 }
-/* line 222, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 221, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-content a {
   font-family: 'Old Standard TT', serif !important;
   font-size: .2em !important;
@@ -335,34 +335,34 @@ aside {
   text-align: left;
   padding-left: .5em !important;
 }
-/* line 231, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 230, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-content a:hover {
   color: #03a9f4 !important;
   transition: all .3s ease-in-out;
 }
-/* line 238, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 237, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-reveal {
   padding: 5px !important;
   overflow-x: hidden !important;
 }
-/* line 242, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 241, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-reveal .row span {
   line-height: .7em !important;
   position: relative;
 }
-/* line 245, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 244, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-reveal .row span a {
   font-family: 'Old Standard TT', serif !important;
   font-size: .6em !important;
   color: #000 !important;
   text-transform: capitalize;
 }
-/* line 250, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 249, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-reveal .row span a:hover {
   color: #03a9f4 !important;
   transition: all .3s ease-in-out;
 }
-/* line 255, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 254, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .card-reveal .row span i {
   position: absolute !important;
   right: 0px !important;
@@ -370,16 +370,16 @@ aside {
   margin-left: 0px !important;
   background-color: rgba(255, 255, 255, 0.7);
 }
-/* line 266, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 265, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .body {
   font-size: .8em !important;
 }
-/* line 268, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 267, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .card .body p {
   margin: .5em 0 0 0 !important;
 }
 
-/* line 273, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 272, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .fondos_h {
   font-size: 1.5em;
   background-color: #212121;
@@ -389,84 +389,85 @@ aside {
   font-family: 'Old Standard TT', serif;
   padding: 5px 0px 5px 0px;
 }
-/* line 281, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 280, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .fondos_h a {
   color: #fff !important;
   text-transform: uppercase;
   font-size: .8em !important;
 }
-/* line 285, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 284, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .fondos_h a:hover {
   text-decoration: underline;
 }
 
-/* line 291, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 290, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 footer {
   background-color: #383b43 !important;
   box-shadow: 0px 0px 15px black !important;
 }
-/* line 294, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 293, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 footer .row {
   height: auto !important;
 }
-/* line 297, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 296, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 footer h5 {
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
 }
 
-/* line 302, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 301, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .copyright {
   background-color: #383b43 !important;
   color: #e0e0e0;
   border-top: 1px solid rgba(144, 144, 144, 0.25);
 }
 
-/* line 307, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 306, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .text-shadow {
   text-shadow: 1px 1px 0px #585858, 2px 2px 0px #585858, 3px 3px 0px #585858, 4px 4px 0px black;
   font-size: 1.5em;
 }
 
-/* line 315, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 314, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 nav {
   background-color: #03a9f4;
 }
-/* line 318, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 317, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 nav .button-collapse i {
   font-size: 2rem !important;
   padding: 0px 1rem !important;
 }
 
-/* line 324, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 323, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .relative {
   position: relative;
 }
 
-/* line 327, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 326, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .absolute {
   position: absolute;
 }
 
-/* line 330, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 329, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .btn-trans {
   background-color: #ede7f6  !important;
 }
 
-/* line 333, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
-.oculto {
+/* line 332, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+.oculto, #target {
   display: none;
 }
 
-/* line 336, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 335, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .sombras {
   background-color: #FFF;
   box-shadow: 0px 0px 15px #78909c;
   padding: 0px !important;
 }
 
-/* line 341, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
+/* line 340, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
 .li-nav {
   height: 64px !important;
+  padding: 0em 1em !important;
 }
 
 /* line 344, /home/alfredo/Escritorio/apps/app/assets/stylesheets/style.scss */
@@ -510,20 +511,131 @@ nav .button-collapse i {
 
 
  */
-
-
  /* categorias de footer */
 
-.tag{background:#0090D5!important;padding:5px 10px!important;color:#fff!important;height:26px!important;line-height:26px!important;text-decoration:none!important;border:none!important;-webkit-transition:all .3s ease-in-out!important;t:30pxt: 30px;margin-left:3px!important;margin-top:3px!important;font-size:13px!important;-webkit-border-radius:4px!important;-moz-border-radius:4px!important;border-radius:4px!important}.tag:hover{background:#69625A!important;-webkit-border-radius:8px!important;-moz-border-radius:8px!important;border-radius:8px!important}
-
+.tag{background:#0090D5!important;padding:5px 10px!important;color:#fff!important;height:26px!important;line-height:26px!important;text-decoration:none!important;border:none!important;-webkit-transition:all .3s ease-in-out!important;margin-left:3px!important;margin-top:3px!important;font-size:13px!important;-webkit-border-radius:4px!important;-moz-border-radius:4px!important;border-radius:4px!important}.tag:hover{background:#69625A!important;-webkit-border-radius:8px!important;-moz-border-radius:8px!important;border-radius:8px!important;}
 /* Buscador*/
 ul li form input{left:50%!important;top:50%!important;width:20px!important;height:20px!important;border-style:none!important;border-radius:20px!important;padding:10px!important;outline:none!important;transition-duration:500ms!important;cursor:pointer!important;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAWpJREFUWEfNljFOxDAQRbehoKDnIjTcgYtwAHpOwhE4BA3Vig6Je9ABYZ60kZbVc5xkifRHelrleRzP2rGT3TAM0ahMQmUSKpNQmYTKJFQmoTIJlUmonMFlcV88FW/F5+GXazzt1m8xKjvcFh/FVNBOnvVfhMoJHorvgtgXzNZNcXX45RpPkEe+3Wc2KhswIwz6VTwWF4Xl4Wknj/yzZlKlwDM1LiuDW84p5BH0W/1MqhRYOoLla83cKeSNy01/y+miUmB3EksHGv8Y/a29i0qBI4RgI1h7C/IJ+lt7F5UC5xzBbrX2FuQT9Lf2LiqF+BmMfwbHgWJ3cfw5CEvfJD8FcVdY3ixUTrDkXTzGe3Fd2P26qOww92uGmaM4YnWRKmfAM8VssTs5QlrfgxR1VpEq/5mzilS5AauLVLkRq4pUuSHHRb4WlvMHlRtDkS/F85FrojIJlUmoTEJlEiqTUJmEyiRUJqEyh2H3Cz4WH1fC57RBAAAAAElFTkSuQmCC)!important;background-repeat:no-repeat!important;font-family:'Segoe UI'!important;font-size:15px!important;color:transparent!important;overflow:hidden!important}ul li form{position:relative;z-index:1000}ul li form input:focus{width:200px!important;cursor:text!important;padding-left:40px!important;color:#A0A0A0!important}ul li form input:hover{background-color:#039be5!important}ul li form input:focus{background-color:#F5F5F5!important;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJTSURBVFiF7ZdNSxtRFIafM5PgJGqXxXy4DIziJhBdFLrwnyi4cym40S4ClkJ/g2B/Qv+BC0s3CtkIDWYZasWtXxEzebswQxGt3sk0Nou8cHfnPTycc+fOOSaJUZb3vwFe0hgwrcaAaTUGTKuRB8wMYrLZ2dxEd3rVPC2aqAoqBi0ZDfXs8DZzsad2++ZfAFrSP0m+NPdO4gtQeSasZcbK9c8f39PAQcIW50vzmxIHQEXQkGzdU2+pc6c3nnpLkq0LGkBF4iBfmt9MC+hcwX7lDgBhfOycTu5IR3ePElotGxSvthFbgJnxPlUlJb14KJdzQSE8CQqhgmJYd/EExbAeFEIFhfCEcjnn4nnqOLV4oju9Sr+tndPJHRdP53RyJ2533z+QnADN0yIAst2n2vqUpKM7ZLsP/EMDFFUAn+gwSfI4PvYPIidA9Z+U6641kySP4/X8k/Ss3CoILYB8RmGS5HF87B9EbhU0GgARfqK7FMfH/kHkBtiz+7tnWjOrZV08ZrUsprUH/mEB3mYu9oCWQTUoXm27eILi1bZBFWj1/cMDVLt9Y8YK0ENs5Upz9b9V0qyWzZXm6ogPAF6PjTSDQ6Jh4f5frE+AJ2gg2/WJDq+71sxnFEb4i5jW+pWL1fS7/vLl+fHZ0AHvId2mGa/HRs/jMxCmgUwMCO7z4NTbhZkoE+2ngRwIMInSQg595L88Pz7zu/4y0ATCKBPtT71dmHH1v8pOkgby1ZamR5DZ6KuL71W3uj+Q9k3SLxfP0D+StBr5vXgMmFZjwLQaA6bVyAP+BkJqfmMbSKF/AAAAAElFTkSuQmCC)!important}.transparent:hover{background-color:transparent!important}
-
 /*paginacion*/
 *,:before,:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.pagination > *{display:inline-block;width:30px;height:30px;border-radius:2px;line-height:30px;text-align:center;vertical-align:middle;margin:.5em 0}.pagination a{color:#444;border:1px solid rgba(255,255,255,0.5);text-decoration:none}.pagination a:hover,.pagination a:focus{color:#444;background-color:#ddd;transition:all .3s}.pagination .prev,.pagination .next{width:auto;padding:0 8px;border:none}.pagination .prev:hover,.pagination .prev:focus,.pagination .next:hover,.pagination .next:focus{background:none;text-decoration:underline}.pagination .prev.disabled,.pagination .next.disabled{text-decoration:none}.current{background-color:#26a69a;border:1px solid #fff;color:#fff;font-weight:700;font-style:normal}.disabled{color:#999}
-
 /*Redes sociales botones*/
-a,a:hover{text-decoration:none;cursor:pointer}.share-post{text-align:center;padding:25px 0 0;font-family:'Roboto Condensed',sans-serif}.widget .post-body &gt; .share-post ul{padding:0}.share-post li{display:inline-block;margin:0 1% 15px;padding:0;list-style:none;position:relative;transition:all ease-out .2s;width:100%}.share-post li a{padding:5px 15px 6px 38px;color:#fff;display:block;font-size:15px;font-weight:700;line-height:22px;border-radius:10px 3px;text-shadow:2px 2px rgba(0,0,0,0.1);box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);transition:all .6s ease-out}.share-post li .facebook{background:#3b5998}.share-post li .twitter{background:#19bfe5}.share-post li .gplus{background:#d64136}.share-post li .fa:before{position:absolute;top:0;left:0;display:inline-block;padding:6.3px 12px;font-family:fontawesome;text-align:center;line-height:20px;font-size:16px}.share-post li:hover{opacity:.8}.share-post li:hover a{color:#fff}.share-post li .fa{display:initial}#share-menu,.share-post li.whatsapp-mobile{display:none}
+a,a:hover{text-decoration:none;cursor:pointer}.share-post{text-align:center;padding:25px 0 0;font-family:'Roboto Condensed',sans-serif}.widget .post-body.share-post ul{padding:0}.share-post li{display:inline-block;margin:0 1% 15px;padding:0;list-style:none;position:relative;transition:all ease-out .2s;width:100%}.share-post li a{padding:5px 15px 6px 38px;color:#fff;display:block;font-size:15px;font-weight:700;line-height:22px;border-radius:10px 3px;text-shadow:2px 2px rgba(0,0,0,0.1);box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.24);transition:all .6s ease-out}.share-post li .facebook{background:#3b5998}.share-post li .twitter{background:#19bfe5}.share-post li .gplus{background:#d64136}.share-post li .fa:before{position:absolute;top:0;left:0;display:inline-block;padding:6.3px 12px;font-family:fontawesome;text-align:center;line-height:20px;font-size:16px}.share-post li:hover{opacity:.8}.share-post li:hover a{color:#fff}.share-post li .fa{display:initial}#share-menu,.share-post li.whatsapp-mobile{display:none}
+/*Botones sociales*/
+.button {
+  background:#DCE0E0;
+  position:relative;
+  display: inline-block;
+  width:168px;
+  height:40px; 
+  overflow:hidden;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+.button .icon {
+  float:left;
+  z-index:200;
+  position:relative;
+  width:40px;
+  height:40px;
+  -webkit-border-radius:3px 0px 0px 3px;
+  -moz-border-radius:3px 0px 0px 3px;
+  border-radius:3px 0px 0px 3px;
+  background-repeat:no-repeat;
+  text-align: center !important;
+  vertical-align: middle;
+}
+.button .icon i{
+	color: #eee !important;
+	vertical-align: -webkit-baseline-middle !important;
+}
+.button .native_button {
+  right: 0px;
+  width:110px!important;
+  height:40px!important;
+  float:left!important;
+  background:#DCE0E0 !important;
+  display:table!important;
+}
+.button .native_button > div {
+  display:table-cell!important;
+  vertical-align:middle!important;
+  text-align:center!important;
+}
+.button .slide {
+  position:absolute!important;
+  right:0!important;
+  top:0!important;
+  z-index:100!important;
+  float:left!important;
+  width:128px!important;
+  height:40px!important;
+  transition:.2s transform linear;
+  -webkit-transition:.2s -webkit-transform linear;
+  -moz-transition:.2s -moz-transform linear;
+}
+.button .slide span {
+  color:#fff!important;
+  display:block!important;
+  cursor:default!important;
+  width:100%!important;
+  text-align:center!important;
+  margin:10px 0!important;
+  font-size:16px!important;
+  border-left:1px solid rgba(255,255,255,0.35)!important;
+}
+/* Transitions */
+.button.slide_x:hover .slide {
+  -webkit-transform:translateX(110px);
+  -moz-transform:translateX(110px);
+  transform:translateX(130px);
+}
+.button.slide_nx:hover .slide {
+  -webkit-transform:translateX(-110px);
+  -moz-transform:translateX(-110px);
+  transform:translateX(-125px);
+}
+.button.slide_y:hover .slide {
+  -webkit-transform:translateY(40px);
+  -moz-transform:translateY(40px);
+  transform:translateY(40px);
+}
+.button.slide_ny:hover .slide {
+  -webkit-transform:translateY(-40px);
+  -moz-transform:translateY(-40px);
+  transform:translateY(-40px);
+}
+/*========================*/
+/*=== Colors ===*/
+/* FACEBOOK */
+.button.facebook .icon {
+  background-position:-40px 0;
+}
+.button.facebook > div {
+  background-color:#305c99;
+}
+/* TWITTER */
+.button.twitter .icon {
+  background-position:0 0;
+}
+.button.twitter > div {
+  background-color:#00cdff;
+}
+/* YOUTUBE */
+.button.youtube .icon {
+  background-position:-80px 0;
+}
+.button.youtube > div {
+  background-color:#e22b26;
+}
+/* GOOGLE PLUS */
+.button.gplus .icon {
+  background-position:0 -40px;
+}
+.button.gplus > div {
+  background-color:#3f3d3e;
+}
+/*==============*/
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
