@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 	get "sitemap" => "sitemaps#show"
   	resources :users, :path=>"usuarios_admin"
-  	get "pagina(:page)",to:"articles#index"
+  	get "/:page"
     resources :tags, :path => "category"
   	resources :articles, :path => "android"
   	get '/feed', to: 'articles#feed',:format => 'rss'
