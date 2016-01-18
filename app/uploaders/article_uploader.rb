@@ -10,7 +10,7 @@ class ArticleUploader < CarrierWave::Uploader::Base
    end
    #primer dato anchura[anchura,altura]
    version :index_slider do
-       process resize_to_fill: [600, 300]
+       process resize_to_fill: [800, 480]
    end
    #imagen de articles show
    version :show do
