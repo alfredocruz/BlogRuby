@@ -15,7 +15,6 @@
 //= require jquery_ujs
 //= require 'epiceditor'
 //= require_tree .
-
 $(document).on('ready page:load', function () {
    $('.modal-trigger').leanModal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -24,7 +23,6 @@ $(document).on('ready page:load', function () {
       out_duration: 200, // Transition out duration
     }
     );
-
 (function(doc, script) {
     var js,
         fjs = doc.getElementsByTagName(script)[0],
@@ -35,11 +33,9 @@ $(document).on('ready page:load', function () {
             id && (js.id = id);
             fjs.parentNode.insertBefore(js, fjs);
         };
-
     // Google Analytics
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
     // Facebook SDK
      add('//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514');
 }(document, 'script'));
-
 });
