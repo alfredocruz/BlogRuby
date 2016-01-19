@@ -9,16 +9,6 @@ class ApplicationController < ActionController::Base
     redirect_to root_url, :alert => exception.message
   end
 
-   before_filter :ensure_domain
-
-  APP_DOMAIN = 'www.dowloadapps.herokuapp.com'
-
-  def ensure_domain
-    if request.env['HTTP_HOST'] != APP_DOMAIN
-      # HTTP 301 is a "permanent" redirect
-      redirect_to "http://#{APP_DOMAIN}", :status => 301
-    end
-  end
     protected
         def configure_permitted_parameters
             devise_parameter_sanitizer.for(:sign_up) << :username
