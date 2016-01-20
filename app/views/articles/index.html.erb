@@ -83,7 +83,6 @@
 		<div class="row">
 			<div class="col-xs center cero-padding ">
 				<h4 class="fondos_h text-shadow left-align" >Lo último</h4>
-				<h1 class="fondos_h text-shadow oculto" >Aplicaciones para Android</h1>
 				<main class="sombras" >		
 					<%= render @articles %>
 					<div class="col-xs-12 border-top pagination">
@@ -93,7 +92,21 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
+		<div class="row">
+			<div class="col-xs center cero-padding ">
+				<% @articles_juegos.each do |tag| %>
+					<h4 class="fondos_h text-shadow left-align" >Categoria: <%= link_to tag.name, tag %></h4>
+					<main class="sombras" >	
+			  			<% tag.articles.each do |article| %>
+			    			<%=render partial: "article" , locals: { article: article } %>
+						<% end %>
+			  		</main>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
 </div>
 <%= render "parciales/footer" %>
 
