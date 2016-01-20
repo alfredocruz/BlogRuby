@@ -92,20 +92,26 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
-		<div class="row">
-			<div class="col-xs center cero-padding ">
+
+	
+			
 				<% @articles_juegos.each do |tag| %>
-					<h4 class="fondos_h text-shadow left-align" >Categoria: <%= link_to tag.name, tag %></h4>
+				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
+				<div class="row">
+				<div class="col-xs center cero-padding ">
+					<h4 class="fondos_h text-shadow left-align" >Categoria: <%=link_to tag.name,tag%><a href="/category/juegos"><i class="fa fa-share right"></i></a></h4>
 					<main class="sombras" >	
 			  			<% tag.articles.each do |article| %>
 			    			<%=render partial: "article" , locals: { article: article } %>
 						<% end %>
 			  		</main>
+			  	</div>
+			  	</div>
+				</div>
+
 				<% end %>
-			</div>
-		</div>
-	</div>
+			
+		
 
 </div>
 <%= render "parciales/footer" %>
