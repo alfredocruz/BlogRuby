@@ -7,6 +7,14 @@ body{
 }
 
 .colection-tags{
+	i{
+		position: absolute;
+		left: 20%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		color: #FFF;
+		font-size: 1.4em;
+	}
 	&:hover{
 		background-color:#039be5!important;
 		transition: all 0.5s ease;

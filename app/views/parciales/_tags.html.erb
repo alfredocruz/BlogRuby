@@ -5,19 +5,26 @@
 			<% @category_where.each do |tag| %>
 				<%if tag.name=="juegos"%>
 					<% @back_color_tag ="green darken-2" %>
+					<% icon_tag= "fa fa-gamepad" %>
 					<%elsif tag.name=="comunicacion"%>
 						<% @back_color_tag ="teal darken-2" %>
+						<% icon_tag= "fa fa-mobile" %>
 					<%elsif tag.name=="multimedia"%>
 						<% @back_color_tag ="blue darken-2" %>
+						<% icon_tag= "fa fa-film" %>
 					<%elsif tag.name=="herramientas"%>
 						<% @back_color_tag ="cyan darken-2" %>
+						<% icon_tag= "fa fa-cog" %>
 					<%elsif tag.name=="lifestyle"%>
 						<% @back_color_tag =" deep-orange darken-4" %>
+						<% icon_tag= "fa fa-odnoklassniki" %>
 					<%elsif tag.name=="productividad"%>
 						<% @back_color_tag ="blue-grey darken-3" %>
+						<% icon_tag= "fa fa-line-chart" %>
 				<%end%>
 				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 ">
 					<div class="collection row center-align colection-tags <%= @back_color_tag %>">
+						<i class="<%= icon_tag %>"></i>
 						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12 transparent grey-text text-lighten-5 "%>
 						<div style="right:5px; bottom:0px; position:absolute; ">
 							<%if can? :destroy, @tag%>

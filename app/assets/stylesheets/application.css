@@ -48,8 +48,12 @@ a,a:hover{text-decoration:none;cursor:pointer}.share-post{text-align:center;padd
   vertical-align: middle;
 }
 .button .icon i{
-	color: #eee !important;
-	vertical-align: -webkit-baseline-middle !important;
+	color: #fff !important;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.4em;
 }
 .button .native_button {
   right: 0px;
