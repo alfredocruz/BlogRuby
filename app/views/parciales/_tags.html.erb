@@ -1,12 +1,24 @@
-
-
 <div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding" id="target">
 	<aside>
 		<div class="row cero-margin">
-			<% @tags.each do |tag| %>
-				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-					<div class="collection row center-align">
-						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12"%>
+			
+			<% @category_where.each do |tag| %>
+				<%if tag.name=="juegos"%>
+					<% @back_color_tag ="green darken-2" %>
+					<%elsif tag.name=="comunicacion"%>
+						<% @back_color_tag ="teal darken-2" %>
+					<%elsif tag.name=="multimedia"%>
+						<% @back_color_tag ="blue darken-2" %>
+					<%elsif tag.name=="herramientas"%>
+						<% @back_color_tag ="cyan darken-2" %>
+					<%elsif tag.name=="lifestyle"%>
+						<% @back_color_tag =" deep-orange darken-4" %>
+					<%elsif tag.name=="productividad"%>
+						<% @back_color_tag ="blue-grey darken-3" %>
+				<%end%>
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 ">
+					<div class="collection row center-align colection-tags <%= @back_color_tag %>">
+						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12 transparent grey-text text-lighten-5 "%>
 						<div style="right:5px; bottom:0px; position:absolute; ">
 							<%if can? :destroy, @tag%>
 								<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>

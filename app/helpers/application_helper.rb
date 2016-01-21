@@ -10,6 +10,7 @@ module ApplicationHelper
 			title = @article.title
 		end
 	end
+	
 	def resource_name
     	:user
   	end

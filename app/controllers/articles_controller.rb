@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
     @articles = Article.search(params[:search]).paginate(:per_page => 12, :page => params[:page]).ultimos
     @articles_visit = Article.limit(8).order_visits
-    @articles_juegos = Tag.where(:name =>["juegos","comunicacion","herramientas","lifestyle","multimedia","productividad"])
+    
 
   end
 
@@ -98,6 +98,7 @@ class ArticlesController < ApplicationController
     end
     def set_tags
       @tags = Tag.all
+      @category_where = Tag.where(:name =>["juegos","comunicacion","herramientas","lifestyle","multimedia","productividad"])
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_article
