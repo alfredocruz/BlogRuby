@@ -6,7 +6,7 @@ class Article < ActiveRecord::Base
   	has_many :taggings
   	has_many :tags, through: :taggings
 
-	validates :title, :presence =>{ :message=>"Usted debe de ingresar un titulo" }, length: {minimum: 25, :message => "El título debe tener minimo 25 caracteres"}
+	validates :title, :presence =>{ :message=>"Usted debe de ingresar un titulo" }
 	validates :body, :presence =>{ :message=>"Usted debe de ingresar un Cuerpo" }
 	validates :link_des, :presence=>{ :message=>"Usted debe de ingresar un link de descarga" }
 	validates :tamano, :presence =>{ :message=>"Usted debe de ingresar un tamaño en MB" }
