@@ -9,7 +9,7 @@ gem 'rails-html-sanitizer'
 gem "cancan"
 gem 'meta-tags-helpers', '~> 0.2.0'
 gem 'cloudinary'
-gem 'rmagick', require: false
+gem 'rmagick'
 gem 'carrierwave', :github => 'satoruk/carrierwave' , :ref => '43179f94d6a4e62f69e812f5082d6447c9138480'
 gem 'omniauth'
 gem 'google-analytics-rails'
