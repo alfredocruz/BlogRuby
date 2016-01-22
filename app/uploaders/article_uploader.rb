@@ -14,7 +14,7 @@ class ArticleUploader < CarrierWave::Uploader::Base
    end
    #imagen de articles show
    version :show do
-       process resize_to_fill: [300, 100]
+       process resize_to_fill: [500, 300]
    end
    # Crop to 275px, 206px
    version :thumbnail do

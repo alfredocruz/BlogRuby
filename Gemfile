@@ -10,7 +10,7 @@ gem "cancan"
 gem 'meta-tags-helpers', '~> 0.2.0'
 gem 'cloudinary'
 gem 'rmagick'
-gem 'carrierwave', :github => 'satoruk/carrierwave' , :ref => '43179f94d6a4e62f69e812f5082d6447c9138480'
+gem 'carrierwave'
 gem 'omniauth'
 gem 'google-analytics-rails'
 #font awesome para iconos
