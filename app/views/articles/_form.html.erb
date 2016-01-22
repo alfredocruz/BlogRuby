@@ -13,19 +13,24 @@
       <div class="input-field col s12">
         <i class="fa fa-pencil prefix"></i>
         <%= f.text_field :title,:class =>"materialize-textarea"%>
-        <label for="textarea1">Nombre de la url(min. 25 Caracteres)</label>
+        <label for="textarea1">Nombre</label>
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s6">
+      <div class="input-field col s4">
         <i class="fa fa-link prefix"></i>
         <%= f.text_field :link_des%>
         <label for="icon_prefix">Link de Descarga</label>
       </div>
-      <div class="input-field col s6">
+      <div class="input-field col s4">
         <i class="fa fa-file prefix"></i>
         <%= f.text_field :tamano%>
         <label for="icon_prefix">Tamaño en Mb</label>
+      </div>
+      <div class="input-field col s4">
+        <i class="fa fa-code-fork prefix"></i>
+        <%= f.text_field :version%>
+        <label for="icon_prefix">Versión</label>
       </div>
     </div>
     <div class="row">

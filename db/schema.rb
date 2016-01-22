@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150917010401) do
+ActiveRecord::Schema.define(version: 20160122010013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20150917010401) do
     t.string   "title"
     t.text     "body"
     t.integer  "visits_count"
-    t.string   "link_des"
     t.float    "tamano"
     t.string   "markup_body"
     t.string   "image"
@@ -28,10 +27,18 @@ ActiveRecord::Schema.define(version: 20150917010401) do
     t.datetime "updated_at",   null: false
     t.integer  "user_id"
     t.string   "slug"
+    t.string   "link_des"
+    t.string   "version"
   end
 
   add_index "articles", ["slug"], name: "index_articles_on_slug", using: :btree
   add_index "articles", ["user_id"], name: "index_articles_on_user_id", using: :btree
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -45,6 +52,22 @@ ActiveRecord::Schema.define(version: 20150917010401) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
+
+  create_table "links", force: :cascade do |t|
+    t.string   "descarga"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "linktaggings", force: :cascade do |t|
+    t.integer  "link_id"
+    t.integer  "article_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "linktaggings", ["article_id"], name: "index_linktaggings_on_article_id", using: :btree
+  add_index "linktaggings", ["link_id"], name: "index_linktaggings_on_link_id", using: :btree
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
