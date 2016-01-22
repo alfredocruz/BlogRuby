@@ -12,7 +12,7 @@
     </script>
 <div class="row marin-top center-xs">
 		<%= render "parciales/tags" %>
-	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 ">
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
 		<h4 class="fondos_h text-shadow" ><%= link_to "HOME/ANDROID/",root_path%><%= link_to @article.title, @article%></h4>
 		<main class=" center-align sombras" >						
 			<div class="row ">
@@ -43,7 +43,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
 					<div class="col-xs">
 						<h2 class="show-title text-left"><%=@title = @article.title%></h2>
-						<%=@article.version%>
+						<h6 class="version text-left grey-text text-lighten-1">V<%=@article.version%></h6>
 					</div>
 					<div class="col-xs left-align">
 						<i class="fa fa-tag show-icon"></i>
