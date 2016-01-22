@@ -17,7 +17,7 @@ body{
 	}
 	&:hover{
 		background-color:#039be5!important;
-		transition: all 0.5s ease;
+		transition: all 0.5s ease-in-out;
 	}
 }
 .fa-ellipsis-v{
@@ -260,7 +260,7 @@ aside{
 		.row{
 			span{
 				line-height: .7em !important;
-				position: relative;
+				position: static;
 				a{
 					font-family: 'Old Standard TT', serif !important;
 					font-size: .6em !important;
