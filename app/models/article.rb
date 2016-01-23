@@ -31,7 +31,7 @@ class Article < ActiveRecord::Base
 	
 	def self.search(search)#buscador inicio
 		if search 
-		    where("title LIKE ? or slug LIKE ?","%#{search}%","%#{search}%")
+		    where("title LIKE ? or slug LIKE ? or markup_body LIKE ?","%#{search}%","%#{search}%","%#{search}%")
 		else
 			all
   		end
