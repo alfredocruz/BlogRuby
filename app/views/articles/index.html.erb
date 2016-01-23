@@ -85,7 +85,7 @@
 				<% if params[:search].blank? %>
 					<h4 class="fondos_h text-shadow left-align" >Lo último</h4>
 					<%else%>
-					<h4 class="fondos_h text-shadow left-align" >Mostrando <%= @articles.count %> resultados para: <%= params[:search] %></h4>
+					<h4 class="fondos_h left-align" >Mostrando <%= @articles.count %> resultados para: <%= params[:search] %></h4>
 				<%end%>
 				<main class="sombras" >		
 					<%= render @articles %>
