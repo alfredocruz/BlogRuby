@@ -31,10 +31,11 @@ class Article < ActiveRecord::Base
 	
 	def self.search(search)#buscador inicio
 		if search 
-		    where("title LIKE ? or slug LIKE ? or markup_body LIKE ?","%#{search}%","%#{search}%","%#{search}%")
+		    where("title ILIKE ? or slug ILIKE ?","%#{search}%","%#{search}%")
 		else
 			all
   		end
+
 	end#buscador fin
 	
 	private
