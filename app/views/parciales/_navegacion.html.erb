@@ -41,9 +41,9 @@
 			</ul>
 			<ul class="right">
 				<li class="transparent">
-					<%= form_tag articles_path, :method => 'get',:validate=>true do %>
+					<form  action="<%=articles_path%>" method='get'%>
 						<%= search_field_tag :search, params[:search]%>
-					<%end%>
+					</form>
 				</li>
 			</ul>
 			<div class="relative">

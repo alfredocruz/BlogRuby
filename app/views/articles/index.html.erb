@@ -92,20 +92,22 @@
 			</div>
 		</div>
 	</div>
-	<% @category_where.each do |tag| %>
-		<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
-			<div class="row">
-				<div class="col-xs center cero-padding ">
-					<h4 class="fondos_h text-shadow left-align" >Categoria: <%=link_to tag.name,tag%><!--<a href="/category/juegos"><i class="fa fa-share right"></i></a>--></h4>
-					<main class="sombras" >	
-			  			<% tag.articles.limit(6).each do |article| %>
-			    			<%=render partial: "article" , locals: { article: article } %>
-						<% end %>
-			  		</main>
+	<% if params[:search].blank? %>
+		<% @category_where.each do |tag| %>
+			<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
+				<div class="row">
+					<div class="col-xs center cero-padding ">
+						<h4 class="fondos_h text-shadow left-align" >Categoria: <%=link_to tag.name,tag%><!--<a href="/category/juegos"><i class="fa fa-share right"></i></a>--></h4>
+						<main class="sombras" >	
+				  			<% tag.articles.limit(6).each do |article| %>
+				    			<%=render partial: "article" , locals: { article: article } %>
+							<% end %>
+				  		</main>
+				  	</div>
 			  	</div>
-		  	</div>
-		</div>
-	<% end %>
+			</div>
+		<% end %>
+	<%end%>
 </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
