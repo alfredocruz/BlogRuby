@@ -16,8 +16,6 @@ class ArticlesController < ApplicationController
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
     @articles = Article.search(params[:search]).paginate(:per_page => 12, :page => params[:page]).ultimos
     @articles_visit = Article.limit(8).order_visits
-    
-
   end
 
   # GET /articles/1

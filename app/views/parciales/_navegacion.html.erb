@@ -41,7 +41,7 @@
 			</ul>
 			<ul class="right">
 				<li class="transparent">
-					<%= form_tag articles_path, :method => 'get' do %>
+					<%= form_tag articles_path, :method => 'get',:validate=>true do %>
 						<%= search_field_tag :search, params[:search]%>
 					<%end%>
 				</li>
