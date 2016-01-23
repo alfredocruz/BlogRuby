@@ -82,7 +82,11 @@
 	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
 		<div class="row">
 			<div class="col-xs center cero-padding ">
-				<h4 class="fondos_h text-shadow left-align" >Lo último</h4>
+				<% if params[:search].blank? %>
+					<h4 class="fondos_h text-shadow left-align" >Lo último</h4>
+					<%else%>
+					<h4 class="fondos_h text-shadow left-align" >Mostrando <%= @articles.count %> resultados para: <%= params[:search] %></h4>
+				<%end%>
 				<main class="sombras" >		
 					<%= render @articles %>
 					<div class="col-xs-12 border-top pagination">
