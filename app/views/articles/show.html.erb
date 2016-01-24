@@ -4,13 +4,13 @@
 	<div class="col-xs">
 		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5053365791951337" data-ad-slot="2360559806" data-ad-format="auto"></ins>
 	</div>
- </div>
+</div>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 <div class="row marin-top center-xs">
-		<%= render "parciales/tags" %>
+	<%= render "parciales/tags" %>
 	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
 		<h4 class="fondos_h text-shadow" ><%= link_to "HOME/ANDROID/",root_path%><%= link_to @article.title, @article%></h4>
 		<main class=" center-align sombras" >						
@@ -19,8 +19,8 @@
 					<div class="row card-header">
 						<div class="col-xs-4 right-align">
 							<% unless @article.user.nil? %>
-								<i class="fa fa-user show-icon"></i>
-								<span class="show-user">Posted by: <%=@article.user.username%></span>
+							<i class="fa fa-user show-icon"></i>
+							<span class="show-user">Posted by: <%=@article.user.username%></span>
 							<%end%>
 						</div>
 						<div class="col-xs-4 right-align">
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 
-			
+				
 
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 margin-left">	
 					<%= image_tag @article.image.url(:show),:class=>"show-imagen materialboxed" %>
@@ -47,7 +47,7 @@
 					<div class="col-xs left-align">
 						<i class="fa fa-tag show-icon"></i>
 						<% @article.tags.each do |tag| %>
-						    <%= link_to tag.name, tag_path(tag),:class=>"show-color-text" %>
+						<%= link_to tag.name, tag_path(tag),:class=>"show-color-text" %>
 						<% end %>
 					</div>
 					<div class="row cero-margin">
@@ -55,9 +55,9 @@
 							<a href="<%=@article.link_des%>" class="padding-button-show waves-effect waves-light btn-large marin-top " style="width:100%; height:4em !important;"><i class="fa fa-download right"></i>APK <%=@article.tamano%>MB</a>
 						</div>
 						<% unless @article.pesodatos.nil?%>
-							<div class="valign-wrapper col-xs">
-								<a href="<%=@article.datos%>" class="padding-button-show waves-effect waves-light btn-large marin-top " style="width:100%; height:4em !important;"><i class="fa fa-download right"></i>DATOS <%=@article.pesodatos%>MB</a>
-							</div>
+						<div class="valign-wrapper col-xs">
+							<a href="<%=@article.datos%>" class="padding-button-show waves-effect waves-light btn-large marin-top " style="width:100%; height:4em !important;"><i class="fa fa-download right"></i>DATOS <%=@article.pesodatos%>MB</a>
+						</div>
 						<%end%>
 					</div>
 				</div>
@@ -66,16 +66,16 @@
 						<strong style='margin:0 0 10px;display:block; font-weight: bold;'>Comparte en:</strong>
 						<div class="row">
 							<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
-						    	<li><a class='facebook' href='http://www.facebook.com/sharer.php?u=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-facebook'></i>Facebook</a></li>
-						    </div>
-						    <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
-						    <li><a class='twitter' href='https://twitter.com/intent/tweet?url=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>&amp;text=dowloadapps&amp;via=dowloadapps' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-twitter'></i>Twitter</a></li>
-						    </div>
+								<li><a class='facebook' href='http://www.facebook.com/sharer.php?u=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-facebook'></i>Facebook</a></li>
+							</div>
+							<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
+								<li><a class='twitter' href='https://twitter.com/intent/tweet?url=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>&amp;text=dowloadapps&amp;via=dowloadapps' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-twitter'></i>Twitter</a></li>
+							</div>
 
-						    <div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
-						    <li><a class='gplus' href='http://plus.google.com/share?url=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-google-plus'></i>Google+</a></li>
-						    </div>
-					    </div>
+							<div class="col-xs-4 col-sm-12 col-md-12 col-lg-12">
+								<li><a class='gplus' href='http://plus.google.com/share?url=http://dowloadapps.herokuapp.com/android/<%=@article.slug%>' rel='nofollow' target='_blank' onClick="window.open(this.href,this.target,'width=500,height=500,top=210,left=360'); return false;"><i class='fa fa-google-plus'></i>Google+</a></li>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -88,12 +88,12 @@
 			<div class="row">
 				<div class="col-xs left-align">
 					<%if can? :update, @article%>
-						<%= link_to 'Edit', edit_article_path(@article) %>
+					<%= link_to 'Edit', edit_article_path(@article) %>
 					<%end%>
 				</div>
 				<div class="col-xs right-align">
 					<%if can? :destroy, @article%>
-						<%= link_to 'Back', articles_path %>
+					<%= link_to 'Back', articles_path %>
 					<%end%>
 				</div>
 			</div>
@@ -111,7 +111,7 @@
 				
 
 				<% if user_signed_in?%>
-		        <%else%>
+				<%else%>
 		        	<!--
 		        	<div class="row">
 		        		<div class="col-xs-12 center-align margin-bottom">
@@ -120,15 +120,15 @@
 
 		        		<%= render "btnRegistration" %>
 		        	</div>
-		        	-->
+		        -->
 		        <%end%>
-			</div>
+		    </div>
 		</div>
 	</div>	
 </div>
 <!-- footershowdowloadapps -->
 <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5053365791951337" data-ad-slot="3558091400" data-ad-format="auto"></ins>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <%= render "parciales/footer" %>
