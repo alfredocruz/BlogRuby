@@ -9,7 +9,7 @@ $(document).on("ready page:load",function(){
 		e.returnValue=!1}
 
 		function l(e){
-			var l=1e3,t=400;
+			var l=1e3,t=230;
 			$("html, body")
 			.stop().animate({scrollTop:
 				$(window)
