@@ -2,15 +2,7 @@ module ApplicationHelper
 	def resource_class
   		devise_mapping.to
 	end
-	
-	def title
-		if @title.nil?
-			title = "DowloadApps"
-		else
-			title = @article.title
-		end
-	end
-	
+
 	def resource_name
     	:user
   	end

@@ -83,7 +83,7 @@
 		<div class="row">
 			<div class="col-xs center cero-padding ">
 				<% if params[:search].blank? %>
-				<h4 class="fondos_h text-shadow left-align" >Lo último</h4>
+				<h4 class="fondos_h left-align" >Lo último</h4>
 				<%else%>
 				<h4 class="fondos_h left-align" >Mostrando <%= @articles.count %> resultados para: "<%= params[:search] %>"</h4>
 				<%end%>
@@ -98,10 +98,11 @@
 	</div>
 	<% if params[:search].blank? %>
 	<% @category_where.each do |tag| %>
+	<%unless tag.name=="lifestyle" %>
 	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
 		<div class="row">
 			<div class="col-xs center cero-padding ">
-				<h4 class="fondos_h text-shadow left-align" >Categoria: <%=link_to tag.name,tag%><!--<a href="/category/juegos"><i class="fa fa-share right"></i></a>--></h4>
+				<h4 class="fondos_h left-align" >Categoria: <%=link_to tag.name,tag%><!--<a href="/category/juegos"><i class="fa fa-share right"></i></a>--></h4>
 				<main class="sombras" >	
 					<% tag.articles.limit(6).each do |article| %>
 					<%=render partial: "article" , locals: { article: article } %>
@@ -110,6 +111,7 @@
 			</div>
 		</div>
 	</div>
+	<%end%>
 	<% end %>
 	<%end%>
 </div>
