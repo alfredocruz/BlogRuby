@@ -98,7 +98,7 @@
 	</div>
 	<% if params[:search].blank? %>
 	<% @category_where.each do |tag| %>
-	<%unless tag.name=="lifestyle" %>
+	<%unless tag.name=="lifestyle" or tag.name=="productividad" %>
 	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
 		<div class="row">
 			<div class="col-xs center cero-padding ">
