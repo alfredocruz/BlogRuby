@@ -1,3 +1,4 @@
+//Todo el cuerpo de la pagina
 body{
 	background-color: #EEEEEE;
 	max-width: 100%;
@@ -5,7 +6,7 @@ body{
 	text-rendering:optimizeLegibility;
 	overflow-x: hidden;
 }
-
+//categorias de la parte de arriba de la pagina
 .colection-tags{
 	i{
 		position: absolute;
@@ -20,12 +21,9 @@ body{
 		transition: all 0.5s ease-in-out;
 	}
 }
+//padding de los botones de descarga de show
 .padding-button-show{
 	padding: 0 1rem!important; 
-}
-.fa-ellipsis-v{
-	font-size: 18px !important;
-	padding: 0px 5px 0px 3px !important;
 }
 .dropdown-content li>a, .dropdown-content li>span{
 	display: inline-block !important;
@@ -228,70 +226,79 @@ aside{
 		position: relative;
 		height: 8em;
 	}
-}
-.card{
-	margin: 0px!important;
-	overflow: hidden!important;
-	.card-content{
-		padding: 7px 0px 0px 0px;
-		text-align: center;
-		h2{
-			margin: 0px;
-			font-size: 4.5rem !important;
-		}
-		a{
-			font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
-			font-weight: 300 !important;
-			text-transform: capitalize !important;
-			font-size: .2em !important;
-			width: 100% !important;
-			height: 32px;
-			display: block !important;
-			color: #505050 !important;
-			line-height: 1.2 !important;
-			text-align: left;
-			padding-left: .5em !important;
-			&:hover{
-				color: #03a9f4 !important;
-				transition: all .3s ease-in-out;
-			}
 
+	//cuard revelard cuadros reveladores del index
+	.card{
+		margin: 0px!important;
+		overflow: hidden!important;
+		.card-content{
+			padding: 7px 0px 0px 0px;
+			text-align: center;
+			h2{
+				margin: 0px;
+				font-size: 4.5rem !important;
+			}
+			.card-title{
+				i{
+				font-size: 18px !important;
+				padding: 0px 5px 0px 3px !important;
+			}
+			}
+			
+			a{
+				font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+				font-weight: 300 !important;
+				text-transform: capitalize !important;
+				font-size: .2em !important;
+				width: 100% !important;
+				height: 32px;
+				display: block !important;
+				color: #505050 !important;
+				line-height: 1.2 !important;
+				text-align: left;
+				padding-left: .5em !important;
+				&:hover{
+					color: #03a9f4 !important;
+					transition: all .3s ease-in-out;
+				}
+
+			}
 		}
-	}
-	.card-reveal{
-		padding: 5px !important;
-		overflow-x: hidden!important; 
-		.row{
-			span{
-				line-height: .7em !important;
-				position: static;
-				a{
-					font-family: 'Old Standard TT', serif !important;
-					font-size: .6em !important;
-					color: #000 !important;
-					text-transform: capitalize;
-					&:hover{
-						color: #03a9f4 !important;
-						transition: all .3s ease-in-out;
+		.card-reveal{
+			padding: 5px !important;
+			overflow-x: hidden!important; 
+			.row{
+				span{
+					line-height: .7em !important;
+					position: static;
+					a{
+						font-family: 'Old Standard TT', serif !important;
+						font-size: .6em !important;
+						color: #000 !important;
+						text-transform: capitalize;
+						&:hover{
+							color: #03a9f4 !important;
+							transition: all .3s ease-in-out;
+						}
+					}
+					i{
+						position: absolute !important;
+						right: 0px !important;
+						top: 0px !important;
+						margin-left: 0px !important;
+						background-color: rgba(255,255,255,0.7);
+
 					}
 				}
-				i{
-					position: absolute !important;
-					right: 0px !important;
-					top: 0px !important;
-					margin-left: 0px !important;
-					background-color: rgba(255,255,255,0.7);
-
-				}
 			}
 		}
-	}
-	.body{
-		font-size: .8em !important;
-		p{
-			margin: .5em 0 0 0 !important;
-			line-height: 1.3;
-			font-weight: 300;
+		.body{
+			font-size: .8em !important;
+			p{
+				margin: .5em 0 0 0 !important;
+				line-height: 1.3;
+				font-weight: 300;
+			}
 		}
 	}
 }
