@@ -25,6 +25,7 @@ body{
 .padding-button-show{
 	padding: 0 1rem!important; 
 }
+
 .dropdown-content li>a, .dropdown-content li>span{
 	display: inline-block !important;
 	&:hover{
@@ -51,14 +52,7 @@ body{
 .parent_class .field_with_errors {
     display: inline;
   }
-.comment-box{
-	background-color: rgba(255,255,255,0.5);
-	color: #444;
-	font-family: 'Roboto',sans-serif;
-	font-style: italic;
-	margin: 1em 0 0 0;
-	border: 1px solid #E2E2E2;
-}
+
 .card-header{
 	margin: .5em 0em !important; 
 }
@@ -115,9 +109,11 @@ body{
 	text-align: left;
 }
 .show-title{
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
 	color: #212121 !important;
 	font-size: 2rem !important;
 	margin: 0px;
+	font-weight: 300;
 }
 .version{
 	font-size: 2em;
@@ -215,6 +211,7 @@ aside{
 	display: inline-block;
 }
 
+//cuard revelard cuadros reveladores del index
 .cuadro-1{
 	width: 10em;
 	height: auto;
@@ -226,8 +223,6 @@ aside{
 		position: relative;
 		height: 8em;
 	}
-
-	//cuard revelard cuadros reveladores del index
 	.card{
 		margin: 0px!important;
 		overflow: hidden!important;
@@ -240,11 +235,10 @@ aside{
 			}
 			.card-title{
 				i{
-				font-size: 18px !important;
-				padding: 0px 5px 0px 3px !important;
+					font-size: 18px !important;
+					padding: 0px 5px 0px 3px !important;
+				}
 			}
-			}
-			
 			a{
 				font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
 				font-weight: 300 !important;
@@ -302,6 +296,7 @@ aside{
 		}
 	}
 }
+
 .fondos_h{
 	font-size: 1.5em;
 	background-color: #009688;
