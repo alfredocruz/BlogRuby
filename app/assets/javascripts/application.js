@@ -30,7 +30,6 @@ $(document).on('ready page:load', function () {
             if (doc.getElementById(id)) {return;}
             js = doc.createElement(script);
             js.src = url;
-            js.async=true;
             id && (js.id = id);
             fjs.parentNode.insertBefore(js, fjs);
         };
