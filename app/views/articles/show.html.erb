@@ -80,9 +80,11 @@
 				</div>
 			</div>
 
-			<div class="border-top">
-				<h4 class="caracteristicas">Caracteristicas</h4>
-				<%= Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe%>
+			<div class="border-top row center-xs">
+				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+					<h4 class="caracteristicas">Caracteristicas</h4>
+					<%= Sanitize.fragment(@article.body, Sanitize::Config::RELAXED).html_safe%>
+				</div>
 			</div>
 
 			<div class="row">
