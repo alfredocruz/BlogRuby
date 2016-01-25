@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	get "page(/:page)" => "articles#index"
 	get "sitemap" => "sitemaps#show"
   	resources :users, :path=>"usuarios_admin"
     resources :tags, :path => "category"
