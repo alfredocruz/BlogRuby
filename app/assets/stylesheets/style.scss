@@ -220,6 +220,7 @@ aside{
 	padding: 0px !important;
 	border: 1px solid #d5d5d5;
 	display: inline-block;
+	transition: all 0.5s;
 	img{
 		position: relative;
 		height: 8em;
@@ -307,7 +308,7 @@ aside{
 	border-left: 20px solid #009688;
 	font-family: 'Old Standard TT', serif;
 	padding: 5px 0px 5px 0px;
-	a{
+	span,a{
 		color: #fff !important;
 		text-transform: capitalize;
 		font-size: .8em !important;
@@ -316,14 +317,10 @@ aside{
 		}
 	}
 	i{
-		text-shadow: 	0px 0px 0px #585858,
-						0px 0px 0px #585858,
-						0px 0px 0px #585858,
-						0px 0px 0px black;
-		height: 100%;
-		width: 3%;
+		font-size: 1.3em;
+		padding-right: .5em;
 		&:hover{
-			color: #0288d1;
+			color: #e0e0e0;
 		}
 	}
 }
