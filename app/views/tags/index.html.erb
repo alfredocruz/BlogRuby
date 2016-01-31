@@ -1,25 +1,28 @@
-<div class="col s12 center-align">
-	<h3 style="font-size: 1.5em;">Todas las categorias</h3>
-</div>
+<div class="row center-xs">
+	<%= render "parciales/tags" %>
+	<div class="col s12 center-align">
+		<h3 style="font-size: 1.5em;">Todas las categorias</h3>
+	</div>
 
-<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding">
-	<aside>
-		<div class="row cero-margin">
-			<% @tags.each do |tag| %>
-				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-					<div class="collection row center-align">
-						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12"%>
-						<div style="right:5px; bottom:0px; position:absolute; ">
-							<%if can? :destroy, @tag%>
-								<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>
-									<i class="fa fa-trash-o" ></i>
+	<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 cero-padding ">
+		<aside>
+			<div class="row cero-margin">
+				<% @tags.each do |tag| %>
+					<div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="collection row center-align">
+							<%= link_to tag.name,tag,:class =>"collection-item col-xs-12"%>
+							<div style="right:5px; bottom:0px; position:absolute; ">
+								<%if can? :destroy, @tag%>
+									<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>
+										<i class="fa fa-trash-o" ></i>
+									<%end%>
 								<%end%>
-							<%end%>
+							</div>
 						</div>
 					</div>
-				</div>
-			<% end %>
-		</div>
-	</aside>
+				<% end %>
+			</div>
+		</aside>
+	</div>
+	<%= render "parciales/footer" %>
 </div>
-<%= render "parciales/footer" %>

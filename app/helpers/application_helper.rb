@@ -1,4 +1,10 @@
 module ApplicationHelper
+  def category_where
+    @category_where = Tag.where(:name =>["juegos","comunicacion","herramientas","lifestyle","multimedia","productividad"])
+  end
+  def tags
+    @tags = Tag.all
+  end
   def articulos
     @articulos = Article.all
   end

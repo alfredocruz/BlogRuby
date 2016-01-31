@@ -2,7 +2,6 @@ class ArticlesController < ApplicationController
 
   before_action :authenticate_user!, except: [:show ,:index,:feed]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  before_action :set_tags, only:[:show,:index]
   before_action :set_meta_tags
   load_and_authorize_resource :except =>[:create,:feed]
   # GET /articles
@@ -97,10 +96,7 @@ class ArticlesController < ApplicationController
     def set_meta_tags
       set_meta "viewport"   => "width=device-width, initial-scale=1"
     end
-    def set_tags
-      @tags = Tag.all
-      @category_where = Tag.where(:name =>["juegos","comunicacion","herramientas","lifestyle","multimedia","productividad"])
-    end
+    
     # Use callbacks to share common setup or constraints between actions.
     def set_article
       @article = Article.friendly.find(params[:id])

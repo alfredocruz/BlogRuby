@@ -116,8 +116,8 @@
 					  		</a>
 					  		<div class="collapsible-body">
 								<ul>
-									<% unless  @tags.nil? %>
-										<% @tags.each do |tag| %>
+									<% unless  category_where.nil? %>
+										<% category_where.each do |tag| %>
 											<li><%= link_to tag.name, tag_path(tag)%></li>
 										<% end %>
 									<%end%>

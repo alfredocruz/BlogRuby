@@ -27,8 +27,6 @@ class TagsController < ApplicationController
 
 	private
 		def set_tag_all
-			@tags = Tag.all
-			@category_where = Tag.where(:name =>["juegos","comunicacion","herramientas","lifestyle","multimedia","productividad"])
 			set_meta "viewport"   => "width=device-width, initial-scale=1"
 		end
 	    # Use callbacks to share common setup or constraints between actions.

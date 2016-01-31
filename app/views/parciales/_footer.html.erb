@@ -11,7 +11,7 @@
        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 center">
         <h5 class="grey-text text-darken-2">Etiquetas</h5>
             <div class="left-align">
-               <% @tags.each do |tag| %>
+               <% tags.each do |tag| %>
                <span><%= link_to tag.name, tag_path(tag),:class =>"tag" %></span><% end %>
             </div>
       </div>
