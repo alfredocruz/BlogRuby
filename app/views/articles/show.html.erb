@@ -42,7 +42,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
 					<div class="col-xs">
 						<h2 class="show-title text-left"><%=@title = @article.title%></h2>
-						<h6 class="version text-left grey-text text-lighten-1">V<%=@article.version%></h6>
+						<h6 class="version text-left grey-text text-lighten-1">V.<%=@article.version%></h6>
 					</div>
 					<div class="col-xs left-align">
 						<i class="fa fa-tag show-icon"></i>
@@ -56,7 +56,7 @@
 						</div>
 						<% unless @article.pesodatos.nil?%>
 						<div class="valign-wrapper col-xs">
-							<a href="<%=@article.datos%>" class="padding-button-show waves-effect waves-light btn-large marin-top " style="width:100%; height:4em !important;"><i class="fa fa-download right"></i>DATOS <%=@article.pesodatos%>MB</a>
+							<a href="<%=@article.datos%>" target="_blank" class="padding-button-show waves-effect waves-light btn-large marin-top " style="width:100%; height:4em !important;"><i class="fa fa-download right"></i>DATOS <%=@article.pesodatos%>MB</a>
 						</div>
 						<%end%>
 					</div>
