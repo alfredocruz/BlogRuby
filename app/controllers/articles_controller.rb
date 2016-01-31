@@ -7,7 +7,6 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    set_meta "robots" =>"index,follow"
     set_meta "description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "title" => "dowloadapps-Aplicaciones para Android"
     set_meta "og:title"   => "dowloadapps"
@@ -24,7 +23,6 @@ class ArticlesController < ApplicationController
     set_meta "twitter:description"  => Sanitize.fragment(@article.markup_body.truncate(100), Sanitize::Config::RELAXED).html_safe
     set_meta "og:description"=> Sanitize.fragment(@article.markup_body.truncate(100), Sanitize::Config::RELAXED).html_safe
     set_meta "title" => @article.title+ " v."+ @article.version+ "-Android"
-    set_meta "robots" =>"index,follow"
     set_meta "og:title"   => @article.title+ " v."+ @article.version+ "-Android"
     set_meta "og:image"   => @article.image.url
     set_meta "author" => @article.user.username
