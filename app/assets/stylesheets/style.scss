@@ -5,6 +5,12 @@ body{
 	font-weight:100;
 	text-rendering:optimizeLegibility;
 	overflow-x: hidden;
+	.preloader-wrapper{
+		position: fixed !important;
+		top: 50% !important;
+		left:50% !important;
+		z-index: 1000 !important;
+	}
 }
 //categorias de la parte de arriba de la pagina
 .colection-tags{
