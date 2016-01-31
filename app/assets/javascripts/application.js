@@ -11,11 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require turbolinks
 //= require jquery_ujs
 //= require 'epiceditor'
 //= require_tree .
-$(document).on('ready page:load', function () {
+$(document).ready(function () {
    $('.modal-trigger').leanModal({
       dismissible: true, // Modal can be dismissed by clicking outside of the modal
       opacity: .5, // Opacity of modal background

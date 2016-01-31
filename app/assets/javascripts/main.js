@@ -1,6 +1,6 @@
 
 
-$(document).on("ready page:load",function(){
+$(document).ready(function(){
 	function e(e){
 		var t=0;
 		e.wheelDelta?t=e.wheelDelta/120:
