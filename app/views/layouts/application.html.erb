@@ -107,9 +107,12 @@
       </div>
    </div>
    <script>
-   $(document).ready(function() {
+   
+      var ready = function(){ 
         $( "#preloader" ).addClass( "hide" );
-    });
+    };
+      $(document).ready(ready);
+      $(document).on('page:load', ready);
    </script>
 </body>
 </html>
