@@ -26,13 +26,6 @@
 					<div class="collection row center-align colection-tags <%= @back_color_tag %>">
 						<i class="<%= icon_tag %>"></i>
 						<%= link_to tag.name,tag,:class =>"collection-item col-xs-12 transparent grey-text text-lighten-5 "%>
-						<div style="right:5px; bottom:0px; position:absolute; ">
-							<%if can? :destroy, @tag%>
-								<%= link_to tag, method: :delete, data: { confirm: '¿Desea Eliminar Esto?' } do%>
-									<i class="fa fa-trash-o" ></i>
-								<%end%>
-							<%end%>
-						</div>
 					</div>
 				</div>
 			<% end %>
