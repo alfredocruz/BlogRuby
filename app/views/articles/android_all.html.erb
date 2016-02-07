@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-xs-12 center">
+		<span>
+			Mostrando Todos los Articulos.
+		</span>
+	</div>
+	<div class="collection col-xs-12">
+		<div class="row">
+		<% articulos.each do |article| %>
+			<div>
+				<%=link_to article.title,article,:class=>"collection-item col-xs-12" %>
+				<%if can? :update, @article%>
+					<%= link_to edit_article_path(article)do %>
+						<i class="fa fa-pencil-square-o absolute-button"></i>
+					<%end%>
+				<%end%>
+				<%if can? :destroy, @article%>
+					<%= link_to article,method: :delete,data:{confirm:"Esta seguro?"} do%>
+						<i class="fa fa-trash-o absolute-top"></i>
+					<%end%>
+				<%end%>
+			</div>
+		<%end%>
+		</div>
+	</div>
+</div>
