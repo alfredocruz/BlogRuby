@@ -37,10 +37,6 @@ class Article < ActiveRecord::Base
   		end
 
 	end#buscador fin
-	class Article
-  		self.per_page = 10
-	end
-	WillPaginate.per_page = 10
 	
 	private
 	def set_visits_count
