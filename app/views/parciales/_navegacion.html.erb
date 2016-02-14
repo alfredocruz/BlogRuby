@@ -85,11 +85,43 @@
 				    </div>
 				<%end%>
 				<li>
-					<%= link_to root_path do%>
-						<i class="fa fa-home ico-nav"></i>
-						<span class="font-nav">Home</span>
+					<%= link_to root_path,:style=>"padding: 15px 0px;" do%>
+						
+							<img src="http://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" alt="logo">
+					
+						
 					<%end%>
 				</li>
+				<% unless  category_where.nil? %>
+					<% category_where.each do |tag| %>
+						<%if tag.name=="juegos"%>
+						<% @back_color_tag ="green darken-2" %>
+						<% icon_tag= "fa fa-gamepad" %>
+						<%elsif tag.name=="comunicacion"%>
+							<% @back_color_tag ="teal darken-2" %>
+							<% icon_tag= "fa fa-mobile" %>
+						<%elsif tag.name=="multimedia"%>
+							<% @back_color_tag ="blue darken-2" %>
+							<% icon_tag= "fa fa-film" %>
+						<%elsif tag.name=="herramientas"%>
+							<% @back_color_tag ="cyan darken-2" %>
+							<% icon_tag= "fa fa-cog" %>
+						<%elsif tag.name=="lifestyle"%>
+							<% @back_color_tag =" deep-orange darken-4" %>
+							<% icon_tag= "fa fa-odnoklassniki" %>
+						<%elsif tag.name=="productividad"%>
+							<% @back_color_tag ="blue-grey darken-3" %>
+							<% icon_tag= "fa fa-line-chart" %>
+						<%end%>
+						<li  class="<%= @back_color_tag %>">
+							<%= link_to tag do%>
+								<i class="<%= icon_tag %> ico-nav grey-text text-lighten-5"></i>
+								<span class="font-nav grey-text text-lighten-5"><%= tag.name %></span>
+							<%end%>
+						</li>
+					<% end %>
+				<%end%>
+
 				<% if user_signed_in?%>
 					<li>
 						<%= link_to edit_user_registration_path do%>
@@ -103,40 +135,9 @@
 							<span class="font-nav">Salir</span>
 						<%end%>
 					</li>
-				<%else%>
-					<li>
-						<%= link_to new_session_path(resource_name) do%>
-							<i class="fa fa-sign-in ico-nav"></i>
-							<span class="font-nav">Iniciar sesion</span>
-						<%end%>
-					</li>
-					<li>
-						<%= link_to new_registration_path(resource_name) do%>
-							<i class="fa fa-user-plus ico-nav"></i>
-							<span class="font-nav">Crear cuenta</span>
-						<%end%>
-					</li>
 				<% end -%>
-				<li class="no-padding">
-				 	<ul class="collapsible collapsible-accordion">
-						<li>
-					  		<a class="collapsible-header">Categorias<i class="fa fa-tags ico-nav"></i>
-					  		<i class="fa fa-sort-desc right"></i>
-					  		</a>
-					  		<div class="collapsible-body">
-								<ul>
-									<% unless  category_where.nil? %>
-										<% category_where.each do |tag| %>
-											<li><%= link_to tag.name, tag_path(tag)%></li>
-										<% end %>
-									<%end%>
-								</ul>
-					  		</div>
-						</li>
-				 	</ul>
-				</li>
+
 			</ul>
-			
 		</div>
 	</nav>
 </header>
