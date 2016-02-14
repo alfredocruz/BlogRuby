@@ -94,7 +94,13 @@
 				<main class="sombras" >		
 					<%= render @articles %>
 					<div class="col-xs-12 border-top pagination">
-						<%= will_paginate @articles %>
+						
+						<div class="digg_pagination">
+						    <div class="page_info">
+						      <%= page_entries_info @posts %>
+						    </div>
+						    <%= will_paginate @articles,:container => false %>
+						 </div>
 					</div>
 				</main>
 			</div>
