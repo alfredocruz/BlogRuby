@@ -15,6 +15,12 @@ body{
 .indicator{
 	background-color: #009688 !important;
 }
+.width-full{
+	width: 100% !important;
+	.modal-content{
+		padding: 10px !important;
+	}
+}
 //categorias de la parte de arriba de la pagina
 .colection-tags{
 	i{

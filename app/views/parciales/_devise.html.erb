@@ -1,20 +1,20 @@
 <div class="row">
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name),html:{:id=>"iniciar_sesion" ,:class =>"col s12"}) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name),html:{:id=>"iniciar_sesion" ,:class =>"col s12 cero-padding"}) do |f| %>
     <div class="row">
-      <div class="input-field col s12">
+      <div class="input-field col s12 cero-padding">
         <i class="fa fa-envelope prefix"></i>
         <%= f.email_field :email, autofocus: true,:id=>"users_email" %>
         <%= f.label :email,"Correo electronico" %>
       </div>
 
-      <div class="input-field col s12">
+      <div class="input-field col s12 cero-padding">
         <i class="fa fa-user-secret prefix"></i>
         <%= f.password_field :password, autocomplete: "off",:id=>"users_password" %>
         <%= f.label :password,"Contraseña" %>
       </div>
 
       
-      <div class="actions col s12 left-align " >
+      <div class="actions col s12 left-align cero-padding" >
         <% if devise_mapping.rememberable? -%>
           <div class="field">
             <%= f.check_box :remember_me %>
@@ -23,13 +23,13 @@
         <% end -%> 
       </div>
     
-      <div class="actions col s12 right-align ">
+      <div class="actions col s12 right-align  cero-padding">
          <button class="btn waves-effect waves-light valign btn-ingresar" type="submit" name="action" style="width: 100%;height:35px;">
          INICIAR SESIÓN
           <i class="fa fa-paper-plane right"></i>
         </button>
       </div>
-      <div class="center-align col s12">
+      <div class="center-align col s12 cero-padding">
         <%= render "devise/shared/links" %>
       </div>
     </div>
