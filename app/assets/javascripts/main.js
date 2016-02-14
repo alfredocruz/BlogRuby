@@ -16,7 +16,7 @@ $(document).ready(function(){
 				.scrollTop()-t*e},l)
 		}
 		$(".dropdown-button").dropdown(),
-		$(".slider").slider({full_width:!0}),
+		$(".slider").slider({full_width:false}),
 		// Initialize collapse button 
 		$(".button-collapse").sideNav(),
 
