@@ -39,6 +39,13 @@
 					<li class="li-nav"><i class="fa fa-user-times ico-nav"></i></li>
 				<%end%>
 			</ul>
+			<ul class="right hide-on-large-only">
+				<li class="li-nav" data-target="modal3">
+					<a class="modal-trigger" data-target="modal3">
+						<i class="fa fa-user ico-nav"></i>
+					</a>
+				</li>
+			</ul>
 			<ul class="right">
 				<li class="transparent">
 					<%= form_tag articles_path, :method => 'get' do %>
@@ -46,6 +53,7 @@
 					<%end%>
 				</li>
 			</ul>
+			
 			<div class="relative">
 				<%= link_to root_path,:class=>'brand-logo' do%>
 				<div class="absolute" style="height:64px;">
@@ -56,6 +64,7 @@
 				</div>
 				<%end%>
 			</div>
+
 			<a data-activates="slide-out" class="button-collapse"><i class="fa fa-align-justify" data-activates="slide-out" ></i></a>
 			<ul id="slide-out" class="side-nav">
 				<%if user_signed_in?%>

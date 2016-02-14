@@ -24,6 +24,9 @@ $(document).ready(function () {
       out_duration: 200, // Transition out duration
     }
     );
+$('ul.tabs').tabs();
+$('ul.tabs').tabs('select_tab', 'test1');
+$('.indicator').css("right",'50%');
 (function(doc, script) {
     var js,
         fjs = doc.getElementsByTagName(script)[0],
