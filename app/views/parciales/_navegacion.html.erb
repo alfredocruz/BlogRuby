@@ -67,6 +67,15 @@
 
 			<a data-activates="slide-out" class="button-collapse"><i class="fa fa-align-justify" data-activates="slide-out" ></i></a>
 			<ul id="slide-out" class="side-nav">
+				<li>
+					<%= link_to root_path,:style=>"height:100px" do%>
+						
+							<img src="http://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" alt="logo">
+					
+						
+					<%end%>
+				</li>
+				
 				<%if user_signed_in?%>
 					<div class="col s12 m8 offset-m2 l6 offset-l3">
 				        <div class="card-panel grey lighten-5 z-depth-1 cero-padding" style="box-shadow: 0px 0px; margin:0px; line-height: 20px;">
@@ -84,14 +93,7 @@
 				        </div>
 				    </div>
 				<%end%>
-				<li>
-					<%= link_to root_path,:style=>"height:100px" do%>
-						
-							<img src="http://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" alt="logo">
-					
-						
-					<%end%>
-				</li>
+				
 				<% unless  category_where.nil? %>
 					<% category_where.each do |tag| %>
 						<%if tag.name=="juegos"%>
