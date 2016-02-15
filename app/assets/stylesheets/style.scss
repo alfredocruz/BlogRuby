@@ -22,7 +22,7 @@ body{
 	}
 }
 //categorias de la parte de arriba de la pagina
-.colection-tags{
+.collection-tags{
 	i{
 		position: absolute;
 		left: 20%;
@@ -31,6 +31,12 @@ body{
 		color: #FFF;
 		font-size: 1.4em;
 	}
+	&:hover{
+		background-color:#039be5!important;
+		transition: all 0.5s ease-in-out;
+	}
+}
+.collection-tags-nav{
 	&:hover{
 		background-color:#039be5!important;
 		transition: all 0.5s ease-in-out;
