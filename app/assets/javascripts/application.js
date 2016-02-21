@@ -51,4 +51,53 @@ $('.toggle').click(function() {
     $("html, body").animate({ scrollTop: 0 }, 600);
 });
 
+$( ".juegos" ).hover(
+  function() {
+    $( this ).addClass( "green darken-2" );
+  }, function() {
+    $( this ).removeClass( "green darken-2" );
+  }
+);
+
+$( ".comunicacion" ).hover(
+  function() {
+    $( this ).addClass( "teal darken-2" );
+  }, function() {
+    $( this ).removeClass( "teal darken-2" );
+  }
+);
+
+$( ".multimedia" ).hover(
+  function() {
+    $( this ).addClass( "blue darken-2" );
+  }, function() {
+    $( this ).removeClass( "blue darken-2" );
+  }
+);
+
+$( ".lifestyle" ).hover(
+  function() {
+    $( this ).addClass( "deep-orange darken-4" );
+  }, function() {
+    $( this ).removeClass( "deep-orange darken-4" );
+  }
+);
+
+$( ".productividad" ).hover(
+  function() {
+    $( this ).addClass( "blue-grey darken-3" );
+  }, function() {
+    $( this ).removeClass( "blue-grey darken-3" );
+  }
+);
+
+$( ".herramientas" ).hover(
+  function() {
+    $( this ).addClass( "cyan darken-2" );
+  }, 
+  function() {
+    $( this ).removeClass( "cyan darken-2" );
+  }
+);
+
 });

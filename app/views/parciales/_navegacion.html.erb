@@ -68,17 +68,15 @@
 			<a data-activates="slide-out" class="button-collapse"><i class="fa fa-align-justify" data-activates="slide-out" ></i></a>
 			<ul id="slide-out" class="side-nav">
 				<li>
-					<%= link_to root_path,:style=>"height:100px" do%>
-						
-							<img src="http://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" alt="logo">
-					
-						
+					<%= link_to root_path,:style=>"padding-bottom:5em" do%>
+						<img src="http://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" alt="logo">
 					<%end%>
+
 				</li>
 
 				<%if user_signed_in?%>
 					<div class="col s12 m8 offset-m2 l6 offset-l3">
-				        <div class="card-panel grey lighten-5 z-depth-1 cero-padding" style="box-shadow: 0px 0px; margin:0px; line-height: 20px;">
+				        <div class="card-panel grey lighten-5 z-depth-1 cero-padding" style="padding: 2px; box-shadow: 0px 0px; margin:0px; line-height: 20px;">
 				        	<div class="row valign-wrapper cero-margin">
 					            <div class="col s4">
 					            	
@@ -97,28 +95,39 @@
 				<% unless  category_where.nil? %>
 					<% category_where.each do |tag| %>
 						<%if tag.name=="juegos"%>
+						<% hover="juegos" %>
 						<% @back_color_tag ="green darken-2" %>
 						<% icon_tag= "fa fa-gamepad" %>
+
 						<%elsif tag.name=="comunicacion"%>
+							<% hover="comunicacion" %>
 							<% @back_color_tag ="teal darken-2" %>
 							<% icon_tag= "fa fa-mobile" %>
+
 						<%elsif tag.name=="multimedia"%>
+							<% hover="multimedia" %>
 							<% @back_color_tag ="blue darken-2" %>
 							<% icon_tag= "fa fa-film" %>
+
 						<%elsif tag.name=="herramientas"%>
+							<% hover="herramientas" %>
 							<% @back_color_tag ="cyan darken-2" %>
 							<% icon_tag= "fa fa-cog" %>
+
 						<%elsif tag.name=="lifestyle"%>
+							<% hover="lifestyle" %>
 							<% @back_color_tag =" deep-orange darken-4" %>
 							<% icon_tag= "fa fa-odnoklassniki" %>
+
 						<%elsif tag.name=="productividad"%>
+							<% hover="productividad" %>
 							<% @back_color_tag ="blue-grey darken-3" %>
 							<% icon_tag= "fa fa-line-chart" %>
 						<%end%>
-						<li  class="<%= @back_color_tag %> collection-tags-nav">
-							<%= link_to tag do%>
-								<i class="<%= icon_tag %> ico-nav grey-text text-lighten-5"></i>
-								<span class="font-nav grey-text text-lighten-5"><%= tag.name %></span>
+						<li  class=" collection-tags-nav cero-padding <%= hover %>">
+							<%= link_to tag, :class=>"cero-padding" do%>
+								<i class="<%= icon_tag %> <%= @back_color_tag %> ico-nav grey-text text-lighten-5"></i>
+								<span class="font-nav"><%= tag.name %></span>
 							<%end%>
 						</li>
 					<% end %>

@@ -37,10 +37,28 @@ body{
 	}
 }
 .collection-tags-nav{
-	&:hover{
-		background-color:#039be5!important;
-		transition: all 0.5s ease-in-out;
+	a{
+		height: 40px;
+		line-height: 40px;
+		color: #505050 !important;
+		&:hover span{
+			color: #fafafa; 
+			transition: all 0.5s ease-in-out;
+		}
+		
+		i{
+			height: 40px;
+			width: 40px;
+			font-size: 1.3em !important;
+			line-height: 40px;
+			text-align: center;
+		}
 	}
+	&:hover {
+			color: #fafafa;
+			transition: all 0.5s ease-in-out;
+		}
+	
 }
 .collection{
 	div{
