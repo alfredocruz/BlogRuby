@@ -94,7 +94,7 @@
 				<main class="sombras" >		
 					<%= render @articles %>
 					<div class="col-xs-12 border-top pagination">
-						<%= will_paginate @articles,:container => false %>
+						<%= will_paginate @articles,:container => false,:inner_window => 6  %>
 					</div>
 				</main>
 			</div>
