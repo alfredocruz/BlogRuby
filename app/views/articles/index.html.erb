@@ -110,7 +110,7 @@
 				<h4 class="fondos_h left-align" >Categoria: <span><%=tag.name%></span><%=link_to tag, :class=>"right" do%><i data-tooltip="Más" data-delay="50" data-position="left" class="fa fa-arrow-circle-right tooltipped"></i><%end%></h4>
 				<main class="sombras" >	
 					<% tag.articles.limit(6).each do |article| %>
-					<%=render partial: "article" , locals: { article: article } %>
+						<%=render partial: "article" , locals: { article: article } %>
 					<% end %>
 				</main>
 			</div>
