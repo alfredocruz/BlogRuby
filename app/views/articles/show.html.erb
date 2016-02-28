@@ -86,11 +86,11 @@
 						<div class="col-xs center cero-padding ">
 							<h4 class="fondos_h left-align" > Similar a <%= @article.title %></h4>
 							<main class="sombras" >
-							<% @category_where.limit(1).each do |tag| %>
-								<% tag.articles.limit(6).each do |article| %>
-									<%=render partial: "article" , locals: { article: article } %>
-								<% end %>
-							<%end%>
+								<% @article.tags.limit(1).each do |tag| %>
+									<% tag.articles.limit(6).each do |article| %>
+										<%=render partial: "article" , locals: { article: article } %>
+									<% end %>
+								<%end%>
 							</main>
 						</div>
 					</div>
