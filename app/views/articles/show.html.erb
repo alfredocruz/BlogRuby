@@ -85,10 +85,12 @@
 					<div class="row">
 						<div class="col-xs center cero-padding ">
 							<h4 class="fondos_h left-align" > Similar a <%= @article.title %></h4>
-							<main class="sombras" >	
-								<% @article.tags.limit(6).each do |article| %>
+							<main class="sombras" >
+							<% @category_where.each do |tag| %>
+								<% tag.articles.limit(6).each do |article| %>
 									<%=render @article%>
 								<% end %>
+							<%end%>
 							</main>
 						</div>
 					</div>
