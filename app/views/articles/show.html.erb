@@ -87,7 +87,6 @@
 							<h4 class="fondos_h left-align" > Similar a <%= @article.title %></h4>
 							<main class="sombras" >
 							<% @category_where.limit(1).each do |tag| %>
-								<span><%=tag.name%></span>
 								<% tag.articles.limit(6).each do |article| %>
 									<%=render partial: "article" , locals: { article: article } %>
 								<% end %>
