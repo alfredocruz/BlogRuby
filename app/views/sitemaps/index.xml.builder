@@ -15,7 +15,7 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
   }
   @articles.each do |p|
     xml.url {
-      xml.loc("http://dowloadapps.herokuapp.com/#{p.id.to_s}")
+      xml.loc("http://dowloadapps.herokuapp.com/#{p.slug.to_s}")
       xml.changefreq("weekly")
       xml.priority(0.5)
     }
