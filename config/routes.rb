@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+	resources :sitemaps, :only => :show
+	get "sitemap" => "sitemaps#show"
+	
 	get "android_all"=>"articles"
 	get "page(/:page)" => "articles#index"
 	get "sitemap" => "sitemaps#show"
