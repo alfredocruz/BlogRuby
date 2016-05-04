@@ -5,6 +5,7 @@ gem 'friendly_id','~> 5.1.0'
 gem 'epic-editor-rails'
 gem 'sanitize', '~> 4.0.0'
 gem 'rails-html-sanitizer'
+gem 'sitemap_generator'
 gem "cancan"
 #meta datos
 gem 'meta-tags-helpers', '~> 0.2.0'
