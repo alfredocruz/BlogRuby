@@ -6,6 +6,7 @@ gem 'epic-editor-rails'
 gem 'sanitize', '~> 4.0.0'
 gem 'rails-html-sanitizer'
 gem "cancan"
+#meta datos
 gem 'meta-tags-helpers', '~> 0.2.0'
 gem 'cloudinary'
 gem 'rmagick'
