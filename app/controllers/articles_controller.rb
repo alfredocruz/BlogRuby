@@ -93,6 +93,7 @@ class ArticlesController < ApplicationController
   private
     def set_meta_tags
       set_meta "viewport"   => "width=device-width, initial-scale=1"
+      set_meta "keywords" => " Aplicaciones, android,juegos,temas,herramientas,multimedia,descargar,gratis,internet,apk,full,apps "  
     end
     
     # Use callbacks to share common setup or constraints between actions.
