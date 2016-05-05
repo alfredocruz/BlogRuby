@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-	resources :sitemaps, :only => :index
-	get "sitemap.xml", :controller =>"sitemaps", :action => "xml"
+	resources :sitemap, :only => :index
+	get "sitemap.xml", :controller =>"sitemap", :action => "xml"
 	get '/robots.:format' => 'pages#robots'
 
 

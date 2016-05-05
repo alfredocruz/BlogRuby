@@ -111,7 +111,6 @@ GEM
     meta-tags-helpers (0.2.0)
       rails (> 3)
     mime-types (2.99.1)
-    mime-types-data (3.2016.0221)
     mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
