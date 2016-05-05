@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 	resources :sitemaps, :only => :index
 	get "sitemaps.xml", :controller =>"sitemaps", :action => "xml"
+	get '/robots.:format' => 'pages#robots'
+
 	
 	get "android_all"=>"articles"
 	get "page(/:page)" => "articles#index"
