@@ -1,8 +1,7 @@
+#app/controllers/sitemaps_controller.rb
 class SitemapsController < ApplicationController
-  def show
-    @articles = Article.where(:active => true) #we are generating url's for posts
-    respond_to do |format|
-     format.xml
-    end
+  respond_to :xml
+  def index
+    @articles = Article.all
   end
 end

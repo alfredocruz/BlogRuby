@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-	resources :sitemaps, :only => :show
-	get "sitemap" => "sitemaps#show"
-
+	resources :sitemaps, :only => :index
+	get "sitemaps.xml", :controller =>"sitemaps", :action => "xml"
+	
 	get "android_all"=>"articles"
 	get "page(/:page)" => "articles#index"
   	resources :users, :path=>"usuarios_admin"
