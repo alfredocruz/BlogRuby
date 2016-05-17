@@ -7,7 +7,7 @@
 		<div class="row">
 			<div class="col-xs center cero-padding">
 			<h1 class="fondos_h text-shadow oculto" >Aplicaciones para Android</h1>
-			<h4 class="fondos_h text-shadow left-align mayusculas"><%= link_to "HOME/ANDROID/",root_path%><%=link_to @tag.name,tag_path(@tag) %></h4>
+			<h4 class="fondos_h text-shadow left-align mayusculas"><%=link_to @tag.name,tag_path(@tag) %></h4>
 				<main class="sombras" >
 					<%= render @tag.articles %>
 					<br>
