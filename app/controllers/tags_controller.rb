@@ -3,7 +3,7 @@ class TagsController < ApplicationController
 	before_action :set_tag, only: [:show, :edit, :update, :destroy]
 	before_action :set_tag_all, only: [:show, :index]
 	load_and_authorize_resource
-	
+	respond_to :html, :json
 	def index
 	    set_meta "title" => "Categorias"
 	    set_meta "og:title"   => "Categorias"

@@ -11,8 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require turbolinks
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require 'epiceditor'
 //= require_tree .
