@@ -2,7 +2,7 @@
 <html lang="es-MX">
 	<head>
 		<%= meta_tags %>
-		<link rel="icon" type="image/png" href="https://compumexicopc.webcindario.com/images/logo.png" />
+		<link rel="icon" type="image/png" href="https://res.cloudinary.com/alfredhdz/image/upload/v1452741743/logo_tgkmjf.png" />
 		<%= stylesheet_link_tag    'application', media: 'all'%>
 		<%= javascript_include_tag 'application'%>
 		<%= auto_discovery_link_tag(:rss, "https://dowloadapps.herokuapp.com/") %>
@@ -14,20 +14,17 @@
   <h1 class="fondos_h text-shadow oculto" >Aplicaciones para Android</h1>
 	 <%= render "parciales/navegacion" %>
 	 
-	 <% if notice %>
-		<div id="flash-message" class="flash-message green">
-		  <button type="button" class="close">&times;</button>
-		  <i class="fa fa-check"></i><div class="margin"><%= notice %></div>
-		</div>
-	 <% end %>
-	 <% if alert %>
-		
-		<div id="flash-message" class="flash-message red">
-		  <button type="button" class="close">&times;</button>
-		  <i class="fa fa-exclamation"></i>
-		  <div class="margin"><%= alert %></div>
-		</div>
-	 <% end %>
+	<% if notice %>
+		<script >
+			Materialize.toast('<%= notice %>', 4000)
+		</script>
+	<% end %>
+
+	<% if alert %>
+		<script>
+	    Materialize.toast('<%= alert %>', 4000)
+	  </script>
+	<% end %>
 
 	<div class="fixed-action-btn right-align" style="bottom: 76.5%; right: 0px;">
 		<%if can? :new, @article%>

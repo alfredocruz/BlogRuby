@@ -21,14 +21,7 @@ $(document).ready(function(){
 		$(".button-collapse").sideNav(),
 
 		window.addEventListener&&window.addEventListener("DOMMouseScroll",e,!1),window.onmousewheel=document.onmousewheel=e,
-		$("#flash-message").on("click",".close",function(){
-			$(this).parent("#flash-message").fadeOut(250)}),
 		$("select").material_select();
-
-		var t=[
-		{selector:"#android",offset:20,callback:'Materialize.showStaggeredList("#android")'},
-		{selector:"#android",offset:20,callback:"globalFunction()"}];
-		Materialize.scrollFire(t)
 
 
 	});
