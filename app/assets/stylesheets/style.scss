@@ -2,15 +2,9 @@
 body{
 	background-color: #EEEEEE;
 	max-width: 100%;
-	font-weight:100;
+	font-weight:400;
 	text-rendering:optimizeLegibility;
 	overflow-x: hidden;
-	.preloader-wrapper{
-		position: fixed !important;
-		top: 50% !important;
-		left:50% !important;
-		z-index: 1000 !important;
-	}
 }
 .overflow-x{
 	overflow-x:hidden;
@@ -238,11 +232,6 @@ aside{
 	&:hover{
 		background: transparent;
 	}
-}
-
-.margin{
-	margin-left: 1em;
-	display: inline-block;
 }
 
 //cuard revelard cuadros reveladores del index
