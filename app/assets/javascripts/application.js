@@ -50,8 +50,8 @@ $('.toggle').click(function() {
     $("html, body").animate({ scrollTop: 0 }, 600);
 });
 
-$( ".juegos" ).hover(
-  function() {
+
+$( ".juegos" ).on ("hover click",function() {
     $( this ).addClass( "green darken-2" );
   }, function() {
     $( this ).removeClass( "green darken-2" );
