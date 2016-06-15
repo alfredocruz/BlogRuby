@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize-sprockets
 //= require 'epiceditor'
 //= require_tree .
 $(document).ready(function () {

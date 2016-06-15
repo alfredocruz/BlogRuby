@@ -14,6 +14,7 @@ gem 'carrierwave'
 gem 'omniauth'
 gem 'google-analytics-rails'
 gem 'squeel'
+gem 'materialize-sass'
 #font awesome para iconos
 gem 'font-awesome-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

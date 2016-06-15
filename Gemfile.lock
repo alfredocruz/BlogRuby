@@ -106,6 +106,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    materialize-sass (0.97.6)
+      sass (~> 3.3)
     meta-tags-helpers (0.2.0)
       rails (> 3)
     mime-types (2.99.2)
@@ -233,6 +235,7 @@ DEPENDENCIES
   heroku_rails_deflate
   jbuilder (~> 2.0)
   jquery-rails
+  materialize-sass
   meta-tags-helpers (~> 0.2.0)
   omniauth
   pg
