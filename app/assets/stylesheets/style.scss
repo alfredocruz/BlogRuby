@@ -420,3 +420,11 @@ nav{
 		width: 100% !important;
 	}
 }
+
+@media #{$small-and-down} {
+   main{
+   	.cuadro-1{
+   		width: 9em;
+   	}
+   }
+  }
