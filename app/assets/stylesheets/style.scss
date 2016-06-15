@@ -38,6 +38,9 @@ body{
 		height: 40px;
 		line-height: 40px;
 		color: #505050 !important;
+		.icon-nav{
+			float: right;
+		}
 		&:hover span{
 			color: #fafafa; 
 			transition: all 0.5s ease-in-out;
@@ -49,6 +52,10 @@ body{
 			font-size: 1.3em !important;
 			line-height: 40px;
 			text-align: center;
+		}
+		&:hover .icon-nav{
+			color: #fafafa;
+			transition: all 0.5s ease-in-out;
 		}
 	}
 	&:hover {
