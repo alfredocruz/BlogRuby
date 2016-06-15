@@ -51,7 +51,7 @@ $('.toggle').click(function() {
 });
 
 
-$( ".juegos" ).on ("hover click",function() {
+$( ".juegos" ).hover(function() {
     $( this ).addClass( "green darken-2" );
   }, function() {
     $( this ).removeClass( "green darken-2" );
