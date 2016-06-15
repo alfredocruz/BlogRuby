@@ -106,7 +106,7 @@
 			<%unless tag.name=="lifestyle" or tag.name=="productividad" %>
 				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 					<div class="row">
-						<div class="col-xs center cero-padding ">
+						<div class="col-xs center cero-padding z-depth-2 ">
 							<h4 class="fondos_h left-align" >Categoria: <span><%=tag.name%></span><%=link_to tag, :class=>"right" do%><i data-tooltip="Más" data-delay="50" data-position="left" class="fa fa-arrow-circle-right tooltipped"></i><%end%></h4>
 							<main class="sombras" >	
 								<% tag.articles.limit(6).each do |article| %>
