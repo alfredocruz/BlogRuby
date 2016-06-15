@@ -19,6 +19,8 @@ gem 'materialize-sass'
 gem 'font-awesome-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+#para el tiempo de respuesta de las peticiones
+gem "rack-timeout"
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 group :production do

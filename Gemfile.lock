@@ -133,6 +133,7 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-timeout (0.4.2)
     rails (4.2.4)
       actionmailer (= 4.2.4)
       actionpack (= 4.2.4)
@@ -240,6 +241,7 @@ DEPENDENCIES
   omniauth
   pg
   puma
+  rack-timeout
   rails (= 4.2.4)
   rails-html-sanitizer
   rails_12factor
