@@ -19,9 +19,9 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    set_meta "description"=> Sanitize.fragment(@article.markup_body.truncate(200), Sanitize::Config::RELAXED).html_safe
+    set_meta "description"=> Sanitize.fragment(@article.markup_body.truncate(250), Sanitize::Config::RELAXED).html_safe
     set_meta "twitter:description"  => Sanitize.fragment(@article.markup_body.truncate(100), Sanitize::Config::RELAXED).html_safe
-    set_meta "og:description"=> Sanitize.fragment(@article.markup_body.truncate(200), Sanitize::Config::RELAXED).html_safe
+    set_meta "og:description"=> Sanitize.fragment(@article.markup_body.truncate(250), Sanitize::Config::RELAXED).html_safe
     set_meta "title" => @article.title+ " v."+ @article.version+ "-Android"
     set_meta "og:title"   => @article.title+ " v."+ @article.version+ "-Android"
     set_meta "og:image"   => @article.image.url
