@@ -22,32 +22,44 @@
 					<% if tag.name == "juegos" %>
 						<% decoration_color="green darken-2" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+							<span>
+								<i class="fa fa-gamepad" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%elsif tag.name == "comunicacion"%>
 						<% decoration_color="teal darken-2" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span>comunicacion</span>
+							<span>
+								<i class="fa fa-mobile" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%elsif tag.name == "productividad"%>
 						<% decoration_color="blue-grey darken-3" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span>productividad</span>
+							<span>
+								<i class="fa fa-chart" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%elsif tag.name == "herramientas"%>
 						<% decoration_color="cyan darken-2" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span>herramientas</span>
+							<span>
+								<i class="fa fa-cog" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%elsif tag.name == "multimedia"%>
 						<% decoration_color="blue darken-2" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span>multimedia</span>
+							<span>
+								<i class="fa fa-film" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%elsif tag.name == "lifestyle"%>
 						<% decoration_color="deep-orange darken-4" %>
 						<div class="text-decoration <%= decoration_color%>">
-							<span>lifestyle</span>
+							<span>
+								<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+							</span>
 						</div>
 					<%end%>
 				<%end%>
