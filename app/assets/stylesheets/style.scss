@@ -259,10 +259,29 @@ aside{
 	.card{
 		margin: 0px!important;
 		overflow: hidden!important;
+		.text-decoration{
+				position: absolute;
+				width: 4.5em;
+				height: 4.5em;
+				border-radius: 4.5em;
+				z-index: 2;
+				left: -2em;
+				top: -2em;
+				span{
+					color: #FFF;
+					position: relative;
+					display: inline-block;
+					text-align: center;
+					top: 3em;
+					right: -.9em;
+					transform:rotate(-45deg);
+					font-size: 0.8em;
+				}
+			}
 		.card-content{
 			padding: 7px 0px 0px 0px;
 			text-align: center;
-			
+
 			.card-title{
 				h2{
 					margin: 0px;

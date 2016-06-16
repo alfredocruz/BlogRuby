@@ -1,4 +1,5 @@
 <div class="cuadro-1 hoverable">
+
 	<div class="row cero-margin">
 		<div class="col-xs-6 left-align">
 			<%if can? :update, @article%>
@@ -16,6 +17,42 @@
 		</div>
 	</div>
 	<div class="card">
+		
+				<% article.tags.each do |tag| %>
+					<% if tag.name == "juegos" %>
+						<% decoration_color="green darken-2" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>juegos</span>
+						</div>
+					<%elsif tag.name == "comunicacion"%>
+						<% decoration_color="teal darken-2" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>comunicacion</span>
+						</div>
+					<%elsif tag.name == "productividad"%>
+						<% decoration_color="blue-grey darken-3" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>productividad</span>
+						</div>
+					<%elsif tag.name == "herramientas"%>
+						<% decoration_color="cyan darken-2" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>herramientas</span>
+						</div>
+					<%elsif tag.name == "multimedia"%>
+						<% decoration_color="blue darken-2" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>multimedia</span>
+						</div>
+					<%elsif tag.name == "lifestyle"%>
+						<% decoration_color="deep-orange darken-4" %>
+						<div class="text-decoration <%= decoration_color%>">
+							<span>lifestyle</span>
+						</div>
+					<%end%>
+				<%end%>
+			
+		
 		<div class="card-image waves-effect waves-block waves-light">
 			<img src="<%= article.image.url(:index_cards)%>" class="activator" alt="<%= article.title %> - V.<%= article.version %>">
 		</div>
@@ -27,7 +64,6 @@
 			<div class="index-icon">
 				<span class="left"><i class="fa fa-eye"></i><%= article.visits_count%></span>
 			</div>
-			
 		</div>
 		<div class="card-reveal">
 			<div class="row cero-margin">

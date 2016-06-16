@@ -13,8 +13,8 @@ module ApplicationHelper
 	end
 
 	def resource_name
-    	:user
-  	end
+   	:user
+  end
 
   def resource
     @resource ||= User.new
