@@ -5,8 +5,8 @@ $("<%=j render(:partial => @articles) %>")
 
 // Update pagination link
 <% if @articles.last_page? %>
-  $('.pagination').html("That's all, folks!");
+  $('.pag').html("That's all, folks!");
 <% else %>
-  $('.pagination')
+  $('.pag')
     .html("<%=j link_to_next_page(@articles, 'Cargar Mas', :remote => true,:class=>'btn waves-effect waves-yellow green accent-3s') %>");
 <% end %>
