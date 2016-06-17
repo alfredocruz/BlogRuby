@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
     set_meta "og:title"   => "dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
-    @articles = Article.search(params[:search]).page(params[:page]).ultimos.per(2)
+    @articles = Article.search(params[:search]).page(params[:page]).ultimos.per(18)
     @articles_visit = Article.limit(8).order_visits
   end
 
