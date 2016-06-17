@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require materialize-sprockets
 //= require 'epiceditor'
+//= require jquery.infinite-pages
 //= require_tree .
 $(document).ready(function () {
    $('.modal-trigger').leanModal({

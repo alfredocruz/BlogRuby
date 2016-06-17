@@ -16,3 +16,11 @@ $(document).on "ajax:success","form#comments-form",(ev,data)->
 		</div>")
 $(document).on "ajax:error","form#comments-form",(ev,data)->
 	console.log data
+
+
+$ ->
+	$('.infinite-table').infinitePages
+		loading: ->
+	   		$(this).text("Loading...")
+	 	error: ->
+	   		$(this).text("Trouble! Please drink some coconut water and click again")

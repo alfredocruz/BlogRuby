@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'jquery-infinite-pages'
+
 gem "devise"
 gem 'will_paginate', '~> 3.0.7'
 gem 'friendly_id','~> 5.1.0'
