@@ -2,7 +2,7 @@
 		<ul class="slides ">
 			<% @articles_visit.each do |article|%>
 				<li> 
-					<img src="<%= article.image.url(:index_slider)%>" alt="<%= article.title %>"> <!-- random image -->
+					<img style="" src="<%= article.image.url(:index_slider)%>" alt="<%= article.title %>"> <!-- random image -->
 					<div class="caption left-align">
 						<h3 style="font-size:1.5em; padding-left:1em;" ><%= link_to article.title, article, :class=>"light grey-text text-lighten-3"%></h3>
 					</div>
