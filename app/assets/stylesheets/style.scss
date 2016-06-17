@@ -422,10 +422,6 @@ nav{
 .oculto,#target{
 	display: none;
 }
-.sombras{
-	background-color: #FFF;
-	padding: 0px !important;
-}
 .li-nav{
 	a{
 		height: 64px !important;
@@ -456,13 +452,11 @@ nav{
 }
 
 @media #{$small-and-down} {
-   main{
    	.cuadro-1{
    		width: 9.5em;
    		margin: 5px;
    	}
-   }
-  }
+ }
 
 @media only screen 
   and (min-device-width: 300px) 

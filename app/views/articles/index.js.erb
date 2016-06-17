@@ -1,2 +1,12 @@
-$('#posts').append('<%= escape_javascript render(@articles) %>');
-$('.pagination').replaceWith('<%= escape_javascript will_paginate(@articles) %>');
+
+// Append new data
+$("<%=j render(:partial => @articles) %>")
+  .appendTo($(".infinite-table"));
+
+// Update pagination link
+<% if @articles.last_page? %>
+  $('.pagination').html("That's all, folks!");
+<% else %>
+  $('.pagination')
+    .html("<%=j link_to_next_page(@articles, 'Cargar Mas', :remote => true,:class=>'btn waves-effect waves-yellow green accent-3s') %>");
+<% end %>
