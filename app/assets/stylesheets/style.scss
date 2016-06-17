@@ -229,10 +229,12 @@ aside{
 	height: auto;
 }
 
-.slider .slides li {
-	width: 100%; 
-	height: 100%; 
-	background-size: 100% 100%;
+.slider .slides li{
+	img{
+		width: 100%; 
+		height: 100%; 
+		background-size: 100% 100%;
+	}
 	.caption{
 		background-color: rgba(0,0,0,0.5) !important;
 	    bottom: 0!important;
@@ -242,6 +244,7 @@ aside{
 	    width: 100% !important;
 	}
 }
+
 .side-nav li a{
 	&:hover{
 		background: transparent;
