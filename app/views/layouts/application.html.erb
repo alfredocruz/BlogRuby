@@ -37,11 +37,9 @@
 	 <div id="fb-root"></div>
 
 		 <%= analytics_init if GoogleAnalytics.valid_tracker? %>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
+		
 	 <%= yield %>
+	 
 	<!-- Modal Structure  de ingresar-->
 	<div id="modal1" class="modal">
 		<div class="modal-footer">

@@ -1,16 +1,30 @@
-<h2>Forgot your password?</h2>
+<div class="row marin-top ">
+	<div class="col-xs-12">
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { :class=>"row center-xs",method: :post }) do |f| %>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 z-depth-3 white cero-padding">
+			<h5 class="fondos_h text-shadow">¿Ha olvidado su contraseña?</h5>
+				<%= devise_error_messages! %>
+			
+		  	<div class="field row">
+			  	<div class="col-xs-12 input-field">
+			  		<%= f.label :email %><br />
+			    	<%= f.email_field :email, autofocus: true %>
+			  	</div>
+		  	</div>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+		  	<div class="actions row">
+			  	<div class="col-xs-12">
+			  		<%= f.submit "Enviame Instrucciones",:class=>"right waves-effect waves-light btn waves-input-wrapper",:disabled=>"disabled" %>
+			  	</div>
+		  	</div>
+		  	<div class="row">
+		  		<div class="col-xs-12 center">
+		  			<%= render "devise/shared/links" %>
+		  		</div>
+		  	</div>
+		  	
+			</div>
+		<% end %>
+	</div>
+</div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
