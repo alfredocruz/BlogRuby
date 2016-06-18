@@ -129,26 +129,26 @@
 
 				<% if user_signed_in?%>
 					<li>
-						<%= link_to edit_user_registration_path do%>
+						<%= link_to edit_user_registration_path, :class=>"cero-padding" do%>
 							<i class="fa fa-pencil ico-nav"></i>
 							<span class="font-nav">Editar Perfil</span>
 						<%end%>
 					</li>
 					<li>
-						<%= link_to destroy_user_session_path, method: :delete do%>
+						<%= link_to destroy_user_session_path, method: :delete, :class=>"cero-padding" do%>
 							<i class="fa fa-sign-out ico-nav"></i>
 							<span class="font-nav">Salir</span>
 						<%end%>
 					</li>
 				<%elsif%>
-					<li class="collection-tags-nav cero-padding">
-		              <%= link_to new_user_session_path do%>
+					<li class="cero-padding">
+		              <%= link_to new_user_session_path, :class=>"cero-padding" do%>
 		                  <i class="fa fa-sign-in ico-nav" aria-hidden="true"></i>
 		                  <span class="font-nav">Ingresar</span>
 		              <%end%>
 		            </li>
-		            <li class="collection-tags-nav cero-padding">
-		               <%= link_to new_user_registration_path do%>
+		            <li class="cero-padding">
+		               <%= link_to new_user_registration_path, :class=>"cero-padding" do%>
 		                  <i class="fa fa-user-plus ico-nav" aria-hidden="true"></i>
 		                  <span class="font-nav">Crear cuenta</span>
 		               <%end%>
