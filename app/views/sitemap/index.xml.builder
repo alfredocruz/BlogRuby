@@ -14,7 +14,7 @@ xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
       xml.lastmod article.updated_at.strftime("%Y-%m-%dT%H:%M:%S.%2N%:z")
     end
   end
-  @category_where do |tag|
+  category_where.each do |tag|
     xml.url do
       xml.loc tag_url(tag)
       xml.changefreq("daily")
