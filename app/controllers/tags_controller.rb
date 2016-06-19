@@ -15,6 +15,8 @@ class TagsController < ApplicationController
 	    set_meta "og:title"   => @tag.name
 	    set_meta "og:description"   => @tag.description
 	    set_meta "og:image"   => @tag.img.url
+	    set_meta "description"=> @tag.description
+	    set_meta "twitter:description" => @tag.description
 	end
 	def edit
 	end
