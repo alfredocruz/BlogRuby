@@ -17,6 +17,9 @@
 										<i class="fa fa-trash-o absolute-button" ></i>
 									<%end%>
 								<%end%>
+								<%if can? :update, @tag%>
+									<%= link_to "Editar",edit_tag_path(tag) %>
+								<%end%>
 							</div>
 						</div>
 					</div>

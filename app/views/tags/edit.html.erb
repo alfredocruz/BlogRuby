@@ -1,0 +1,30 @@
+<diw class="row">
+	<%= form_for(@tag,html:{:class =>"col-xs-12"}) do |f| %>
+		<div class="row">
+			<div class="input-field col s12">
+				<%= f.text_field :name,:class =>"materialize-textarea"%>
+				<label for="textarea1">Nombre</label>
+			</div>
+			<div class="input-field col s12">
+				<%= f.text_field :description,:class =>"materialize-textarea",:id=>"textarea2"%>
+				<label for="textarea2">Description</label>
+			</div>
+			<div class="file-field input-field col s4">
+				<div class="btn">
+					<span>Imagen</span>
+					<%= f.file_field :img, :class=>"file" %>
+				</div>
+				<div class="file-path-wrapper">
+					<input class="file-path validate valid" type="text" />
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="actions col s12 right-align " style="margin: 20px;" >
+				<button class="btn waves-effect waves-light valign" type="submit" name="action" style="width: 150px;height:50px;">
+					<i class="fa fa-paper-plane"></i>
+				</button>
+			</div>
+		</div>
+	<%end%>
+</diw>

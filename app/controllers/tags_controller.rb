@@ -11,12 +11,24 @@ class TagsController < ApplicationController
 
 	def show
 		@articles_visit = Article.limit(10).order_visits
-		set_meta "title" => @tag.name
+		set_meta "title" => "Descargar aplicaciones sobre "+@tag.name+" para android"
 	    set_meta "og:title"   => @tag.name
-	    set_meta "og:description"   => @tag.name+(" para andoid")
-	    set_meta "og:image"   => "http://res.cloudinary.com/alfredhdz/image/upload/v1442532590/unnamed_pikq1m.png"
+	    set_meta "og:description"   => @tag.description
+	    set_meta "og:image"   => @tag.img.url
 	end
-
+	def edit
+	end
+	def update
+	    respond_to do |format|
+	      if @tag.update(tag_params)
+	        format.html { redirect_to @tag, notice: 'Tag se ha actualizado correctamente.' }
+	        format.json { render :show, status: :ok, location: @tag }
+	      else
+	        format.html { render :edit }
+	        format.json { render json: @tag.errors, status: :unprocessable_entity }
+	      end
+	    end
+  	end
 	def destroy
 	    @tag.destroy
 	    respond_to do |format|
@@ -36,6 +48,6 @@ class TagsController < ApplicationController
 
 	    # Never trust parameters from the scary internet, only allow the white list through.
 	    def tag_params
-	      params.require(:tag).permit(:name)
+	      params.require(:tag).permit(:name,:img,:description)
 	    end
 end
