@@ -1,6 +1,6 @@
 xml.instruct!
 
-xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
+xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" 'xmlns:image'.to_sym => "http://www.google.com/schemas/sitemap-image/1.1") do
   xml.url do
     xml.loc root_url
     xml.changefreq("hourly")
