@@ -261,3 +261,10 @@ es:
       long: "%A, %d de %B de %Y a las %I:%M %p"
       short: "%d de %b a las %H:%M hrs"
     pm: pm
+  unauthorized:
+    default: "No tienes suficientes permisos para realizar esta accion"
+    manage:
+      all: "No estas autorizado para %{action} %{subject}."
+      user: "No se les permite administrar otras cuentas de usuario."
+    update:
+      project: "No se permite actualizar este proyecto."
