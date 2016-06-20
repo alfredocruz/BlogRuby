@@ -2,6 +2,11 @@ class AuthenticationsController < ApplicationController
 	def index
 		
 	end
+	def destroy
+ 		@authentication = Authentication.find(params[:id])
+ 		@authentication.destroy
+ 		redirect_to authentications_url, :notice => "Autenticación destruida exitosamente."
+   	end
 	def all  
         omniauth = request.env["omniauth.auth"]
         authentication = Authentication.find_by_provider_and_uid(omniauth['provider'], omniauth['uid'])
