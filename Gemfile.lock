@@ -269,7 +269,6 @@ DEPENDENCIES
   kaminari
   materialize-sass
   meta-tags-helpers (~> 0.2.0)
-  omniauth
   omniauth-facebook
   omniauth-twitter
   pg
