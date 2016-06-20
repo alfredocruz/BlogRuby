@@ -1,7 +1,6 @@
 class AuthenticationsController < ApplicationController
 	def index
-		def all
-			
+		def all  
         omniauth = request.env["omniauth.auth"]
         authentication = Authentication.find_by_provider_and_uid(omniauth['provider'], omniauth['uid'])
 
