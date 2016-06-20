@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 	before_action :set_user, only: [:edit, :update]
 	before_action :set_meta_tags
-	before_action :authenticate_user!
-	load_and_authorize_resource
+	#before_action :authenticate_user!
+	#load_and_authorize_resource
 	def edit
   	end
 	def index
