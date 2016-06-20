@@ -1,11 +1,13 @@
 class AuthenticationsController < ApplicationController
 	def index
+		def all
+			
         omniauth = request.env["omniauth.auth"]
         authentication = Authentication.find_by_provider_and_uid(omniauth['provider'], omniauth['uid'])
 
          if authentication
                flash[:notice] = "Usuario logueado con éxito."
-               sign_in_and_redirect @article
+               sign_in_and_redirect User.find(authentication.user_id)
          elsif current_user
                token = omniauth['credentials'].token
 
@@ -34,9 +36,9 @@ class AuthenticationsController < ApplicationController
                 redirect_to new_user_registration_path
             end
         end 
+       end
 
-    alias_method :twitter, :all
-    alias_method :facebook, :all
+	    alias_method :twitter, :all
+	    alias_method :facebook, :all
 	end
-	
 end
