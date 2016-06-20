@@ -260,5 +260,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   config.omniauth :twitter, 'sAeOFWfXGrzOjoyI8u35yQ1qG','TXmHtN8pq1isNoIzznPiuEXK7GnVfQtAFm6mAdFd2DZRNbpJmA'  
-  config.omniauth :facebook, '316086441848514', '75505550d38278a172abc97938a20646', {:scope => 'email,user_birthday,read_stream'}  
+  config.omniauth :facebook, '316086441848514', '75505550d38278a172abc97938a20646', {:scope => 'email,read_stream'}  
 end
