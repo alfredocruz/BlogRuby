@@ -31,6 +31,12 @@
       </div>
       <div class="center-align col s12 cero-padding">
         <%= render "devise/shared/links" %>
+        <div class="row">
+          <%= link_to "Sign in with Facebook",user_omniauth_authorize_path(:facebook) %>
+        </div>
+        <div class="row">
+          <%= link_to "Sign in with twitter",user_omniauth_authorize_path(:twitter) %>
+        </div>
       </div>
     </div>
   <% end %>
