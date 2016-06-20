@@ -5,7 +5,7 @@ class AuthenticationsController < ApplicationController
 
          if authentication
                flash[:notice] = "Usuario logueado con éxito."
-               sign_in_and_redirect User.find(authentication.user_id)
+               sign_in_and_redirect @article
          elsif current_user
                token = omniauth['credentials'].token
 
