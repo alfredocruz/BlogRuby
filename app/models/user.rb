@@ -9,10 +9,6 @@ class User < ActiveRecord::Base
 
   	has_many :articles
 
-  	def apply_omniauth(omniauth)
-    	authentications.new(:provider => omniauth['provider'], :uid => omniauth['uid'],:token_secret => omniauth['token_secret'].secret)
-  	end
-
   	def password_required?
     	(authentications.empty? || !password.blank?) && super 
     end
