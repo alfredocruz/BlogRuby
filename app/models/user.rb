@@ -8,9 +8,9 @@ class User < ActiveRecord::Base
 		  	:rememberable, :trackable, :validatable, :omniauthable
 
   	has_many :articles
-
+ 	
   	def apply_omniauth(omniauth)
-    	authentications.new(:provider => omniauth['provider'], :uid => omniauth['uid'],:token_secret => omniauth['credentials'].secret)
+    	authentications.new(:provider => omniauth['provider'], :uid => omniauth['uid'], :token => omniauth['token'].token, :token_secret => omniauth['token_secret'].secret)
   	end
 
   	def password_required?

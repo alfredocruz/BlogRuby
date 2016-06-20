@@ -16,10 +16,10 @@ class AuthenticationsController < ApplicationController
        		flash[:notice] = "Usuario logueado con éxito."
        		sign_in_and_redirect User.find(authentication.user_id)
      	elsif current_user
-       		token = omniauth['credentials'].token
+       		token = omniauth['token_secret'].token
 
        		if omniauth['provider'] == "twitter"
-       			token_secret = omniauth['credentials'].secret
+       			token_secret = omniauth['token_secret'].secret
        		else
        			token_secret = ""
        		end		
@@ -31,7 +31,7 @@ class AuthenticationsController < ApplicationController
      	else
        		user = User.new 
 
-       		user.email = omniauth['extra']['raw_info'].email if omniauth['provider'] == 'facebook'
+       		user.email = omniauth['username']['raw_info'].email if omniauth['provider'] == 'facebook'
 
        		user.apply_omniauth(omniauth)
 
@@ -39,7 +39,7 @@ class AuthenticationsController < ApplicationController
 	     		flash[:notice] = "Logueado con éxito."
 	         	sign_in_and_redirect User.find(user.id)             
 	       	else
-	     		session[:omniauth] = omniauth.except('extra')
+	     		session[:omniauth] = omniauth.except('username')
 	     		redirect_to new_user_registration_path
 	       	end
 	 	end 
