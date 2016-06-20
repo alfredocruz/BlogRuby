@@ -8,11 +8,7 @@ class User < ActiveRecord::Base
 		  	:rememberable, :trackable, :validatable, :omniauthable
 
   	has_many :articles
- 	def apply_omniauth(omniauth)
-    	user.authentications.build(provider: omni['provider'], uid: omni['uid'],
-                          token: omni['credentials'].token,
-                          token_secret: omni['credentials'].secret)
-  	end
+ 	
   	def password_required?
         (authentications.empty? || !password.blank?) && super 
     end
