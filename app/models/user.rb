@@ -9,10 +9,9 @@ class User < ActiveRecord::Base
 
   	has_many :articles
  	def apply_omniauth(omniauth)
-    	user.authentications.build(:provider => omniauth['provider'], 
-    						:uid => omniauth['uid'], 
-    						:token => omniauth['credentials'].token, 
-    						:token_secret => omniauth['credentials'].secret)
+    	user.authentications.build(provider: omni['provider'], uid: omni['uid'],
+                          token: omni['credentials'].token,
+                          token_secret: omni['credentials'].secret)
   	end
   	def password_required?
         (authentications.empty? || !password.blank?) && super 
