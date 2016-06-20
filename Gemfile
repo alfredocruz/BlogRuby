@@ -16,6 +16,7 @@ gem 'carrierwave'
 gem 'omniauth'
 gem 'omniauth-facebook'  
 gem 'omniauth-twitter' 
+gem 'omniauth-linkedin'
 
 gem 'google-analytics-rails'
 gem 'squeel'

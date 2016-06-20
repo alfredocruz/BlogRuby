@@ -145,6 +145,8 @@ GEM
       rack (>= 1.0, < 3)
     omniauth-facebook (3.0.0)
       omniauth-oauth2 (~> 1.2)
+    omniauth-linkedin (0.2.0)
+      omniauth-oauth (~> 1.0)
     omniauth-oauth (1.1.0)
       oauth
       omniauth (~> 1.0)
@@ -271,6 +273,7 @@ DEPENDENCIES
   meta-tags-helpers (~> 0.2.0)
   omniauth
   omniauth-facebook
+  omniauth-linkedin
   omniauth-twitter
   pg
   puma
