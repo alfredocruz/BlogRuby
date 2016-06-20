@@ -9,15 +9,19 @@ class User < ActiveRecord::Base
 
   	has_many :articles
  	
-  	def password_required?
-        (authentications.empty? || !password.blank?) && super 
-    end
+  	def apply_omniauth(omniauth)
+    	authentications.new(:provider => omniauth['provider'], :uid => omniauth['uid'], :token => omniauth['credentials'].token, :token_secret => omniauth['credentials'].secret)
+  	end
 
-    def update_with_password(params, *options)
-        if encrypted_password.blank?
-              update_attributes(params, *options)
-        else
-              super
-        end
+  	def password_required?
+    	(authentications.empty? || !password.blank?) && super 
     end
+  
+  	def update_with_password(params, *options)
+    	if encrypted_password.blank?
+      		update_attributes(params, *options)
+    	else
+      		super
+    	end
+  	end
 end
