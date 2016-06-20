@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     resources :tags, :path => "category"
   	resources :articles, :path => "android"
   	get '/feed', to: 'articles#feed',:format => 'rss'
-    devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout',sign_up: 'registration' }
+
+    resources :authentications
+    devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout',sign_up: 'registration' },
+    controllers:{omniauth_callbacks: "authentications"}
+    get '/entrar', to: 'authentications#index', as: 'entrar'
     root 'articles#index'
 end
