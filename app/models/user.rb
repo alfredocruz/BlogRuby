@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	
+
 	has_many :identities,  dependent: :destroy 
   	# Include default devise modules. Others available are:
   	# :confirmable, :lockable, :timeoutable and :omniauthable
@@ -31,6 +31,7 @@ class User < ActiveRecord::Base
         elsif auth.provider == 'twitter'
           user = User.new(
             email: "#{auth.uid}@change-me.com",
+            username: username,
             password: password,
             password_confirmation: password
           )
