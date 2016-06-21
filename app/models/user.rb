@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
 
     if user.nil?
       email = auth.info.email
-      username = auth.extra.raw_info.name
+      username = auth.info.first_name
       user = User.find_by(email: email) if email
 
       # Create the user if it's a new registration
