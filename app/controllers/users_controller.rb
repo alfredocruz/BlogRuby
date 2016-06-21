@@ -11,13 +11,20 @@ class UsersController < ApplicationController
 	def index
 		@users = User.all
 	end
+	# PATCH/PUT /users/:id.:format
 	def update
-	    if @user.update(user_params)
-	    	redirect_to users_url
-	    else
-	      render 'edit'
+	    # authorize! :update, @user
+	    respond_to do |format|
+	      if @user.update(user_params)
+	        sign_in(@user == current_user ? @user : current_user, :bypass => true)
+	        format.html { redirect_to @user, notice: 'Your profile was successfully updated.' }
+	        format.json { head :no_content }
+	      else
+	        format.html { render action: 'edit' }
+	        format.json { render json: @user.errors, status: :unprocessable_entity }
+	      end
 	    end
-  	end
+	end
 
   	def finish_signup
 	    if request.patch? && params[:user] # Revisa si el request es de tipo patch, es decir, llenaron el formulario y lo ingresaron
