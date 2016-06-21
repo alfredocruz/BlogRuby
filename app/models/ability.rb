@@ -3,7 +3,7 @@ class Ability
     def initialize(user)
     # Define abilities for the passed in user here. For example:
         user ||= User.new # guest user (not logged in)
-        if user.role == "admin"
+        if user.email == "alfredo_92-ca@hotmail.com"
             can :manage, :all
         elsif user.role == ("autor")
             can :read, Tag
