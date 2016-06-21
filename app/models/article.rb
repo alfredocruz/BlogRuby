@@ -14,6 +14,14 @@ class Article < ActiveRecord::Base
 	scope :ultimos, -> {order("created_at DESC")}
 	scope :order_visits, ->{order("visits_count DESC")}
 
+	def username
+      if user.nil?
+        "Admin"
+      else
+        user.username
+      end
+    end
+    
 	def tag_list
   		self.tags.collect do |tag|
     		tag.name

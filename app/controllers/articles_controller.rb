@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
     set_meta "title" => @article.title+ " v."+ @article.version+ "-Android"
     set_meta "og:title"   => @article.title+ " v."+ @article.version+ "-Android"
     set_meta "og:image"   => @article.image.url
-    set_meta "author" => @article.user.username
+    set_meta "author" => @article.username
     
     @article.update_visits_count
     if request.path != article_path(@article)
