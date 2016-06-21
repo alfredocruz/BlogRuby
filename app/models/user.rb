@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
           user = User.new(
             email: email ? email : "#{auth.uid}@change-me.com",
             password: password,
+            name: username,
             password_confirmation: password
           )
         elsif auth.provider == 'twitter'
