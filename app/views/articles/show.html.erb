@@ -17,10 +17,8 @@
 				<div class="col-xs-12 border-bottom margin-bottom">
 					<div class="row card-header">
 						<div class="col-xs-4 right-align">
-							<% unless @article.user.nil? %>
 							<i class="fa fa-user show-icon"></i>
-							<span class="show-user">Posted by: <%=@article.user.username%></span>
-							<%end%>
+							<span class="show-user">Posted by: <%=@article.username%></span>
 						</div>
 						<div class="col-xs-4 right-align">
 							<i class="fa fa-calendar show-icon"></i>
