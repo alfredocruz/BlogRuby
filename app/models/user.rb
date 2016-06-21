@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
 
     if user.nil?
       email = auth.info.email
+      username = auth.extra.raw_info.name
       user = User.find_by(email: email) if email
 
       # Create the user if it's a new registration
@@ -25,7 +26,7 @@ class User < ActiveRecord::Base
           user = User.new(
             email: email ? email : "#{auth.uid}@change-me.com",
             password: password,
-            name: username,
+            username: username,
             password_confirmation: password
           )
         elsif auth.provider == 'twitter'
