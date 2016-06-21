@@ -40,7 +40,7 @@ $('ul.tabs').tabs('select_tab', 'test1');
     // Google Analytics
     add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
     // Facebook SDK
-     
+     add('//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=316086441848514');
 }(document, 'script'));
 
 $('.Hide').click(function() {
