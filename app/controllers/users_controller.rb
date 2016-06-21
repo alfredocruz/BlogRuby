@@ -28,7 +28,14 @@ class UsersController < ApplicationController
 	      end
 	    end
   	end
-
+  	def destroy
+	    # authorize! :delete, @user
+	    @user.destroy
+	    respond_to do |format|
+	      format.html { redirect_to root_url }
+	      format.json { head :no_content }
+	    end
+  	end
 	private
 	def set_meta_tags
 		set_meta "title" => "dowloadapps"
