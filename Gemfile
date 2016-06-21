@@ -13,6 +13,7 @@ gem 'meta-tags-helpers', '~> 0.2.0'
 gem 'cloudinary'
 gem 'rmagick'
 gem 'carrierwave'
+
 gem 'omniauth'
 gem 'omniauth-facebook'  
 gem 'omniauth-twitter' 
