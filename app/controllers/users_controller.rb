@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 	        sign_in(@user, :bypass => true)
 	        redirect_to root_path, notice: 'Hemos guardado tu email correctamente.'
 	      else
-	        @show_errors = true
+	        redirect_to root_path, notice: 'No se ha a guardado el mail'
 	      end
 	    end
   	end
