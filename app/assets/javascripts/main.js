@@ -20,13 +20,17 @@ $(document).ready(function(){
 
 		window.addEventListener&&window.addEventListener("DOMMouseScroll",e,!1),window.onmousewheel=document.onmousewheel=e,
 		$("select").material_select();
+
 	$( "#buscador" ).click(function() {
   		$( ".buscador" ).removeClass( "animation-out" );
   		$( ".buscador" ).addClass( "animacion" );
+  		$( ".navbar-fixed" ).addClass( "animation-out" );
+
 	});
 	$( "#salir" ).click(function() {
 		$( ".buscador" ).removeClass( "animacion" );
   		$( ".buscador" ).addClass( "animation-out" );
+  		$( ".navbar-fixed" ).removeClass( "animation-out" );
 	});
 
 });
