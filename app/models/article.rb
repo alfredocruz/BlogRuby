@@ -21,7 +21,6 @@ class Article < ActiveRecord::Base
         user.username
       end
     end
-    
 	def tag_list
   		self.tags.collect do |tag|
     		tag.name

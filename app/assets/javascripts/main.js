@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 	function e(e){
 		var t=0;

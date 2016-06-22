@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
     @articles = Article.search(params[:search]).page(params[:page]).ultimos.per(18)
     @articles_visit = Article.limit(8).order_visits
   end
-
   # GET /articles/1
   # GET /articles/1.json
   def show

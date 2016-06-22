@@ -1,4 +1,29 @@
-@import "materialize";
+// Mixins
+@import "materialize/components/prefixer";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
+
+// Variables
+@import "materialize/components/variables";
+
+// Reset
+@import "materialize/components/normalize";
+
+// materialize/components
+@import "materialize/components/global";
+@import "materialize/components/navbar";
+@import "materialize/components/roboto";
+@import "materialize/components/typography";
+@import "materialize/components/cards";
+@import "materialize/components/toast";
+@import "materialize/components/tooltip";
+@import "materialize/components/buttons";
+@import "materialize/components/waves";
+@import "materialize/components/modal";
+@import "materialize/components/materialbox";
+@import "materialize/components/forms/forms";
+@import "materialize/components/sideNav";
+@import "materialize/components/slider";
 //Todo el cuerpo de la pagina
 body{
 	background-color: #EEEEEE;

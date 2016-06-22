@@ -1,4 +1,5 @@
+
 json.array!(@articles) do |article|
-  json.extract! article, :id
-  json.url article_url(article, format: :json)
+  json.extract! article, :title
+  json.extract! article, :published_at
 end
