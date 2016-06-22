@@ -468,6 +468,29 @@ nav{
 .font-nav{
 	font-size: 12px !important;
 }
+//buscador
+.buscador{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	.input-field{
+		label{
+			i{
+				font-size: 1.5em !important;
+			}
+		}
+	}
+}
+.animacion{
+	transform: translateY(0px) !important;
+	transition: all 0.5s;
+}
+.animation-out{
+	transform: translateY(-70px) !important;
+	transition: all 0.5s;
+}
+
 ::-webkit-scrollbar{
 	width: 5px !important;
 }

@@ -20,9 +20,16 @@ $(document).ready(function(){
 
 		window.addEventListener&&window.addEventListener("DOMMouseScroll",e,!1),window.onmousewheel=document.onmousewheel=e,
 		$("select").material_select();
-
-
+	$( "#buscador" ).click(function() {
+  		$( ".buscador" ).removeClass( "animation-out" );
+  		$( ".buscador" ).addClass( "animacion" );
 	});
+	$( "#salir" ).click(function() {
+		$( ".buscador" ).removeClass( "animacion" );
+  		$( ".buscador" ).addClass( "animation-out" );
+	});
+
+});
 
 $(document).ready(function() {
   if ($('.pagination').length) {
