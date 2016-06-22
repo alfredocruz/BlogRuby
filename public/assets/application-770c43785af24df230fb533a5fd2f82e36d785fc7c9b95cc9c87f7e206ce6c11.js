@@ -18880,9 +18880,9 @@ Picker.extend( 'pickadate', DatePicker )
         , defaultContent: ''
           , autoSave: 100 // Set to false for no auto saving
           }
-        , theme: { base: '/assets/base/epiceditor-1a63e30a07c6c84eeda732cf5e080c578a7a74e315260d4321e2e7f236325ca9.css'
-          , preview: '/assets/preview/github-a7bc5d04c22eb8cb2befdfd2a5223c1b303cea45e2a5c375184856cfcfe62d17.css'
-          , editor: '/assets/editor/epic-dark-3107a5d8ec41410dc7abeac6819ea5e8b333909217a7a21984ee107fad98937e.css'
+        , theme: { base: '/assets/base/epiceditor-0262bc8ae8dc4a01f7cb2d2564965578c1d9c4e4308e370a16b0043804e38b8b.css'
+          , preview: '/assets/preview/github-5f152b48e140f4e4e520a9def00bc6d8ee9fe9aff3f1bbbec710cdf2520a01c6.css'
+          , editor: '/assets/editor/epic-dark-3e0bf48a9b1ff9fa2a6ceb01407e4a7f437e8f7f695446e12d1d580400d8c564.css'
           }
         , focusOnLoad: false
         , shortcut: { modifier: 18 // alt keycode
@@ -21714,6 +21714,160 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
 }).call(function() {
   return this || (typeof window !== 'undefined' ? window : global);
 }());
+
+/*
+jQuery Infinite Pages v0.2.0
+https://github.com/magoosh/jquery-infinite-pages
+
+Released under the MIT License
+ */
+
+(function() {
+  var slice = [].slice;
+
+  (function($, window) {
+    var InfinitePages;
+    InfinitePages = (function() {
+      InfinitePages.prototype.defaults = {
+        debug: false,
+        navSelector: 'a[rel=next]',
+        buffer: 1000,
+        loading: null,
+        success: null,
+        error: null,
+        context: window,
+        state: {
+          paused: false,
+          loading: false
+        }
+      };
+
+      function InfinitePages(container, options) {
+        this.options = $.extend({}, this.defaults, options);
+        this.$container = $(container);
+        this.$table = $(container).find('table');
+        this.$context = $(this.options.context);
+        this.init();
+      }
+
+      InfinitePages.prototype.init = function() {
+        var scrollHandler, scrollTimeout;
+        scrollTimeout = null;
+        scrollHandler = ((function(_this) {
+          return function() {
+            return _this.check();
+          };
+        })(this));
+        return this.$context.scroll(function() {
+          if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = null;
+          }
+          return scrollTimeout = setTimeout(scrollHandler, 250);
+        });
+      };
+
+      InfinitePages.prototype._log = function(msg) {
+        if (this.options.debug) {
+          return typeof console !== "undefined" && console !== null ? console.log(msg) : void 0;
+        }
+      };
+
+      InfinitePages.prototype.check = function() {
+        var distance, nav, windowBottom;
+        nav = this.$container.find(this.options.navSelector);
+        if (nav.size() === 0) {
+          return this._log("No more pages to load");
+        } else {
+          windowBottom = this.$context.scrollTop() + this.$context.height();
+          distance = nav.offset().top - windowBottom;
+          if (this.options.state.paused) {
+            return this._log("Paused");
+          } else if (this.options.state.loading) {
+            return this._log("Waiting...");
+          } else if (distance > this.options.buffer) {
+            return this._log((distance - this.options.buffer) + "px remaining...");
+          } else {
+            return this.next();
+          }
+        }
+      };
+
+      InfinitePages.prototype.next = function() {
+        if (this.options.state.done) {
+          return this._log("Loaded all pages");
+        } else {
+          this._loading();
+          return $.getScript(this.$container.find(this.options.navSelector).attr('href')).done((function(_this) {
+            return function() {
+              return _this._success();
+            };
+          })(this)).fail((function(_this) {
+            return function() {
+              return _this._error();
+            };
+          })(this));
+        }
+      };
+
+      InfinitePages.prototype._loading = function() {
+        this.options.state.loading = true;
+        this._log("Loading next page...");
+        if (typeof this.options.loading === 'function') {
+          return this.$container.find(this.options.navSelector).each(this.options.loading);
+        }
+      };
+
+      InfinitePages.prototype._success = function() {
+        this.options.state.loading = false;
+        this._log("New page loaded!");
+        if (typeof this.options.success === 'function') {
+          return this.$container.find(this.options.navSelector).each(this.options.success);
+        }
+      };
+
+      InfinitePages.prototype._error = function() {
+        this.options.state.loading = false;
+        this._log("Error loading new page :(");
+        if (typeof this.options.error === 'function') {
+          return this.$container.find(this.options.navSelector).each(this.options.error);
+        }
+      };
+
+      InfinitePages.prototype.pause = function() {
+        this.options.state.paused = true;
+        return this._log("Scroll checks paused");
+      };
+
+      InfinitePages.prototype.resume = function() {
+        this.options.state.paused = false;
+        this._log("Scroll checks resumed");
+        return this.check();
+      };
+
+      return InfinitePages;
+
+    })();
+    return $.fn.extend({
+      infinitePages: function() {
+        var args, option;
+        option = arguments[0], args = 2 <= arguments.length ? slice.call(arguments, 1) : [];
+        return this.each(function() {
+          var $this, data;
+          $this = $(this);
+          data = $this.data('infinitepages');
+          if (!data) {
+            $this.data('infinitepages', (data = new InfinitePages(this, option)));
+          }
+          if (typeof option === 'string') {
+            return data[option].apply(data, args);
+          }
+        });
+      }
+    });
+  })(window.jQuery, window);
+
+}).call(this);
 (function() {
   $(document).on("ajax:success", "form#comments-form", function(ev, data) {
     $(this).find("textarea").val("");
@@ -21725,8 +21879,6 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
   });
 
 }).call(this);
-
-
 $(document).ready(function(){
 	function e(e){
 		var t=0;
@@ -21752,6 +21904,36 @@ $(document).ready(function(){
 
 
 	});
+
+$(document).ready(function() {
+  if ($('.pagination').length) {
+    $(window).scroll(function() {
+      var url = $('.pagination .next_page').attr('href');
+      if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+        $('.pagination').text("Please Wait...");
+        return $.getScript(url);
+      }
+    });
+    return $(window).scroll();
+  }
+});
+(function() {
+
+
+}).call(this);
+(function() {
+  $(function() {
+    return $('.infinite-table').infinitePages({
+      loading: function() {
+        return $(this).text("Loading...");
+      },
+      error: function() {
+        return $(this).text("Trouble! Please drink some coconut water and click again");
+      }
+    });
+  });
+
+}).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -21764,6 +21946,7 @@ $(document).ready(function(){
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 
 
 
