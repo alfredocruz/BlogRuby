@@ -32,7 +32,7 @@ $(document).ready(function(){
   		$( ".buscador" ).addClass( "animation-out" );
   		$( ".navbar-fixed" ).removeClass( "animation-out" );
 	});
-
+	 $('#search').val(' ');
 });
 
 $(document).ready(function() {
