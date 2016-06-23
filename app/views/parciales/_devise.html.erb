@@ -1,54 +1,54 @@
 <div class="row white">
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name),html:{:id=>"iniciar_sesion" ,:class =>"col s12 "}) do |f| %>
-    <div class="row">
-      <div class="col-xs-12 cero-padding">
-        <div class="row marin-top margin-bottom">
-          <div class="col-xs-6 center">
-            <%= link_to user_omniauth_authorize_path(:facebook),:class=>"cero-padding waves-effect blue darken-4 btn width-100" do%>
-               <span>Ingresa con</span>
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            <%end%>
-          </div>
-          <div class="col-xs-6 center">
-            <%= link_to user_omniauth_authorize_path(:twitter),:class=>"cero-padding waves-effect blue btn width-100" do%>
-              <span>ingresa con</span>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            <%end%>
-          </div>
-        </div>
-      </div>
-      
-      <div class="input-field col s12 cero-padding">
-        <i class="fa fa-envelope prefix"></i>
-        <%= f.email_field :email, autofocus: true,:id=>"users_email" %>
-        <%= f.label :email,"Correo electronico" %>
-      </div>
+	<%= form_for(resource, as: resource_name, url: session_path(resource_name),html:{:id=>"iniciar_sesion" ,:class =>"col s12 "}) do |f| %>
+		<div class="row">
+			<div class="col-xs-12 cero-padding">
+				<div class="row marin-top margin-bottom">
+					<div class="col-xs-6 center">
+						<%= link_to user_omniauth_authorize_path(:facebook),:class=>"cero-padding waves-effect blue darken-4 btn width-100" do%>
+							 <span>Ingresa con</span>
+							<i class="fa fa-facebook right" aria-hidden="true"></i>
+						<%end%>
+					</div>
+					<div class="col-xs-6 center">
+						<%= link_to user_omniauth_authorize_path(:twitter),:class=>"cero-padding waves-effect blue btn width-100" do%>
+							<span>ingresa con</span>
+							<i class="fa fa-twitter right" aria-hidden="true"></i>
+						<%end%>
+					</div>
+				</div>
+			</div>
+			
+			<div class="input-field col s12 cero-padding">
+				<i class="fa fa-envelope prefix"></i>
+				<%= f.email_field :email, autofocus: true,:id=>"users_email" %>
+				<%= f.label :email,"Correo electronico" %>
+			</div>
 
-      <div class="input-field col s12 cero-padding">
-        <i class="fa fa-user-secret prefix"></i>
-        <%= f.password_field :password, autocomplete: "off",:id=>"users_password" %>
-        <%= f.label :password,"Contraseña" %>
-      </div>
+			<div class="input-field col s12 cero-padding">
+				<i class="fa fa-user-secret prefix"></i>
+				<%= f.password_field :password, autocomplete: "off",:id=>"users_password" %>
+				<%= f.label :password,"Contraseña" %>
+			</div>
 
-      
-      <div class="actions col s12 left-align cero-padding" >
-        <% if devise_mapping.rememberable? -%>
-          <div class="field">
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me %>
-          </div>
-        <% end -%> 
-      </div>
-    
-      <div class="actions col s12 right-align  cero-padding">
-         <button class="btn waves-effect waves-light valign btn-ingresar" type="submit" name="action" style="width: 100%;height:35px;">
-         INICIAR SESIÓN
-          <i class="fa fa-paper-plane right"></i>
-        </button>
-      </div>
-      <div class="center-align col s12 cero-padding">
-        <%= render "devise/shared/links" %>
-      </div>
-    </div>
-  <% end %>
+			
+			<div class="actions col s12 left-align cero-padding" >
+				<% if devise_mapping.rememberable? -%>
+					<div class="field">
+						<%= f.check_box :remember_me %>
+						<%= f.label :remember_me %>
+					</div>
+				<% end -%> 
+			</div>
+		
+			<div class="actions col s12 right-align  cero-padding">
+				 <button class="btn waves-effect waves-light valign btn-ingresar" type="submit" name="action" style="width: 100%;height:35px;">
+				 INICIAR SESIÓN
+					<i class="fa fa-paper-plane right"></i>
+				</button>
+			</div>
+			<div class="center-align col s12 cero-padding">
+				<%= render "devise/shared/links" %>
+			</div>
+		</div>
+	<% end %>
 </div>
