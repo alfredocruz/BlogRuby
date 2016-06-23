@@ -26,17 +26,10 @@
 	  </script>
 	<% end %>
 
-	<div class="fixed-action-btn right-align" style="bottom: 76.5%; right: 0px;">
-		<%if can? :new, @article%>
-			<%= link_to new_article_path, :class =>"btn-floating btn-large red" do%>
-				<i class="fa fa-plus"></i>
-			<%end%>
-		<%end%>
-	</div>
-  
+	  
  <!--facebook-->
 	 <div id="fb-root"></div>
-
+		<!-- google analyti -->
 		 <%= analytics_init if GoogleAnalytics.valid_tracker? %>
 		
 	 <%= yield %>
@@ -61,24 +54,12 @@
 			<%= render "parciales/new" %>
 		</div>
 	</div>
-
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '316086441848514',
-	      xfbml      : true,
-	      version    : 'v2.6'
-	    });
-	  };
-
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
-
+	<div class="fixed-action-btn right-align" style="bottom: 76.5%; right: 0px;">
+		<%if can? :new, @article%>
+			<%= link_to new_article_path, :class =>"btn-floating btn-large red" do%>
+				<i class="fa fa-plus"></i>
+			<%end%>
+		<%end%>
+	</div>
 </body>
 </html>

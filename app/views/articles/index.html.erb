@@ -34,7 +34,7 @@
 					</div>
 					<div class="native_button">
 						<div>
-							<div class="fb-like" data-href="https://dowloadapps.herokuapp.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>    
+							<div class="fb-like" data-href="http://dowloadapps.herokuapp.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>    
 						</div>
 					</div>
 				</div>
@@ -106,6 +106,7 @@
 				<div class="infinite-table">	
 					<%= render @articles %>
 				</div>
+				<div class="pagination"></div>
 				<div class="col-xs-12 border-top pag">
 					<%= link_to_next_page(@articles,'Cargar Mas',:remote=>true,:class=>'btn waves-effect waves-yellow green accent-3s') %>
 				</div>
@@ -129,9 +130,9 @@
 					<div class="row white">
 						<div class="col-xs center cero-padding z-depth-2 ">
 							<h4 class="fondos_h left-align" >Categoria: <span><%=tag.name%></span><%=link_to tag, :class=>"right" do%><i data-tooltip="Más" data-delay="50" data-position="left" class="fa fa-arrow-circle-right tooltipped"></i><%end%></h4>
-							<div>	
+							<div>
 								<% tag.articles.limit(6).each do |article| %>
-									<%=render partial: "article" , locals: { article: article } %>
+									<%=render partial: "article" , locals: { article: article }%>
 								<% end %>
 							</div>
 						</div>

@@ -8,6 +8,9 @@ module ApplicationHelper
   def articulos
     @articulos = Article.all
   end
+
+
+  
 	def resource_class
   		devise_mapping.to
 	end

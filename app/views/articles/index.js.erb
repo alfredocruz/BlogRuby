@@ -2,10 +2,9 @@
 // Append new data
 $("<%=j render(:partial => @articles) %>")
   .appendTo($(".infinite-table"));
-
 // Update pagination link
 <% if @articles.last_page? %>
-  $('.pag').html("That's all, folks!");
+  $('.pag').html("¡Eso es todo amigo.!");
 <% else %>
   $('.pag')
     .html("<%=j link_to_next_page(@articles, 'Cargar Mas', :remote => true,:class=>'btn waves-effect waves-yellow green accent-3s') %>");
