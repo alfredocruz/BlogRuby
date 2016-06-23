@@ -8,8 +8,8 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     set_meta "description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
-    set_meta "title" => "dowloadapps-Aplicaciones para Android"
-    set_meta "og:title"   => "dowloadapps"
+    set_meta "title" => "DowloadApps - Aplicaciones para Android"
+    set_meta "og:title"   => "dowloadApps"
     set_meta "og:type"   => "website"
     set_meta "og:site_name"   => "dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
