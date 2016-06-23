@@ -9,9 +9,9 @@ class ArticlesController < ApplicationController
   def index
     set_meta "description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "title" => "DowloadApps - Aplicaciones para Android"
-    set_meta "og:title"   => "dowloadApps"
+    set_meta "og:title"   => "DowloadApps"
     set_meta "og:type"   => "website"
-    set_meta "og:site_name"   => "dowloadapps"
+    set_meta "og:site_name"   => "Dowloadapps"
     set_meta "og:description"   => "Aplicaciones para Android, juegos , temas,herramientas, multimedia y mucho mejor que playstore"
     set_meta "og:image"   => "https://res.cloudinary.com/alfredhdz/image/upload/v1466379780/portada_facebook_nswsnr.png"
     @articles = Article.search(params[:search]).page(params[:page]).ultimos.per(2)
