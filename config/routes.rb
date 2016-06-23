@@ -9,12 +9,10 @@ Rails.application.routes.draw do
   	resources :users, :path=>"usuarios_admin"
     resources :tags, :path => "category"
 
-  get "articles/autocomplete_article_title"  
   	resources :articles, :path => "android"
   
 
   	get '/feed', to: 'articles#feed',:format => 'rss'
-    get "/modallogin" => 'articles#index', as: 'modallogin'
     devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout' },
     controllers:{omniauth_callbacks: "omniauth_callbacks"}
     match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], as: :finish_signup
