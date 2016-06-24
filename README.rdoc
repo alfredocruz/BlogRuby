@@ -26,3 +26,40 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+=====Este es un proyecto realizo en ruby on rails donde se aplicaron los siguientes conocimientos:
+
+*Creacion de Scaffold
+
+*ralacionar bases de datos uno a muchos muchos a uno y muchos a muchos 
+
+*creacion de buscador
+
+*authentificcaciones con devise
+
+*generacion de permisos de usuarios con cacan
+
+*authentificacion con facebook y twiter
+
+*paginacio con kaminari 
+
+*Scroll ininto usando ajax & respues en js.builder
+
+*generacion de URL amigables con gem 'friendly_id'
+
+*generacion de meta datos SEO usando meta-tags-helper
+
+*subir imagenes a cloudinary, rmaick y carrierwave
+
+*diseño tipo material desing usando materialize
+
+*se suso base de datos posgretsql 
+
+*usando puma como servidor
+
+*generacion de correos electronicos 
+
+*generacionde sitemap.xml
+
+*generacion de feed.xml
+
