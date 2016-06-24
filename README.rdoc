@@ -27,7 +27,8 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
-=====Este es un proyecto realizo en ruby on rails donde se aplicaron los siguientes conocimientos:
+==Pagina para descargar apps android gratis proyecto personal
+
 
 *Creacion de Scaffold
 
