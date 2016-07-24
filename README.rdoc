@@ -64,3 +64,5 @@ Please feel free to use a different markup language if you do not plan to run
 
 *generacion de feed.xml
 
+otras paginas:
+http://hotalprueba.net16.net/
