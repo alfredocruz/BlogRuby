@@ -32,6 +32,8 @@ Please feel free to use a different markup language if you do not plan to run
 
 *Creacion de Scaffold
 
+*responsive design usando Flexbox grid
+
 *ralacionar bases de datos uno a muchos muchos a uno y muchos a muchos 
 
 *creacion de buscador
